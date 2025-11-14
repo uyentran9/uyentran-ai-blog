@@ -1,0 +1,26 @@
+title: "Uyen Tran — AI, ML & Quantum ML Study Blog"
+description: "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery and Computational Biology."
+url: "https://uyentran9.github.io"
+baseurl: "/uyentran-ai-blog"
+
+theme: minima
+markdown: kramdown
+highlighter: rouge
+
+author:
+  name: "Uyen Tran (Victoria Tran)"
+  email: ""
+  linkedin: "https://www.linkedin.com/in/uyen-tran/"
+  github: "https://github.com/uyentran9"
+
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+minima:
+  social_links:
+    github: uyentran9
+    linkedin: uyen-tran
+
