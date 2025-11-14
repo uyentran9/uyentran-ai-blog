@@ -10,51 +10,93 @@ I am a Pricing Analyst at Abbott Diabetes Care transitioning into **AI and Machi
 
 My background in **Statistics and Economics**, combined with intensive retraining in **modern AI/ML systems**, has motivated me to pursue graduate study and contribute to computational methods for biomedical research.
 
+My journey blends a quantitative background with structured technical training, self-directed university-level coursework, and hands-on ML projects.
+
+
 ---
 
-## **Education**
+## 🎓 **Education**
 - **B.A. in Statistics & B.A. in Economics**, University of California, Berkeley  
-- **AIO 2025 Program (Vietnam/Japan/Korea)** — intensive AI curriculum:  
+
+---
+
+## 📘 **Selected Online Coursework (ongoing)**  
+To strengthen my technical foundation for graduate study, I am also completing well-known university-level courses and applied AI programs:
+
+- **AIO 2025 Program (Vietnam/Japan/Korea)** — intensive AI/ML curriculum:  
   Python, Algorithms, Deep Learning, LLMs, NLP, GNNs, MLOps, and Quantum ML
-
-### **Selected Online Coursework (ongoing)**
-To strengthen my foundation for graduate study, I am also completing well-known open courses:
-- *Machine Learning* — Andrew Ng (Stanford / Coursera)  
-- *CS231n: Convolutional Neural Networks* — Stanford  
-- *CS224n: NLP with Deep Learning* — Stanford  
-- *DeepLearning.AI: Generative AI & LLMs* — OpenAI / DeepLearning.AI  
-- *IBM Qiskit: Introduction to Quantum Computing* — IBM Quantum  
-- *Xanadu Quantum Machine Learning Tutorials* — Pennylane  
-- *MIT Jameel Clinic Talks on AI for Drug Discovery* — MIT CSAIL & J-Clinic  
+  
+- **Machine Learning** — Andrew Ng (Stanford / Coursera)  
+- **CS231n: Convolutional Neural Networks** — Stanford  
+- **CS224n: NLP with Deep Learning** — Stanford  
+- **DeepLearning.AI: Generative AI & LLMs** — OpenAI / DeepLearning.AI  
+- **IBM Qiskit: Introduction to Quantum Computing** — IBM Quantum  
+- **Xanadu Quantum Machine Learning Tutorials** — Pennylane  
+- **MIT Jameel Clinic Talks on AI for Drug Discovery** — MIT CSAIL & J-Clinic
 
 ---
 
-## **Current Focus**
+## 📚 **Selected Coursework & Self-Study (in progress)**
+
+### **Foundations**
+- Linear algebra, probability, and statistics refresher (Berkeley lecture notes + textbooks)
+- Data structures & algorithms in Python  
+- Software engineering fundamentals: Git, testing, documentation, code readability
+
+### **Machine Learning & Deep Learning**
+- Supervised learning, optimization, regularization  
+- Neural networks, CNNs, RNNs, transformers  
+- Hands-on ML practice using **scikit-learn** and **PyTorch**  
+- Kaggle-style projects and model-building exercises  
+
+### **LLMs & NLP**
+- Prompt engineering, embeddings, RAG systems  
+- Retrieval-augmented generation (RAG) 
+- Fine-tuning small/medium LLMs  
+- Classical NLP: tokenization, n-grams, word embeddings, sequence models  
+
+### **Quantum Computing & Quantum Machine Learning**
+- Qubits, quantum gates, Bloch sphere, quantum circuits  
+- Variational algorithms (VQE, QAOA) & algorithmic intuition  
+- Introductory quantum algorithms (Grover, QPE basics)  
+- Quantum ML for chemistry and drug discovery
+  
+---
+
+## 🔥 **Current Focus**
 - Strengthening core CS skills: Python, algorithms, data structures  
-- Deep Learning: LLMs, NLP, Graph Neural Networks  
-- Quantum computing and hybrid quantum-classical algorithms  
-- Applying AI to molecular modeling, biomedical prediction, and computational chemistry  
+- Building deep intuition in ML, Deep Learning, LLMs, NLP, GNNs, diffusion models    
+- Quantum computing and hybrid quantum–classical algorithms for molecular simulation  
+- Applying AI to molecular modeling, prediction, and computational chemistry  
 
 ---
 
-## **Research & Career Interests**
-My long-term research interest lies in building AI systems for **drug discovery**, including:
-- molecular representation learning (GNNs, transformers)  
-- generative models for molecular design (diffusion models, VAEs)  
-- quantum-inspired or hybrid quantum-classical ML  
-- scalable ML systems for biomedical data
+## 🔬 **Research & Career Interests**
+My long-term research interest lies in building intelligent systems for  
+**drug discovery**, especially at the intersection of:
 
-I am especially motivated by how **AI + chemistry + quantum algorithms** can accelerate early-stage drug development.
+- Molecular representation learning (GNNs, transformers)  
+- Generative models for molecular design (diffusion models, VAEs)  
+- Quantum-inspired algorithms for molecular simulation
+- Foundation models for biology & chemistry  
+- AI systems enabling automated early-stage drug candidate exploration
+- Using LLMs/NLP to accelerate scientific literature understanding and hypothesis generation  
+
+Ultimately, I aim to pursue:  
+- **Master’s in Computer Science**  
+- Followed by a **PhD in Computer Science / AI**  
+- With a career as a **Data Scientist / Research Scientist** applying AI to biomedical problems, especially where **quantum ML** and **molecular modeling** intersect  
 
 ---
 
-## **Goals**
-- Pursue a **Master’s in Computer Science (Fall 2026 target)** with a pathway toward a **PhD in CS**  
-- Contribute to research in:
-  - Machine Learning for drug discovery  
-  - Molecular machine learning and computational biology  
-  - Quantum ML algorithms  
-- Eventually work as a **Data Scientist / Research Scientist** applying AI to real-world biomedical problems
+## **💼 Professional Background**
+
+At Abbott Diabetes Care:
+- Utilize statistical analysis and pricing analytics to support revenue strategy  
+- Collaborate across finance, sales, and business teams   
+- Develop strong analytical reasoning and data interpretation experience in real business environments  
+
+This background motivates my transition to ML for healthcare and drug discovery.
 
 ---
 
