@@ -1,0 +1,83 @@
+---
+layout: default
+---
+
+<article class="post">
+  <!-- Banner image if provided -->
+  {% if page.banner %}
+  <div class="banner-container">
+    <img src="{{ page.banner | relative_url }}" alt="{{ page.title }}" class="post-banner">
+  </div>
+  {% endif %}
+  
+  <!-- Post header -->
+  <header class="post-header">
+    <h1>{{ page.title }}</h1>
+    
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">
+        {{ page.date | date: "%B %d, %Y" }}
+      </time>
+      
+      {% if page.author %}
+        • <span class="author">{{ page.author }}</span>
+      {% endif %}
+      
+      {% if page.reading_time %}
+        • <span class="reading-time">{{ page.reading_time }} min read</span>
+      {% endif %}
+      
+      {% if page.categories %}
+      <div class="post-categories">
+        {% for category in page.categories %}
+          <span class="category-tag">{{ category }}</span>
+        {% endfor %}
+      </div>
+      {% endif %}
+    </div>
+  </header>
+  
+  <!-- Table of Contents -->
+  {% if page.toc %}
+  <div class="toc-container">
+    <div class="toc-title">Table of Contents</div>
+    <div id="markdown-toc">
+      {{ content | toc_only }}
+    </div>
+  </div>
+  {% endif %}
+  
+  <!-- Post content -->
+  <div class="post-content">
+    {{ content }}
+  </div>
+  
+  <!-- Post footer with tags -->
+  {% if page.tags %}
+  <div class="post-tags">
+    <strong>Tags:</strong>
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>{% unless forloop.last %}, {% endunless %}
+    {% endfor %}
+  </div>
+  {% endif %}
+  
+  <!-- Citation box -->
+  {% if page.citation %}
+  <div class="citation">
+    <strong>Cite this post:</strong><br>
+    {{ page.citation }}
+  </div>
+  {% endif %}
+</article>
+
+<!-- Navigation to previous/next posts -->
+<nav class="post-navigation">
+  {% if page.previous.url %}
+    <a href="{{ page.previous.url | relative_url }}" class="prev-post">← {{ page.previous.title }}</a>
+  {% endif %}
+  
+  {% if page.next.url %}
+    <a href="{{ page.next.url | relative_url }}" class="next-post">{{ page.next.title }} →</a>
+  {% endif %}
+</nav>

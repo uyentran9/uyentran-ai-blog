@@ -1,0 +1,98 @@
+---
+layout: default
+title: Home
+---
+
+<div class="home">
+  <section class="intro">
+    <h2>Welcome</h2>
+    <p>
+      I'm a researcher passionate about artificial intelligence and machine learning. 
+      This blog documents my journey through theoretical foundations, experimental results, 
+      and practical insights in AI research.
+    </p>
+  </section>
+
+  <section class="recent-posts">
+    <h2>Recent Posts</h2>
+    
+    {% if site.posts.size > 0 %}
+      <ul class="post-list">
+        {% for post in site.posts limit:5 %}
+          <li class="post-list-item">
+            <h3 class="post-list-title">
+              <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            </h3>
+            
+            <div class="post-meta">
+              <time datetime="{{ post.date | date_to_xmlschema }}">
+                {{ post.date | date: "%B %d, %Y" }}
+              </time>
+              
+              {% if post.categories %}
+                <div class="post-categories">
+                  {% for category in post.categories %}
+                    <span class="category-tag">{{ category }}</span>
+                  {% endfor %}
+                </div>
+              {% endif %}
+            </div>
+            
+            {% if post.excerpt %}
+              <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 200 }}</p>
+            {% endif %}
+            
+            <a href="{{ post.url | relative_url }}">Read more →</a>
+          </li>
+        {% endfor %}
+      </ul>
+      
+      <p><a href="{{ '/blog/' | relative_url }}">View all posts →</a></p>
+    {% else %}
+      <p>No posts yet. Check back soon!</p>
+    {% endif %}
+  </section>
+
+  <section class="featured-publications">
+    <h2>Recent Publications</h2>
+    
+    {% assign pubs = site.publications | sort: 'year' | reverse %}
+    {% if pubs.size > 0 %}
+      <div class="publications-list">
+        {% for pub in pubs limit:3 %}
+          <div class="publication-item">
+            <div class="pub-title">
+              <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+            </div>
+            
+            {% if pub.authors %}
+              <div class="pub-authors">{{ pub.authors }}</div>
+            {% endif %}
+            
+            {% if pub.venue %}
+              <div class="pub-venue">{{ pub.venue }}, {{ pub.year }}</div>
+            {% endif %}
+            
+            {% if pub.links %}
+              <div class="pub-links">
+                {% if pub.links.pdf %}
+                  <a href="{{ pub.links.pdf }}" class="pub-link" target="_blank">PDF</a>
+                {% endif %}
+                {% if pub.links.arxiv %}
+                  <a href="{{ pub.links.arxiv }}" class="pub-link" target="_blank">arXiv</a>
+                {% endif %}
+                {% if pub.links.code %}
+                  <a href="{{ pub.links.code }}" class="pub-link" target="_blank">Code</a>
+                {% endif %}
+              </div>
+            {% endif %}
+          </div>
+        {% endfor %}
+      </div>
+      
+      <p><a href="{{ '/publications/' | relative_url }}">View all publications →</a></p>
+    {% else %}
+      <p>Publications coming soon!</p>
+    {% endif %}
+  </section>
+</div>

@@ -1,0 +1,52 @@
+---
+layout: page
+title: Blog
+permalink: /blog/
+---
+
+<div class="blog-page">
+  <p>Explorations in AI, machine learning, and computational theory.</p>
+  
+  <!-- Category filter -->
+  <div class="category-filter">
+    <strong>Filter by category:</strong>
+    <a href="{{ '/blog/' | relative_url }}">All</a> |
+    <a href="{{ '/blog/theory/' | relative_url }}">Theory</a> |
+    <a href="{{ '/blog/notes/' | relative_url }}">Notes</a> |
+    <a href="{{ '/blog/experiments/' | relative_url }}">Experiments</a>
+  </div>
+
+  {% if site.posts.size > 0 %}
+    <ul class="post-list">
+      {% for post in site.posts %}
+        <li class="post-list-item">
+          <h2 class="post-list-title">
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          </h2>
+          
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%B %d, %Y" }}
+            </time>
+            
+            {% if post.categories %}
+              <div class="post-categories">
+                {% for category in post.categories %}
+                  <span class="category-tag">{{ category }}</span>
+                {% endfor %}
+              </div>
+            {% endif %}
+          </div>
+          
+          {% if post.excerpt %}
+            <p class="post-excerpt">{{ post.excerpt | strip_html | truncate: 300 }}</p>
+          {% endif %}
+          
+          <a href="{{ post.url | relative_url }}">Read more →</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No posts yet. Check back soon!</p>
+  {% endif %}
+</div>
