@@ -1,0 +1,54 @@
+---
+layout: default
+---
+
+<article class="publication">
+  <header class="publication-header">
+    <h1>{{ page.title }}</h1>
+    
+    <div class="pub-meta">
+      {% if page.authors %}
+      <p class="pub-authors">{{ page.authors }}</p>
+      {% endif %}
+      
+      {% if page.venue %}
+      <p class="pub-venue">{{ page.venue }}</p>
+      {% endif %}
+      
+      {% if page.year %}
+      <p class="pub-year">{{ page.year }}</p>
+      {% endif %}
+    </div>
+    
+    {% if page.links %}
+    <div class="pub-links">
+      {% if page.links.pdf %}
+        <a href="{{ page.links.pdf }}" class="pub-link" target="_blank">PDF</a>
+      {% endif %}
+      {% if page.links.arxiv %}
+        <a href="{{ page.links.arxiv }}" class="pub-link" target="_blank">arXiv</a>
+      {% endif %}
+      {% if page.links.code %}
+        <a href="{{ page.links.code }}" class="pub-link" target="_blank">Code</a>
+      {% endif %}
+      {% if page.links.slides %}
+        <a href="{{ page.links.slides }}" class="pub-link" target="_blank">Slides</a>
+      {% endif %}
+      {% if page.links.video %}
+        <a href="{{ page.links.video }}" class="pub-link" target="_blank">Video</a>
+      {% endif %}
+    </div>
+    {% endif %}
+  </header>
+  
+  <div class="publication-content">
+    {{ content }}
+  </div>
+  
+  {% if page.bibtex %}
+  <div class="bibtex">
+    <h3>BibTeX</h3>
+    <pre><code>{{ page.bibtex }}</code></pre>
+  </div>
+  {% endif %}
+</article>

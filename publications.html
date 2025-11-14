@@ -1,0 +1,59 @@
+---
+layout: page
+title: Publications
+permalink: /publications/
+---
+
+<div class="publications-page">
+  <p>Academic publications and research work.</p>
+
+  {% assign pubs = site.publications | sort: 'year' | reverse %}
+  
+  {% if pubs.size > 0 %}
+    <div class="publications-list">
+      {% for pub in pubs %}
+        <div class="publication-item">
+          <div class="pub-title">
+            <a href="{{ pub.url | relative_url }}">{{ pub.title }}</a>
+          </div>
+          
+          {% if pub.authors %}
+            <div class="pub-authors">{{ pub.authors }}</div>
+          {% endif %}
+          
+          {% if pub.venue %}
+            <div class="pub-venue">
+              {{ pub.venue }}{% if pub.year %}, {{ pub.year }}{% endif %}
+            </div>
+          {% endif %}
+          
+          {% if pub.excerpt %}
+            <p>{{ pub.excerpt | strip_html }}</p>
+          {% endif %}
+          
+          {% if pub.links %}
+            <div class="pub-links">
+              {% if pub.links.pdf %}
+                <a href="{{ pub.links.pdf }}" class="pub-link" target="_blank">PDF</a>
+              {% endif %}
+              {% if pub.links.arxiv %}
+                <a href="{{ pub.links.arxiv }}" class="pub-link" target="_blank">arXiv</a>
+              {% endif %}
+              {% if pub.links.code %}
+                <a href="{{ pub.links.code }}" class="pub-link" target="_blank">Code</a>
+              {% endif %}
+              {% if pub.links.slides %}
+                <a href="{{ pub.links.slides }}" class="pub-link" target="_blank">Slides</a>
+              {% endif %}
+              {% if pub.links.video %}
+                <a href="{{ pub.links.video }}" class="pub-link" target="_blank">Video</a>
+              {% endif %}
+            </div>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>Publications coming soon!</p>
+  {% endif %}
+</div>
