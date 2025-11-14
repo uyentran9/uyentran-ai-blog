@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Uyen Tran – AI & ML Study Blog
+title: Uyen Tran (Victoria Tran) – AI & ML Study Blog
 list_title: Latest posts
 ---
 
