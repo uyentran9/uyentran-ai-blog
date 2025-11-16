@@ -27,8 +27,9 @@ author:
   name             : "Victoria Tran (Uyen Tran)"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
-  employer         : "Red Brick University"
+  location         : "California, USA"
+  school           : "UC Berkeley"
+  employer         : "Abbott Diabetes Care"
   uri              : # URL
   email            : "uyen.victoria.tran@gmail.com, uyentran@berkeley.edu" 
 
