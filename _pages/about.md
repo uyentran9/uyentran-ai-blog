@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-# 🧬 Victoria Tran (Uyên Trần)  
+# 🧬 Victoria Tran (Uyen Tran)  
 ### *From Mathematics → UC Berkeley Statistics → Abbott Biotech → Machine Learning → Toward Master’s & PhD in Computer Science (AI for Drug Discovery)*
 
 Welcome — I’m **Victoria (Uyen Tran)**, an aspiring **AI researcher** with a quantitative foundation in **mathematics and statistics**, industry experience in **biotech data analysis**, and long-term goals in **Quantum Machine Learning for Drug Discovery**.
