@@ -13,9 +13,8 @@ title                    : "Victoria Tran (Uyen Tran) / Academic Website"
 title_separator          : "-"
 name                     : &name "Victoria Tran (Uyen Tran)"
 description              : &description "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery and Computational Biology."   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://academicpages.github.io # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
-baseurl                  : "" # the subpath of your site, e.g. "/blog"
+url                      : "https://uyentran9.github.io" 
+baseurl                  : "/victoria-uyen-tran.github.io" 
 repository               : "uyentran9/victoria-uyen-tran.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
@@ -26,12 +25,12 @@ author:
   avatar           : "profile.png"
   name             : "Victoria Tran (Uyen Tran)"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery and Computational Biology."
   location         : "San Francisco Bay Area, USA"
   school           : "UC Berkeley"
-  employer         : #"Abbott Diabetes Care"
+  employer         : "Abbott Diabetes Care"
   uri              : # URL
-  email            : "uyen.victoria.tran@gmail.com, uyentran@berkeley.edu" 
+  email            : "uyen.victoria.tran@gmail.com" 
 
   # Academic websites
   academia         : # URL
@@ -55,7 +54,7 @@ author:
 
   # Social media
   artstation       : # Username
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
+  bluesky          : # Replace this with you Bluesky username
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
