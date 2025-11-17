@@ -1,20 +1,25 @@
 ---
-layout: archive
+layout: single
 title: "AIO 2025 – Notes"
 permalink: /blog/notes/
 author_profile: true
 ---
 
-{% include base_path %}
-<h2>AIO 2025 – Summarizing knowledge  for 12 modules</h2>
+<h1>AIO 2025 – Notes</h1>
 
-{% assign modules = "module1,module2,module3,module4,module5,module6,module7,module8,module9,module10,module11,module12" | split: "," %}
+<h2>AIO 2025 – Summarizing knowledge for 12 modules</h2>
 
-{% for m in modules %}
-  <h3>Module {{ forloop.index }}</h3>
-  {% for post in site.categories.AIO2025-Notes %}
-    {% if post.tags contains m %}
-      {% include archive-single.html %}
-    {% endif %}
-  {% endfor %}
-{% endfor %}
+<ul>
+  <li><a href="{{ site.baseurl }}/blog/notes/module1/">Module 1 – [tên module 1]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module2/">Module 2 – [tên module 2]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module3/">Module 3 – [tên module 3]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module4/">Module 4 – [tên module 4]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module5/">Module 5 – [tên module 5]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module6/">Module 6 – [tên module 6]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module7/">Module 7 – [tên module 7]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module8/">Module 8 – [tên module 8]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module9/">Module 9 – [tên module 9]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module10/">Module 10 – [tên module 10]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module11/">Module 11 – [tên module 11]</a></li>
+  <li><a href="{{ site.baseurl }}/blog/notes/module12/">Module 12 – [tên module 12]</a></li>
+</ul>
