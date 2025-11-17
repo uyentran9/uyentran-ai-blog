@@ -1,11 +1,146 @@
 ---
-title: 'Future Blog Post'
-date: 2199-01-01
-permalink: /posts/2012/08/blog-post-4/
-tags:
-  - cool posts
-  - category1
-  - category2
+title: "Module 1 Notes — Topic 1: Python Foundations"
+layout: post
+categories: [AIO2025, Module1, Python]
+tags: [python, basics, programming, aio2025]
 ---
 
-This post will show up by default. To disable scheduling of future posts, edit `config.yml` and set `future: false`. 
+# **Topic 1 — Python Foundations**
+
+Python Foundations in Module 1 introduce the essential programming concepts needed for data analysis, machine learning, and software development. This topic covers variables, data types, control flow, loops, functions, and basic text processing techniques used in early chatbot and NLP tasks.
+
+---
+
+## **1. Why Python Foundations Matter**
+Python is designed for clarity, flexibility, and readability. It allows beginners to write expressive programs with minimal code while enabling advanced users to build full-scale systems.  
+These fundamentals lay the groundwork for:
+- Data structures (Topic 2)  
+- OOP & PyTorch (Topics 6–7)  
+- Mini-projects and deployment  
+- All future modules in AIO 2025
+
+---
+
+## **2. Core Concepts**
+
+### **2.1 Variables & Data Types**
+Python uses dynamic typing and supports:
+- `int`, `float`
+- `str`
+- `bool`
+- `list`, `dict`, `set`, `tuple`
+
+Variables are created by assignment:
+
+\`\`\`python
+x = 10
+name = "Victoria"
+is_student = True
+\`\`\`
+
+---
+
+### **2.2 Conditional Statements**
+Control program flow using `if`, `elif`, and `else`:
+
+\`\`\`python
+if score >= 90:
+    grade = "A"
+elif score >= 80:
+    grade = "B"
+else:
+    grade = "C"
+\`\`\`
+
+---
+
+### **2.3 Loops (for / while)**
+
+#### For loop:
+\`\`\`python
+for i in range(5):
+    print(i)
+\`\`\`
+
+#### While loop:
+\`\`\`python
+count = 0
+while count < 3:
+    count += 1
+\`\`\`
+
+---
+
+### **2.4 Functions**
+Functions modularize logic and promote reusability:
+
+\`\`\`python
+def greet(name):
+    return f"Hello, {name}!"
+\`\`\`
+
+---
+
+## **3. Text Processing Basics**
+
+\`\`\`python
+def clean_text(text):
+    return text.lower().strip()
+\`\`\`
+
+---
+
+## **4. Mini Example: Simple Rule-Based Chatbot**
+
+\`\`\`python
+def chatbot(user_input):
+    text = user_input.lower()
+
+    if "hello" in text:
+        return "Hi there! How can I help you today?"
+    elif "bye" in text:
+        return "Goodbye!"
+    else:
+        return "I'm not sure how to respond to that."
+
+print(chatbot("Hello"))
+\`\`\`
+
+---
+
+## **5. Common Use Cases in Module 1**
+- Automation scripts  
+- Word suggestion  
+- Chatbot prototype  
+- Data structure practice  
+- TA exercises  
+
+---
+
+## **6. Skills to Master**
+- Python syntax  
+- Loops  
+- Functions  
+- Basic text processing  
+- Clean modular coding  
+
+---
+
+## **7. Prepares You For**
+- Data Structures  
+- OOP  
+- PyTorch Intro  
+- Streamlit deployment  
+- Mini projects  
+
+---
+
+## **8. Recommended Resources**
+- Harvard CS50 Python  
+- MIT 6.0001  
+- Real Python  
+- freeCodeCamp Python  
+- Automate the Boring Stuff  
+
+---
+```
