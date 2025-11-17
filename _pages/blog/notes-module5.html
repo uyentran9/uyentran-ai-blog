@@ -1,0 +1,18 @@
+---
+layout: archive
+title: "AIO 2025 – Notes: Module 5"
+permalink: /blog/notes/module5/
+author_profile: true
+module_tag: "module5"
+---
+
+{% include base_path %}
+
+<h2>Module 1 – [ghi tên module 5]</h2>
+<p>Summary notes for Module 5.</p>
+
+{% for post in site.categories.AIO2025-Notes %}
+  {% if post.tags contains page.module_tag %}
+    {% include archive-single.html %}
+  {% endif %}
+{% endfor %}
