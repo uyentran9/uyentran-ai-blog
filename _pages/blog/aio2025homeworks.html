@@ -1,0 +1,20 @@
+---
+layout: archive
+title: "AIO 2025 – Homeworks"
+permalink: /blog/homeworks/
+author_profile: true
+---
+
+{% include base_path %}
+<h2>AIO 2025 – Homeworks theo Modules</h2>
+
+{% assign modules = "module1,module2,module3,module4,module5,module6,module7,module8,module9,module10,module11,module12" | split: "," %}
+
+{% for m in modules %}
+  <h3>Module {{ forloop.index }}</h3>
+  {% for post in site.categories.AIO2025-Homeworks %}
+    {% if post.tags contains m %}
+      {% include archive-single.html %}
+    {% endif %}
+  {% endfor %}
+{% endfor %}
