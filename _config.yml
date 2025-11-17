@@ -11,7 +11,7 @@ locale                   : "en-US"
 #site_theme              : "default" # Currently available options are "default", "air"
 title                    : "Trần Thị Mỹ Uyên / Academic Website"
 title_separator          : "-"
-name                     : "Trần thị Mỹ Uyên"
+name                     : "Trần Thị Mỹ Uyên"
 description              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://uyentran9.github.io" 
 baseurl                  : "/uyentran-ai-blog.github.io" 
@@ -23,7 +23,7 @@ repository               : "uyentran9/victoria-uyen-tran.github.io"
 author:
   # Biographic information
   avatar           : "avartar.jpg"
-  name             : "Trần thị Mỹ Uyên"
+  name             : "Trần Thị Mỹ Uyên"
   pronouns         : # example: "she/her"  
   bio              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery."
   location         : "San Francisco Bay Area, USA"
