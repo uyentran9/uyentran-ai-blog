@@ -24,8 +24,8 @@ Welcome — I’m **Victoria (Uyen Tran)**, an aspiring **AI researcher** with a
 ## 🎓 Early Mathematical Foundations  
 My academic path began in Vietnam’s top magnet schools for mathematics:
 
-- **Tran Dai Nghia Middle School – gifted mathematics program**  
-- **Le Hong Phong High School – Class A (top math-focused cohort)**  
+- **Tran Dai Nghia Middle School For The Gifted – gifted mathematics program**  
+- **Le Hong Phong High School For The Gifted – Class A (top math-focused cohort)**  
 
 These programs gave me a strong early foundation in mathematical thinking, problem-solving, and quantitative rigor — skills that later shaped my interest in statistics, modeling, and machine learning.
 
