@@ -9,7 +9,7 @@ author_profile: true
 
 <ul>
 {% for post in site.posts %}
-  {% if post.categories contains "AIO2025" and post.categories contains "Module1" %}
+  {% if post.categories contains "AIO2025" and post.title contains "Module 1" %}
     <li>
       <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       — {{ post.date | date: "%Y-%m-%d" }}
