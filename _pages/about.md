@@ -134,9 +134,10 @@ My long-term vision is to help build computational tools that accelerate the dev
 ## ✉️ Connect With Me  
 I’m always open to collaborations, research discussions, and opportunities in ML, AI for science, and computational drug discovery.
 
-- **Email:** uyen.victoria.tran@gmail.com  
-- **LinkedIn:** uyen-tran  
-- **GitHub:** uyentran9  
-- **Kaggle:** victoriatranuyentran  
+- **Email:** [uyen.victoria.tran@gmail.com](mailto:uyen.victoria.tran@gmail.com)
+- **LinkedIn:** [uyen-tran](https://www.linkedin.com/in/uyen-tran)
+- **GitHub:** [uyentran9](https://github.com/uyentran9)
+- **Kaggle:** [victoriatranuyentran](https://www.kaggle.com/victoriatranuyentran)
+
 
 Thank you for visiting — and for being part of my journey 🌱
