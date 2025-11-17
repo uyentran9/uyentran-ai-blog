@@ -9,28 +9,22 @@
 
 main:
   - title: "Home"
-    url: "{{ site.baseurl }}/" 
-    
+    url: /
   - title: "Blog"
-    url: "{{ site.baseurl }}/blog/"  
-    
+    url: /blog/
   - title: "Projects"
-    url: "{{ site.baseurl }}/projects/"
-    
+    url: /projects/
   - title: "Publications"
-    url: "{{ site.baseurl }}/publications/"  
-
+    url: /publications/
   - title: "Talks"
-    url: "{{ site.baseurl }}/talks/"     
-
+    url: /talks/
   - title: "Teaching"
-    url: "{{ site.baseurl }}/teaching/"      
-    
+    url: /teaching/
   - title: "Portfolio"
-    url: "{{ site.baseurl }}/portfolio/"  
-    
+    url: /portfolio/
   - title: "CV"
-    url: "{{ site.baseurl }}/cv/"  
+    url: /cv/
+
     
   # - title: "CV"
   #   url: /cv-json/
