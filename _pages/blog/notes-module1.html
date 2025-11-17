@@ -7,10 +7,7 @@ author_profile: true
 
 ## Module 1 – Python Foundations & Core Programming
 
-{% assign module1_posts = site.posts 
-  | where_exp: "post", "post.categories contains 'AIO2025'"
-  | where_exp: "post", "post.categories contains 'Module1'"
-  | sort: "date" %}
+{% assign module1_posts = site.categories.Module1 | sort: "date" %}
 
 <ul>
   {% for post in module1_posts %}
@@ -20,5 +17,4 @@ author_profile: true
     </li>
   {% endfor %}
 </ul>
-
 
