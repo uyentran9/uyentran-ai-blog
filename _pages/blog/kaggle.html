@@ -1,0 +1,13 @@
+---
+layout: archive
+title: "Kaggle Projects"
+permalink: /blog/kaggle/
+author_profile: true
+---
+
+{% include base_path %}
+<h2>Kaggle Projects</h2>
+
+{% for post in site.categories.Kaggle %}
+  {% include archive-single.html %}
+{% endfor %}
