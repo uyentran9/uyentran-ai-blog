@@ -8,7 +8,6 @@ redirect_from:
 ---
 
 ### *From Mathematics → UC Berkeley Statistics → Abbott Biotech → Machine Learning → Toward Master’s & PhD in Computer Science (AI for Drug Discovery)*
-# Victoria Tran (Uyen Tran)
 
 <p align="center">
   <img src="{{ site.baseurl }}/images/about-pic1.png"
