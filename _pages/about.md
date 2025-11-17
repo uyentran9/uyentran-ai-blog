@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Victoria Tran (Uyen Tran)"
+title: "Trần Thị Mỹ Uyên"
 author_profile: true
 redirect_from:
   - /about/
