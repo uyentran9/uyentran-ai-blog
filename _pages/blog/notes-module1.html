@@ -5,17 +5,12 @@ permalink: /blog/notes/module1/
 author_profile: true
 ---
 
-<h1>AIO 2025 – Notes: Module 1</h1>
-<p>All notes for Module 1.</p>
-
-<hr>
-
 {% assign posts = site.categories.Module1 %}
 {% if posts %}
   <ul>
     {% for post in posts %}
       <li>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
         <span style="color:#999;"> — {{ post.date | date: "%Y-%m-%d" }}</span>
       </li>
     {% endfor %}
@@ -23,3 +18,4 @@ author_profile: true
 {% else %}
   <p>No posts yet for Module 1.</p>
 {% endif %}
+
