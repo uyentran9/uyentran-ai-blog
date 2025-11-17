@@ -1,18 +1,24 @@
 ---
-layout: archive
+layout: page
 title: "AIO 2025 – Notes: Module 1"
-permalink: /blog/notes/module1/
-author_profile: true
-module_tag: "module1"
+permalink: /aio2025/module1/
 ---
 
-{% include base_path %}
+<h1>AIO 2025 – Notes: Module 1</h1>
+<p>All notes for Module 1.</p>
 
-<h2>Module 1 – [ghi tên module 1]</h2>
-<p>Summary notes for Module 1.</p>
+<hr>
 
-{% for post in site.categories.AIO2025-Notes %}
-  {% if post.tags contains page.module_tag %}
-    {% include archive-single.html %}
-  {% endif %}
-{% endfor %}
+{% assign posts = site.categories.Module1 %}
+{% if posts %}
+  <ul>
+    {% for post in posts %}
+      <li>
+        <a href="{{ post.url }}">{{ post.title }}</a>
+        <span style="color:#999;"> — {{ post.date | date: "%Y-%m-%d" }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+{% else %}
+  <p>No posts yet for Module 1.</p>
+{% endif %}
