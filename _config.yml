@@ -14,7 +14,7 @@ title_separator          : "-"
 name                     : "Victoria Tran (Uyen Tran)"
 description              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://uyentran9.github.io" 
-baseurl                  : "/victoria-uyen-tran.github.io" 
+baseurl                  : "/uyentran-ai-blog.github.io" 
 repository               : "uyentran9/victoria-uyen-tran.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
