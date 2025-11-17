@@ -15,7 +15,7 @@ title_separator          : "-"
 description              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://uyentran9.github.io" 
 baseurl                  : "/uyentran-ai-blog"           # the repo name, starting with /
-#repository               : "uyentran9/uyentran-ai-blog.github.io"
+repository               : "uyentran9/uyentran-ai-blog"
 # DO NOT add theme: here, keep remote_theme from academicpages
 remote_theme: "academicpages/academicpages.github.io"
 
