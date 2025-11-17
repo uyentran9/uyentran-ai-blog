@@ -17,7 +17,7 @@ url                      : "https://uyentran9.github.io"
 baseurl                  : "/uyentran-ai-blog"           # the repo name, starting with /
 #repository               : "uyentran9/uyentran-ai-blog.github.io"
 # DO NOT add theme: here, keep remote_theme from academicpages
-remote_theme: "mmistakes/academicpages"
+remote_theme: "academicpages/academicpages.github.io"
 
 # the rest of your existing config stays the same under here
 # (collections, plugins, author profile, etc.)
