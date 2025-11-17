@@ -14,8 +14,14 @@ title_separator          : "-"
 name                     : "Trần Thị Mỹ Uyên"
 description              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://uyentran9.github.io" 
-baseurl                  : "/uyentran-ai-blog.github.io" 
-repository               : "uyentran9/uyentran-ai-blog.github.io"
+baseurl                  : "/uyentran-ai-blog"           # the repo name, starting with /
+#repository               : "uyentran9/uyentran-ai-blog.github.io"
+# DO NOT add theme: here, keep remote_theme from academicpages
+remote_theme: "mmistakes/academicpages"
+
+# the rest of your existing config stays the same under here
+# (collections, plugins, author profile, etc.)
+
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
