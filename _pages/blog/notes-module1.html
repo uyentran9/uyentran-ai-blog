@@ -8,20 +8,13 @@ author_profile: true
 ## Module 1 – Python Foundations & Core Programming
 
 <ul>
-  <!-- Link thủ công cho Tuần 1 -->
-  <li>
-    <a href="{{ '/2025/06/10/m1-w1/' | relative_url }}">Tóm tắt Module 1 tuần 1</a>
-    — 2025-06-10
-  </li>
-
-  <!-- Các bài khác được lấy tự động -->
-  {% for post in site.posts %}
-    {% if post.categories contains "AIO2025" and post.title contains "Module 1" and post.title != "Tóm tắt Module 1 tuần 1" %}
-      <li>
-        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
-        — {{ post.date | date: "%Y-%m-%d" }}
-      </li>
-    {% endif %}
+  {% assign module1_posts = site.posts | where: "series", "m1-notes" | sort: "date" %}
+  {% for post in module1_posts %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      — {{ post.date | date: "%Y-%m-%d" }}
+    </li>
   {% endfor %}
 </ul>
+
 
