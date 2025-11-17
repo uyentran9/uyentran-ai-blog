@@ -5,17 +5,15 @@ permalink: /blog/notes/module1/
 author_profile: true
 ---  
 
-{% assign posts = site.categories.Module1 %}
-{% if posts %}
-  <ul>
-    {% for post in posts %}
-      <li>
-        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
-        <span style="color:#999;"> — {{ post.date | date: "%Y-%m-%d" }}</span>
-      </li>
-    {% endfor %}
-  </ul>
-{% else %}
-  <p>No posts yet for Module 1.</p>
-{% endif %}
+## Module 1 – Python Foundations & Core Programming
 
+<ul>
+{% for post in site.posts %}
+  {% if post.categories contains "AIO2025" and post.categories contains "Module1" %}
+    <li>
+      <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+      — {{ post.date | date: "%Y-%m-%d" }}
+    </li>
+  {% endif %}
+{% endfor %}
+</ul>
