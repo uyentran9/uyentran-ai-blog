@@ -18,51 +18,50 @@
 
 
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var path = window.location.pathname.toLowerCase();
-    var navLinks = document.querySelectorAll('.greedy-nav a');
+<style>
+  /* 1. Reset thuộc tính cho tất cả thẻ a trong menu */
+  .greedy-nav a {
+    text-decoration: none !important;
+  }
 
-    navLinks.forEach(function(link) {
-      var href = (link.getAttribute('href') || '').toLowerCase();
-      if (!href) return;
+  /* 2. Highlight khi ở trang AI Journey / Blog (Bao gồm cả bài con) */
+  body[class*="blog"] .greedy-nav a[href*="blog"],
+  body[class*="post"] .greedy-nav a[href*="blog"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
 
-      var isActive = false;
+  /* 3. Highlight khi ở trang Projects (Bao gồm cả bài con như hepatic-risk.md) */
+  body[class*="project"] .greedy-nav a[href*="projects"],
+  body[class*="page"] .greedy-nav a[href*="projects"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
 
-      // 1. Kiểm tra mục Home (Chỉ active khi URL CHÍNH XÁC là trang chủ)
-      if (href === '/' || href.endsWith('/uyentran-ai-blog/') || href.endsWith('/uyentran-ai-blog')) {
-        // Chỉ chấp nhận khi path thực tế đúng là trang chủ
-        if (path === '/' || path.endsWith('/uyentran-ai-blog/') || path.endsWith('/uyentran-ai-blog') || path.endsWith('/index.html')) {
-          isActive = true;
-        }
-      } 
-      // 2. AI Journey / Blog
-      else if (href.includes('/blog') && path.includes('/blog')) {
-        isActive = true;
-      }
-      // 3. Projects
-      else if (href.includes('/projects') && path.includes('/projects')) {
-        isActive = true;
-      }
-      // 4. Publications
-      else if (href.includes('/publications') && path.includes('/publications')) {
-        isActive = true;
-      }
-      // 5. CV
-      else if (href.includes('/cv') && path.includes('/cv')) {
-        isActive = true;
-      }
+  /* 4. Highlight khi ở trang Publications (Bao gồm cả bài con) */
+  body[class*="publication"] .greedy-nav a[href*="publications"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
 
-      // Áp dụng CSS trực tiếp hoặc reset lại
-      if (isActive) {
-        link.style.setProperty('font-weight', 'bold', 'important');
-        link.style.setProperty('text-decoration', 'underline', 'important');
-        link.style.setProperty('text-underline-offset', '5px', 'important');
-      } else {
-        link.style.removeProperty('font-weight');
-        link.style.removeProperty('text-decoration');
-        link.style.removeProperty('text-underline-offset');
-      }
-    });
-  });
-</script> 
+  /* 5. Highlight khi ở trang CV */
+  body[class*="cv"] .greedy-nav a[href*="cv"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+
+  /* 6. Highlight trang Home (CHỈ khi đứng ở trang chủ duy nhất) */
+  body.layout--home .greedy-nav a[href$="uyentran-ai-blog/"],
+  body.layout--home .greedy-nav a[href="/"],
+  body.layout--splash .greedy-nav a[href$="uyentran-ai-blog/"],
+  body.layout--splash .greedy-nav a[href="/"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+</style> 
+
