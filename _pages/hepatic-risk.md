@@ -20,7 +20,7 @@ nav: hepatic-risk   # 👈 THÊM DÒNG NÀY
 ## 🔎 Sections
 
 - 📊 [Data](/projects/hepatic-risk/data/)
-- ⚙️ [Pipeline](/projects/hepatic-risk/pipeline/)
+- ⚙️ [Pipeline](https://github.com/uyentran9/hepatic-risk-prediction/blob/main/PROJECT_PIPELINE.md)
 - 💻 [Code](/projects/hepatic-risk/code/)
 - 📄 [Technical Report](/projects/hepatic-risk/report/)
 
