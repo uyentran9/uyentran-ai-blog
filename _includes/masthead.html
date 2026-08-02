@@ -26,40 +26,5 @@
 </div>
 
 
-<script>
-  function highlightActiveMenu() {
-    var path = window.location.pathname;
-    
-    // Xác định từ khóa dựa trên URL thực tế
-    var activeKey = "";
-    if (path.indexOf("/blog/") !== -1) activeKey = "/blog/";
-    else if (path.indexOf("/projects/") !== -1) activeKey = "/projects/";
-    else if (path.indexOf("/publications/") !== -1) activeKey = "/publications/";
-    else if (path.indexOf("/cv/") !== -1) activeKey = "/cv/";
-    else if (path === "/" || path.endsWith("/uyentran-ai-blog/")) activeKey = "home";
 
-    if (!activeKey) return;
-
-    // Chèn CSS trực tiếp vào <head> để gạch chân vĩnh viễn, không lo bị JS của theme ghi đè
-    var styleId = "custom-nav-active-style";
-    var existingStyle = document.getElementById(styleId);
-    if (existingStyle) existingStyle.remove();
-
-    var style = document.createElement('style');
-    style.id = styleId;
-    
-    if (activeKey === "home") {
-      style.innerHTML = '.greedy-nav a[href$="/uyentran-ai-blog/"], .greedy-nav a[href="/"] { font-weight: bold !important; text-decoration: underline !important; text-underline-offset: 5px !important; }';
-    } else {
-      style.innerHTML = '.greedy-nav a[href*="' + activeKey + '"] { font-weight: bold !important; text-decoration: underline !important; text-underline-offset: 5px !important; }';
-    }
-    
-    document.head.appendChild(style);
-  }
-
-  // Chạy ngay khi tải trang và khi DOM đã sẵn sàng
-  highlightActiveMenu();
-  document.addEventListener("DOMContentLoaded", highlightActiveMenu);
-  window.addEventListener("load", highlightActiveMenu);
-</script> 
 
