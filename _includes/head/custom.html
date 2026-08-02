@@ -15,3 +15,43 @@
 <meta name="theme-color" content="#ffffff"/>
 
 <!-- end custom head snippets -->
+
+<style>
+  /* 1. Trang chủ (Home) */
+  body:not([class*="page"]):not([class*="archive"]):not([class*="single"]) .greedy-nav a[href="/"],
+  body:not([class*="page"]):not([class*="archive"]):not([class*="single"]) .greedy-nav a[href$="uyentran-ai-blog/"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+
+  /* 2. Mục AI Journey / Blog */
+  body[class*="blog"] .greedy-nav a[href*="/blog/"],
+  body[class*="post"] .greedy-nav a[href*="/blog/"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+
+  /* 3. Mục Projects (Bao gồm cả bài viết con như hepatic-risk.md) */
+  body[class*="project"] .greedy-nav a[href*="/projects/"],
+  body[class*="page"] .greedy-nav a[href*="/projects/"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+
+  /* 4. Mục Publications */
+  body[class*="publication"] .greedy-nav a[href*="/publications/"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+
+  /* 5. Mục CV */
+  body[class*="cv"] .greedy-nav a[href*="/cv/"] {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+</style>
