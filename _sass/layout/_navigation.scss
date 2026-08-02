@@ -444,5 +444,51 @@
 } 
 
 
+/* ==========================================================================
+   ACTIVE MENU HIGHLIGHT (BOLD & UNDERLINE FOR ALL NAV ITEMS)
+   ========================================================================== */
+
+.greedy-nav {
+  /* 1. Khi theme tự nhận diện được class active */
+  a.active,
+  .visible-links li.active a {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 5px !important;
+  }
+}
+
+/* 2. Ép Highlight theo đường dẫn thực tế trên thẻ body của Jekyll cho từng mục */
+
+/* AI Journey / Blog */
+body[class*="blog"] .greedy-nav a[href*="/blog/"],
+body[class*="posts"] .greedy-nav a[href*="/blog/"],
+body[class*="m1-"] .greedy-nav a[href*="/blog/"] {
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-underline-offset: 5px !important;
+}
+
+/* Projects */
+body[class*="project"] .greedy-nav a[href*="/projects/"] {
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-underline-offset: 5px !important;
+}
+
+/* Publications */
+body[class*="publication"] .greedy-nav a[href*="/publications/"] {
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-underline-offset: 5px !important;
+}
+
+/* CV */
+body[class*="cv"] .greedy-nav a[href*="/cv/"] {
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-underline-offset: 5px !important;
+} 
+
 
 
