@@ -53,7 +53,7 @@ Working inside a major biotech company helped me understand:
 - the importance of data-driven innovation, and  
 - the massive potential of AI in healthcare and therapeutic development.
 
-This experience motivated my transition into AI for medicine.
+This experience motivated my transition into AI for Biomedical and Healthcare.
 
 ---
 
@@ -72,7 +72,7 @@ To prepare for this path, I am currently studying full-time through:
 - Hands-on projects and Kaggle competitions focused on real-world ML pipelines  
 - Self-study in optimization, generative modeling, and scientific machine learning  
 
-I am applying for **Master’s programs in Computer Science (Fall 2027)** with the long-term goal of pursuing a **PhD in machine learning for biomedical and scientific applications**, including areas such as healthcare AI and drug discovery. 
+I am applying for **Master’s programs in Computer Science (Fall 2027)** with the long-term goal of pursuing a **PhD in machine learning for biomedical and scientific applications**. 
 
 ---
  
