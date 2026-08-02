@@ -7,7 +7,10 @@ author_profile: true
 
 ## ⚙️ Pipeline Overview
 
-The pipeline follows a standard machine learning workflow:
+The pipeline follows a standard machine learning workflow: 
+👉 View full detailed pipeline:
+
+🔗 https://github.com/uyentran9/hepatic-risk-prediction/blob/main/PROJECT_PIPELINE.md 
 
 ---
 
