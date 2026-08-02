@@ -25,33 +25,4 @@
   </div>
 </div>
 
-<script>
-  (function() {
-    // 1. Lấy đường dẫn hiện tại trên trình duyệt
-    var currentPath = window.location.pathname;
-
-    // 2. Tìm tất cả các thẻ <a> trong thanh menu
-    var navLinks = document.querySelectorAll('.greedy-nav a');
-
-    navLinks.forEach(function(link) {
-      var href = link.getAttribute('href');
-      if (!href) return;
-
-      // Chuẩn hóa đường dẫn (loại bỏ domain/subpath trùng)
-      var cleanHref = href.replace(/^\/|\/$/g, ''); 
-      var cleanPath = currentPath.replace(/^\/|\/$/g, '');
-
-      // Kiểm tra xem bài viết hiện tại có thuộc mục menu này không
-      var isHome = (href === '/' || href === '') && (cleanPath === '' || cleanPath.endsWith('uyentran-ai-blog'));
-      var isMatch = cleanHref !== '' && cleanPath.indexOf(cleanHref) !== -1;
-
-      if (isHome || isMatch) {
-        // Gán style trực tiếp
-        link.style.setProperty('font-weight', 'bold', 'important');
-        link.style.setProperty('text-decoration', 'underline', 'important');
-        link.style.setProperty('text-underline-offset', '5px', 'important');
-      }
-    });
-  })();
-</script> 
 
