@@ -443,6 +443,14 @@
   }
 } 
 
-
+/* Dùng thuộc tính chính xác của Minimal Mistakes cho trang đang active */
+.greedy-nav {
+  a.active,
+  .visible-links li.active a {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px !important;
+  }
+} 
 
 
