@@ -2,26 +2,4 @@
 
 {% include analytics.html %}
 
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var currentPath = window.location.pathname;
-    var links = document.querySelectorAll('.greedy-nav a');
-    
-    links.forEach(function(link) {
-      var href = link.getAttribute('href');
-      if (href) {
-        // Kiểm tra xem đường dẫn hiện tại có chứa đoạn link đó không (loại bỏ dấu / ở trang chủ)
-        var cleanHref = href.replace(/\/$/, "");
-        if (cleanHref !== "" && currentPath.includes(cleanHref)) {
-          link.style.fontWeight = 'bold';
-          link.style.textDecoration = 'underline';
-          link.style.textUnderlineOffset = '4px';
-        } else if (href === '/' && (currentPath === '/' || currentPath.endsWith('/uyentran-ai-blog/'))) {
-          link.style.fontWeight = 'bold';
-          link.style.textDecoration = 'underline';
-          link.style.textUnderlineOffset = '4px';
-        }
-      }
-    });
-  });
-</script> 
+
