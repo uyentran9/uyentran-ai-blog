@@ -9,7 +9,7 @@ author_profile: true
 
 Projects focused on practical machine learning pipelines, model optimization, and evaluation.
 
-- 🧠 [Hepatic Risk Outcome Prediction](/projects/hepatic-risk/)
+- 🧠 [🧠 Hepatic Risk Outcome Prediction]({{ site.baseurl }}/projects/hepatic-risk/)
 - 🫁 PneumoniaMNIST (coming soon)
 - 🧬 Multimodal Biomedical Learning (planned)
 
