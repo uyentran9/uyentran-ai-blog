@@ -103,14 +103,15 @@ $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
 $xing-color                 : #006567;
 
-/* --- Force Active Menu Highlight --- */
-.greedy-nav {
-  a.active,
-  a.selected,
-  .visible-links a:active,
-  .visible-links li.active a {
-    font-weight: bold !important;
-    text-decoration: underline !important;
-    text-underline-offset: 4px !important;
-  }
+/* --- Active Menu Highlight based on URL matching --- */
+/* Tự động gạch chân dựa vào đường dẫn trang hiện tại */
+body[class*="posts"] .greedy-nav a[href*="/blog/"],
+body[class*="archive"] .greedy-nav a[href*="/projects/"],
+body[class*="page"] .greedy-nav a[href*="data"],
+body[class*="single"] .greedy-nav a[href*="pipeline"] {
+  font-weight: bold !important;
+  text-decoration: underline !important;
+  text-underline-offset: 4px !important;
 } 
+
+
