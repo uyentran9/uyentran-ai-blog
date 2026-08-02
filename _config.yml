@@ -9,9 +9,9 @@
 # Basic Site Settings
 locale                   : "en-US"
 #site_theme              : "default" # Currently available options are "default", "air"
-title                    : "Trần Thị Mỹ Uyên / Academic Website"
+title                    : "Victoria Tran (Uyen Tran) / Academic Website"
 title_separator          : "-"
-#name                     : "Trần Thị Mỹ Uyên"
+#name                     : "Victoria Tran (uyen Tran)"
 description              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery."   # Update this with a general description of your site, this is the default if not overridden by a page
 url                      : "https://uyentran9.github.io" 
 baseurl                  : "/uyentran-ai-blog"           # the repo name, starting with /
@@ -29,7 +29,7 @@ remote_theme: "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "avatar.jpg"
-  name             : "Trần Thị Mỹ Uyên"
+  name             : "Victoria Tran (Uyen Tran)"
   avatar: "avatar.jpg"
   pronouns         : # example: "she/her"  
   bio              : "Learning journey in AI, Machine Learning, Deep Learning, LLMs/NLP, and Quantum Machine Learning, with applications toward Drug Discovery."
