@@ -123,13 +123,5 @@ div.highlighter-rouge, figure.highlight {
 .highlight .vi { color: #22b3eb } /* Name.Variable.Instance */
 .highlight .il { color: #2aa198 } /* Literal.Number.Integer.Long */
 
-/* --- Highlight active menu item based on body classes --- */
-body.layout--single.tag-archive .greedy-nav a[href*="/blog/"],
-body.layout--archive .greedy-nav a[href*="/projects/"],
-body.layout--single .greedy-nav a[href*="/publications/"],
-body.layout--single .greedy-nav a[href*="/pipeline/"] {
-  font-weight: bold !important;
-  text-decoration: underline !important;
-  text-underline-offset: 4px !important;
-}
+
 
