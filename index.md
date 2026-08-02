@@ -4,7 +4,7 @@ layout: single
 author_profile: true
 ---
 
-### *From Mathematics → UC Berkeley Statistics & Economics → Abbott Biotech → Machine Learning → Toward Master’s & PhD in Computer Science (AI for Drug Discovery)*
+### *From Mathematics → UC Berkeley Statistics & Economics → Abbott Biotech → Machine Learning → Toward Master’s & PhD in Computer Science (AI for Biomedical & Healthcare)*
 
 <p align="center">
   <img src="{{ site.baseurl }}/images/about-pic2.png"
@@ -14,17 +14,17 @@ author_profile: true
 </p>
 
 
-Welcome — I’m **Victoria (Uyen Tran)**, an aspiring **AI researcher** with a quantitative foundation in **mathematics and statistics**, industry experience in **biotech data analysis**, and long-term goals in **AI for Biomedical and Healthcare**.
+Welcome — I’m **Victoria (Uyen Tran)**, an aspiring **AI researcher** with a strong quantitative background in **mathematics and statistics**, industry experience in **biotech data analysis**, and long-term goals in **AI for Biomedical and Healthcare**.
 
 ---
 
 ## 🎓 Early Mathematical Foundations  
-My academic path began in Vietnam’s top magnet schools for mathematics:
+My academic path began in Vietnam’s top specialized schools for mathematics:
 
-- **Tran Dai Nghia Middle School For The Gifted – gifted mathematics program**  
-- **Le Hong Phong High School For The Gifted – Class A (top math-focused cohort)**  
+- **Tran Dai Nghia Middle School For The Gifted (Mathematics track)**  
+- **Le Hong Phong High School For The Gifted (Class A - top math-focused cohort)**  
 
-These programs gave me a strong early foundation in mathematical thinking, problem-solving, and quantitative rigor — skills that later shaped my interest in statistics, modeling, and machine learning.
+These programs build my foundation in **mathematical thinking, problem-solving, and analytical thinking** — skills that later shaped my interest in statistics, modeling, and machine learning.
 
 ---
 
@@ -45,7 +45,7 @@ This training built the analytical mindset I use today in ML, data science, and 
 ---
 
 ## 💼 Industry Experience — Abbott Diabetes Care  
-From 2020–2025, I worked at **Abbott Diabetes Care**, analyzing large datasets that support multi-million-dollar pricing and operational decisions. I used Python, dashboards, and quantitative analysis to identify trends, forecast performance, and solve high-impact data problems across retail, government, and hospital channels.  :contentReference[oaicite:0]{index=0}
+I worked at **Abbott Diabetes Care**, analyzing large datasets that support multi-million-dollar pricing and operational decisions. I used Python, Excel Power Query, Power BI, Tableau, dashboards, and quantitative analysis to identify trends, forecast performance, and solve high-impact data problems across retail, government, and hospital channels.  :contentReference[oaicite:0]{index=0}
 
 Working inside a major biotech company helped me understand:
 
@@ -58,7 +58,7 @@ This experience motivated my transition into AI for medicine.
 ---
 
 ## 🔥 Why I Am Transitioning Into AI & Computer Science  
-During 2024–2025, I became deeply inspired by breakthroughs in:
+During 2025-2026, I became deeply inspired by breakthroughs in:
 
 - **Machine Learning, Deep Learning, LLMs, NLP, Graph Neural Network, Quantum Machine Learning**,  
 - **AI-driven molecular design**,  
@@ -74,67 +74,71 @@ To prepare, I am studying full-time through:
 - Kaggle projects & ML pipelines  
 - Self-study in optimization, generative models, and scientific ML  
 
-I’m applying for **Master’s in Computer Science (Fall 2026)** with plans to pursue a **PhD in AI for Drug Discovery**.
+I’m applying for **Master’s in Computer Science (Fall 2027)** with plans to pursue a **PhD in Computer Science**.
 
 ---
  
 ## 🧪🧬 Research Interests — Machine Learning for Drug Discovery  
-My long-term research direction focuses on developing and applying **advanced machine learning methods** to accelerate the early stages of drug discovery. I am especially motivated by how deep learning, generative modeling, and representation learning can transform scientific decision-making.
+My research interests broadly lie in **AI for Biomedical and Healthcare**, with a focus on developing **scalable machine learning methods for complex, multimodal biological and medical data**. I am especially motivated by how deep learning, generative modeling, and representation learning can transform scientific discovery and decision-making.
 
-To prepare for this path, I am building strong foundations in:
+I am particularly interested in building strong foundations in:
 
-- **Core Machine Learning** (supervised, unsupervised, evaluation, generalization)  
-- **Deep Learning** (neural networks, CNNs, RNNs, attention mechanisms)  
-- **Large Language Models & NLP** (transformers, embeddings, sequence modeling)  
-- **Graph Neural Networks** (GNNs for structured and relational data)  
-- **Generative Modeling** (VAEs, diffusion models, RL-based optimization)  
-- **Scientific Machine Learning & Quantum Machine Learning** (exploratory)
+- **Representation learning and self-supervised learning** for extracting meaningful structure from complex data  
+- **Foundation models and multimodal learning** for integrating diverse biomedical data (e.g., medical imaging, biological sequences, and structured clinical data)  
+- **Deep learning architectures**, including CNNs, transformers, and sequence models, for both visual and structured data  
+- **Graph-based and structured data modeling** for relational and high-dimensional scientific data  
+- **Generative modeling** (e.g., VAEs, diffusion models, and optimization-based approaches) for exploring large biological and chemical design spaces  
+- **Robust learning under real-world constraints**, including limited annotations, noisy labels, domain shift, and data heterogeneity  
+- **Uncertainty-aware modeling** for improving reliability in high-stakes biomedical applications  
+- Emerging areas such as **scientific machine learning** and exploratory **quantum machine learning**
 
-### 🔹 ML for Scientific Representation  
-- Learning structured, high-dimensional representations from molecular and experimental datasets  
-- Graph-based and transformer-based architectures for capturing relationships in scientific data  
-- Embeddings that support similarity search, clustering, and downstream prediction  
+I am interested in developing **generalizable machine learning models across diverse data modalities** (e.g., medical imaging, graph-structured data, and structured clinical data) for real-world biomedical and healthcare applications.
 
-### 🔹 Predictive Modeling for Drug Discovery  
-- Machine learning models that estimate key properties important for early-stage screening  
-- Data-driven approaches to prioritize promising candidates efficiently  
-- Uncertainty-aware predictions for more reliable scientific insights  
+### 🔹 Representation Learning for Scientific and Biomedical Data  
+- Learning structured, high-dimensional representations from **multimodal biomedical data** (e.g., imaging, molecular, and experimental datasets)  
+- Graph-based and transformer-based architectures for capturing relationships in complex and relational data  
+- Representation learning and embeddings that support similarity search, clustering, and downstream prediction  
 
-### 🔹 Generative & Optimization Methods  
-- ML-based generation of new candidate compounds  
-- Algorithmic strategies for exploring large chemical design spaces  
-- Reinforcement-learning or heuristic optimization to guide search and selection  
+### 🔹 Robust and Generalizable Machine Learning  
+- Developing models that perform reliably under **limited or imperfect supervision**, domain shift, and data heterogeneity  
+- Uncertainty-aware modeling for improving robustness and reliability in high-stakes biomedical settings  
+- Learning representations that generalize across datasets, modalities, and real-world conditions  
 
-### 🔹 Scientific ML & Emerging Quantum Methods  
-- Surrogate modeling for complex computations  
-- Data-centric models that augment traditional research workflows  
-- Exploratory interest in quantum-enhanced ML for representation or optimization tasks  
+### 🔹 Generative and Optimization Methods for Scientific Discovery  
+- Generative models for exploring large biological and chemical design spaces  
+- Algorithmic and data-driven strategies for efficient search and candidate prioritization  
+- Optimization approaches (e.g., reinforcement learning or heuristic methods) for guiding discovery processes  
 
-My research goal is to help build **scalable, reliable, and data-driven ML systems** that support and accelerate innovations in drug discovery.
+### 🔹 Multimodal and Scalable ML Systems  
+- Integrating diverse data sources (e.g., imaging, structured clinical data, and molecular data)  
+- Designing scalable ML systems for real-world biomedical applications  
+- Bridging representation learning with downstream decision-making systems  
 
+My research goal is to develop **scalable, generalizable, and data-driven machine learning systems** that can operate across diverse biomedical domains and support applications ranging from **medical imaging and healthcare AI to molecular modeling**.
 
 ---
 
 ## 🚀 Career Vision
-After completing a Master’s and PhD in Computer Science, my goal is to work as a **Machine Learning researcher** in the field of **AI for Drug Discovery**.
 
-I hope to contribute to:
+My goal is to become a **machine learning researcher** working on **AI for biomedical and scientific applications**.
 
-- **Machine learning models for understanding and predicting molecular behavior**  
-- **Data-driven approaches for identifying promising therapeutic candidates**  
-- **Deep learning systems that accelerate research and decision-making in drug development**  
+I aim to contribute to:
 
-My long-term vision is to help build computational tools that accelerate the development of life-saving medicines and make drug discovery more efficient, data-driven, and scientifically grounded.
+- Developing machine learning models for understanding and predicting complex biological and medical systems  
+- Building data-driven approaches for efficient discovery and decision-making  
+- Designing scalable ML systems that integrate multimodal data in real-world settings  
+
+My long-term vision is to develop computational methods that **bridge machine learning and scientific discovery**, enabling more efficient, data-driven, and reliable solutions in areas such as biomedical and healthcare.
 
 ---
 
 ## ✉️ Connect With Me  
 I’m always open to collaborations, research discussions, and opportunities in ML, AI for science, and computational drug discovery.
 
-- **Email:** [uyen.victoria.tran@gmail.com](mailto:uyen.victoria.tran@gmail.com)
+- **Email:** [uyen.victoria.tran@gmail.com](mailto:myuyen.t.tran@gmail.com)
 - **LinkedIn:** [uyen-tran](https://www.linkedin.com/in/uyen-tran)
 - **GitHub:** [uyentran9](https://github.com/uyentran9)
-- **Kaggle:** [victoriatranuyentran](https://www.kaggle.com/victoriatranuyentran)
+- **Kaggle:** [victoriatranuyentran](https://www.kaggle.com/myuyentran)
 
 
 Thank you for visiting — and for being part of my journey 🌱
