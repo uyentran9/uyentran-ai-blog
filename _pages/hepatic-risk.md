@@ -8,7 +8,10 @@ author_profile: true
 ## 🧠 Hepatic Risk Outcome Prediction
 
 <p align="center">
-  <img src="{{ site.baseurl }}/images/ai-project.png" width="260" style="border-radius: 12px;">
+  <img src="{{ site.baseurl }}/images/hepatic-risk.png"
+       width="260"
+       alt="Uyên Tran AI & Drug Discovery Chibi"
+       style="border-radius: 14px;"/>
 </p>
 
 ---
