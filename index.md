@@ -14,7 +14,7 @@ author_profile: true
 </p>
 
 
-Welcome — I’m **Victoria (Uyen Tran)**, an aspiring **AI researcher** with a quantitative foundation in **mathematics and statistics**, industry experience in **biotech data analysis**, and long-term goals in **Quantum Machine Learning for Drug Discovery**.
+Welcome — I’m **Victoria (Uyen Tran)**, an aspiring **AI researcher** with a quantitative foundation in **mathematics and statistics**, industry experience in **biotech data analysis**, and long-term goals in **AI for Biomedical and Healthcare**.
 
 ---
 
