@@ -21,10 +21,10 @@ nav: hepatic-risk   # 👈 THÊM DÒNG NÀY
 
 | Section | Link |
 |--------|------|
-| 📊 Data | [View Dataset](https://github.com/uyentran9/hepatic-risk-prediction) |
-| ⚙️ Pipeline | [View Pipeline](https://github.com/uyentran9/hepatic-risk-prediction/blob/main/PROJECT_PIPELINE.md) |
-| 💻 Code | [View Notebook](https://nbviewer.org/github/uyentran9/hepatic-risk-prediction/blob/main/notebooks/hepatic-risk-analysis.ipynb) |
-| 📄 Report | [View PDF](https://github.com/uyentran9/hepatic-risk-prediction/blob/main/reports/report.pdf) |
+| 📊 Data | (/projects/hepatic-risk/data/)|
+| ⚙️ Pipeline | (/projects/hepatic-risk/pipeline/) |
+| 💻 Code | (/projects/hepatic-risk/code/) |
+| 📄 Report | [Technical Report](/projects/hepatic-risk/report/) |
 
 ---
 
