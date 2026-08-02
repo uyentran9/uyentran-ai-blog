@@ -441,4 +441,17 @@
       display: block;
     }
   }
-}
+} 
+
+/* --- Custom Active Menu Highlight --- */
+.greedy-nav {
+  a.active,
+  a:active,
+  .visible-links li.active a {
+    font-weight: bold !important;
+    text-decoration: underline !important;
+    text-underline-offset: 4px !important;
+  }
+} 
+
+
