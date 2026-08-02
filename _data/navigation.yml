@@ -24,7 +24,7 @@ main:
     url: /portfolio/
   - title: "CV"
     url: /cv/ 
-  - title: "Contact"
+  #- title: "Contact"
     url: /contact/
 
     
