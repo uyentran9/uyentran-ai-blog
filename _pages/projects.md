@@ -5,13 +5,6 @@ permalink: /projects/
 author_profile: true
 ---
 
----
-layout: single
-title: "Projects"
-permalink: /projects/
-author_profile: true
----
-
 ## 🏆 Kaggle Projects
 
 Projects focused on practical machine learning pipelines, model optimization, and evaluation.
