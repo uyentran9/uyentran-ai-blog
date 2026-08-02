@@ -7,7 +7,7 @@ author_profile: true
 ### *From Mathematics → UC Berkeley Statistics & Economics → Abbott Biotech → Machine Learning → Toward Master’s & PhD in Computer Science (AI for Drug Discovery)*
 
 <p align="center">
-  <img src="{{ site.baseurl }}/images/about-pic1.png"
+  <img src="{{ site.baseurl }}/images/about-pic2.png"
        width="260"
        alt="Uyên Tran AI & Drug Discovery Chibi"
        style="border-radius: 14px;"/>
