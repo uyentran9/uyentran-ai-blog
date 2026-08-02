@@ -58,23 +58,21 @@ This experience motivated my transition into AI for medicine.
 ---
 
 ## 🔥 Why I Am Transitioning Into AI & Computer Science  
-During 2025-2026, I became deeply inspired by breakthroughs in:
 
-- **Machine Learning, Deep Learning, LLMs, NLP, Graph Neural Network, Quantum Machine Learning**,  
-- **AI-driven molecular design**,  
-- **Protein structure and sequence modeling**, and  
-- **Quantum Machine Learning and Graph Neural Network for chemistry**.
+During 2025–2026, I became deeply interested in recent advances in **machine learning for complex scientific and biomedical data**, particularly in areas such as **representation learning, multimodal modeling, and data-driven discovery**.
 
-I realized I wanted to build AI systems that accelerate drug discovery, molecular modeling, and scientific discovery.
+I was especially inspired by how modern ML systems can learn from **heterogeneous data sources**—including imaging, structured clinical data, and molecular or sequence data—and enable new approaches to **understanding, prediction, and scientific decision-making**.
 
-To prepare, I am studying full-time through:
+This led me to pursue a transition into AI and computer science, with the goal of building **scalable and generalizable machine learning systems** that can operate under real-world constraints, such as **limited or imperfect supervision, domain variability, and multimodal data integration**.
 
-- **AIO 2025** — 12-module curriculum in Python, ML, Deep Learning, LLMs, CV, MLOps  
-- Online coursework from **Stanford, MIT, IBM Quantum**  
-- Kaggle projects & ML pipelines  
-- Self-study in optimization, generative models, and scientific ML  
+To prepare for this path, I am currently studying full-time through:
 
-I’m applying for **Master’s in Computer Science (Fall 2027)** with plans to pursue a **PhD in Computer Science**.
+- Structured training in machine learning and deep learning (AIO program), covering core topics such as representation learning, computer vision, graph-based modeling, and modern neural architectures  
+- Online coursework from **Stanford, MIT, and IBM Quantum**  
+- Hands-on projects and Kaggle competitions focused on real-world ML pipelines  
+- Self-study in optimization, generative modeling, and scientific machine learning  
+
+I am applying for **Master’s programs in Computer Science (Fall 2027)** with the long-term goal of pursuing a **PhD in machine learning for biomedical and scientific applications**, including areas such as healthcare AI and drug discovery. 
 
 ---
  
