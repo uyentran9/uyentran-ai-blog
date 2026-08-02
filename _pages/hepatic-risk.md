@@ -3,6 +3,7 @@ layout: single
 title: "Hepatic Risk Outcome Prediction"
 permalink: /projects/hepatic-risk/
 author_profile: true
+nav: hepatic-risk   # 👈 THÊM DÒNG NÀY
 --- 
 
 ## 🧠 Hepatic Risk Outcome Prediction
