@@ -20,43 +20,45 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
-    // 1. Lấy đường dẫn URL thực tế hiện tại
-    var currentPath = window.location.pathname;
-
-    // 2. Tìm tất cả các liên kết trong menu header
+    var path = window.location.pathname.toLowerCase();
     var navLinks = document.querySelectorAll('.greedy-nav a');
 
     navLinks.forEach(function(link) {
-      var href = link.getAttribute('href');
+      var href = (link.getAttribute('href') || '').toLowerCase();
       if (!href) return;
-
-      // Chuẩn hóa đường dẫn bằng cách xóa bớt các ký tự / thừa ở hai đầu
-      var cleanHref = href.replace(/^\/+|\/+$/g, '');
-      var cleanPath = currentPath.replace(/^\/+|\/+$/g, '');
-
-      // Tách lấy từ khóa chính của menu (ví dụ: 'blog', 'projects', 'publications', 'cv')
-      var hrefSegment = cleanHref.split('/').pop();
 
       var isActive = false;
 
-      // Kiểm tra trang chủ (Home): Nếu path rỗng hoặc chỉ chứa tên repo
-      if (cleanHref === '' || cleanHref === 'uyentran-ai-blog') {
-        if (cleanPath === '' || cleanPath === 'uyentran-ai-blog') {
+      // 1. Kiểm tra mục Home (Chỉ active khi URL CHÍNH XÁC là trang chủ)
+      if (href === '/' || href.endsWith('/uyentran-ai-blog/') || href.endsWith('/uyentran-ai-blog')) {
+        // Chỉ chấp nhận khi path thực tế đúng là trang chủ
+        if (path === '/' || path.endsWith('/uyentran-ai-blog/') || path.endsWith('/uyentran-ai-blog') || path.endsWith('/index.html')) {
           isActive = true;
         }
       } 
-      // Kiểm tra các trang khác: So sánh từ khóa chính trong URL
-      else if (hrefSegment && cleanPath.indexOf(hrefSegment) !== -1) {
+      // 2. AI Journey / Blog
+      else if (href.includes('/blog') && path.includes('/blog')) {
+        isActive = true;
+      }
+      // 3. Projects
+      else if (href.includes('/projects') && path.includes('/projects')) {
+        isActive = true;
+      }
+      // 4. Publications
+      else if (href.includes('/publications') && path.includes('/publications')) {
+        isActive = true;
+      }
+      // 5. CV
+      else if (href.includes('/cv') && path.includes('/cv')) {
         isActive = true;
       }
 
-      // Nếu đúng trang hiện tại -> Ép Bold & Underline
+      // Áp dụng CSS trực tiếp hoặc reset lại
       if (isActive) {
         link.style.setProperty('font-weight', 'bold', 'important');
         link.style.setProperty('text-decoration', 'underline', 'important');
         link.style.setProperty('text-underline-offset', '5px', 'important');
       } else {
-        // Reset lại nếu không phải trang hiện tại để tránh bị dính highlight nhầm
         link.style.removeProperty('font-weight');
         link.style.removeProperty('text-decoration');
         link.style.removeProperty('text-underline-offset');
@@ -64,4 +66,3 @@
     });
   });
 </script> 
-
