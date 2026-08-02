@@ -10,20 +10,22 @@
 main:
   - title: "Home"
     url: /
-  - title: "Blog"
+  - title: "AI Journey"
     url: /blog/
   - title: "Projects"
     url: /projects/
   - title: "Publications"
     url: /publications/
-  - title: "Talks"
+  #- title: "Talks"
     url: /talks/
-  - title: "Teaching"
+  #- title: "Teaching"
     url: /teaching/
-  - title: "Portfolio"
+  #- title: "Portfolio"
     url: /portfolio/
   - title: "CV"
-    url: /cv/
+    url: /cv/ 
+ - title: "Contact"
+    url: /contact/
 
     
   # - title: "CV"
