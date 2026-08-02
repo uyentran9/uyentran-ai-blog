@@ -34,18 +34,3 @@ main:
   #- title: "Guide"
     url: /markdown/
 
-/* --- Ép hiển thị gạch chân và in đậm dựa trên URL thực tế của trang --- */
-.greedy-nav a {
-  &[href*="/projects/"] {
-    /* Thêm đoạn này nếu muốn trang Projects luôn được highlight khi đứng ở đó */
-  }
-}
-
-/* Dùng thuộc tính chính xác của Minimal Mistakes cho trang đang active */
-.greedy-nav {
-  a.active {
-    font-weight: bold !important;
-    text-decoration: underline !important;
-    text-underline-offset: 4px !important;
-  }
-} 
