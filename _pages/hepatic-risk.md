@@ -3,51 +3,67 @@ layout: single
 title: "Hepatic Risk Outcome Prediction"
 permalink: /projects/hepatic-risk/
 author_profile: true
----
+--- 
 
-## 🧠 Project Overview
+## 🧠 Hepatic Risk Outcome Prediction
 
-This project develops a machine learning pipeline to predict patient outcomes from clinical tabular data.
-
-- Models: XGBoost, LightGBM, CatBoost  
-- Focus: imbalanced classification, robust validation, model blending  
-
----
-
-## 📊 Data
-
-- Clinical tabular dataset  
-- Multi-class target: C, CL, D  
-- Significant class imbalance  
+<p align="center">
+  <img src="{{ site.baseurl }}/images/ai-project.png" width="260" style="border-radius: 12px;">
+</p>
 
 ---
 
-## ⚙️ Project Pipeline
+## 🔎 Navigation
 
-👉 Detailed pipeline explanation:
-
-🔗 https://github.com/uyentran9/hepatic-risk-prediction/blob/main/PROJECT_PIPELINE.md  
-
----
-
-## 💻 Code (Jupyter Notebook)
-
-👉 Interactive notebook:
-
-🔗 https://nbviewer.org/github/uyentran9/hepatic-risk-prediction/blob/main/notebooks/hepatic-risk-analysis.ipynb  
+| Section | Link |
+|--------|------|
+| 📊 Data | [View Dataset](https://github.com/uyentran9/hepatic-risk-prediction) |
+| ⚙️ Pipeline | [View Pipeline](https://github.com/uyentran9/hepatic-risk-prediction/blob/main/PROJECT_PIPELINE.md) |
+| 💻 Code | [View Notebook](https://nbviewer.org/github/uyentran9/hepatic-risk-prediction/blob/main/notebooks/hepatic-risk-analysis.ipynb) |
+| 📄 Report | [View PDF](https://github.com/uyentran9/hepatic-risk-prediction/blob/main/reports/report.pdf) |
 
 ---
 
-## 📄 Technical Report
+## 🧪 Overview
 
-👉 PDF report:
-
-🔗 https://github.com/uyentran9/hepatic-risk-prediction/blob/main/reports/report.pdf  
+This project develops a **machine learning pipeline** to predict patient outcomes from structured clinical data.
 
 ---
 
-## 📦 Repository
+## ⚠️ Problem
 
-👉 Full source code:
+- Multi-class classification (C, CL, D)  
+- Severe class imbalance  
+- Missing values in clinical data  
 
-🔗 https://github.com/uyentran9/hepatic-risk-prediction  
+---
+
+## ⚙️ Methods
+
+- Logistic Regression (baseline)  
+- XGBoost  
+- LightGBM  
+- CatBoost  
+- Stratified K-Fold Cross-Validation  
+- Model Blending  
+
+---
+
+## 📊 Results
+
+- OOF Log Loss: **~0.373**  
+- Public Leaderboard: **~0.383**  
+
+---
+
+## 💡 Key Learnings
+
+- Handling imbalanced data is critical  
+- Cross-validation improves robustness  
+- Tree-based models outperform linear models  
+
+---
+
+## 🔗 GitHub Repository
+
+👉 [View Full Code](https://github.com/uyentran9/hepatic-risk-prediction)
