@@ -12,22 +12,13 @@ permalink: /projects/
 author_profile: true
 ---
 
-## ⭐ Featured Projects
-
-These projects best represent my current level in machine learning and my research direction in **AI for biomedical and healthcare**.
-
-- 🧠 [Hepatic Risk Outcome Prediction](/projects/hepatic-risk/)
-- 🫁 Pneumonia Detection (coming soon)
-- 🧬 Multimodal Biomedical Learning (planned)
-
----
-
 ## 🏆 Kaggle Projects
 
 Projects focused on practical machine learning pipelines, model optimization, and evaluation.
 
 - 🧠 [Hepatic Risk Outcome Prediction](/projects/hepatic-risk/)
-- PneumoniaMNIST (planned)
+- 🫁 PneumoniaMNIST (coming soon)
+- 🧬 Multimodal Biomedical Learning (planned)
 
 
 ---
