@@ -102,4 +102,12 @@ $vimeo-color                : #1ab7ea;
 $vine-color                 : #00bf8f;
 $youtube-color              : #bb0000;
 $xing-color                 : #006567;
-   
+
+/* --- Custom Active Menu Highlight --- */
+.greedy-nav {
+  a.active {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+  }
+} 
