@@ -7,4 +7,4 @@ author_profile: true
 
 ## Selected Projects
 
-- [Hepatic Risk Outcome Prediction](https://uyentran9.github.io/hepatic-risk-prediction/)
+- [Hepatic Risk Outcome Prediction]({{ site.baseurl }}/projects/hepatic-risk/)
