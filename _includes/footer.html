@@ -23,3 +23,23 @@
   &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}, {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.<br />
   Site last updated {{ "now" | date: '%Y-%m-%d' }}
 </div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var path = window.location.pathname;
+    var links = document.querySelectorAll('.greedy-nav a');
+    links.forEach(function(link) {
+      var href = link.getAttribute('href');
+      if (href && href !== '/' && path.includes(href)) {
+        link.style.fontWeight = 'bold';
+        link.style.textDecoration = 'underline';
+        link.style.textUnderlineOffset = '4px';
+      } else if (href === '/' && path === '/') {
+        link.style.fontWeight = 'bold';
+        link.style.textDecoration = 'underline';
+        link.style.textUnderlineOffset = '4px';
+      }
+    });
+  });
+</script> 
+
