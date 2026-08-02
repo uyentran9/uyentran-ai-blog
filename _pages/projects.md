@@ -1,10 +1,10 @@
 ---
 layout: single
-title: "Hepatic Risk Outcome Prediction"
-permalink: /projects/hepatic-risk/
+title: "Projects"
+permalink: /projects/
 author_profile: true
 ---
 
 ## Selected Projects
 
-[Hepatic Risk Outcome Prediction]({{ site.baseurl }}/projects/hepatic-risk/)
+- [Hepatic Risk Outcome Prediction]({{ site.baseurl }}/projects/hepatic-risk/)
