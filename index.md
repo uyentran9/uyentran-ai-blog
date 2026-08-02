@@ -1,5 +1,5 @@
 ---
-title: "Trần Thị Mỹ Uyên"
+title: "Trần Thị Mỹ Uyên (Victoria Tran)"
 layout: single
 author_profile: true
 ---
