@@ -53,7 +53,7 @@ A reproducible machine-learning pipeline for predicting three cirrhosis outcomes
 
 **What the project demonstrates:** the largest gains came not from the choice of algorithm but from careful validation design, missingness-aware modeling, and cautious interpretation of small, potentially unstable improvements — including a seed-averaging experiment I ultimately *rejected* because its out-of-fold gain disagreed with the leaderboard.
 
-[View project website](https://uyentran9.github.io/hepatic-risk-prediction/) ·
+[View project website](https://uyentran9.github.io/hepatic-risk-prediction/) 
 
 <!--
 [View source code](https://github.com/uyentran9/hepatic-risk-prediction)
