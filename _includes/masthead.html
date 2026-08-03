@@ -1,0 +1,6 @@
+{% include base_path %}
+
+{{ site.title }}
+{% for link in site.data.navigation.main %} {% if link.url contains 'http' %} {% assign domain = '' %} {% else %} {% assign domain = base_path %} {% endif %}
+{{ link.title }}
+{% endfor %}
