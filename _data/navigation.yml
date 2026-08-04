@@ -11,7 +11,8 @@ main:
   - title: "Home"
     url: /
   - title: "Notes"
-    url: /blog/
+    url: /blog/ 
+    match: /notes/
   - title: "Projects"
     url: /projects/
   - title: "Publications"
