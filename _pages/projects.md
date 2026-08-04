@@ -123,3 +123,8 @@ Across projects, I aim to demonstrate:
 A complete record of repositories, notebooks, source code, and project updates is available on GitHub.
 
 [View all repositories](https://github.com/uyentran9)
+
+
+<p style="margin-top:24px;">
+<a href="{{ '/' | relative_url }}" style="background:#1f4d7a;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;"> 🏠 Back to Home </a>
+</p> 
