@@ -10,7 +10,7 @@
 main:
   - title: "Home"
     url: /
-  - title: "AI Journey"
+  - title: "Notes"
     url: /blog/
   - title: "Projects"
     url: /projects/
