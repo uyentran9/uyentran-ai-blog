@@ -25,10 +25,12 @@ Summary notes on tabular vs. time-series data — structure, common errors, and 
   color: #fff !important; background: var(--global-base-color, #2f6f4f);
   border-radius: 4px; text-decoration: none !important;
 }
-.report-btn:hover { opacity: 0.85; }
+.report-btn {
+  background: #2f4f5f; /* điều chỉnh nếu cần khớp chính xác hơn */
+}
 .report-secondary-btn {
-  background: transparent; color: var(--global-base-color, #2f6f4f) !important;
-  border: 1px solid var(--global-base-color, #2f6f4f);
+  color: #2f4f5f !important;
+  border: 1px solid #2f4f5f;
 }
 .report-wrap {
   border: 1px solid #e8e8e8;
