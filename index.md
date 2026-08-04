@@ -131,7 +131,7 @@ My long-term vision is to develop computational methods that **bridge machine le
 ---
 
 ## ✉️ Connect With Me  
-I’m always open to collaborations, research discussions, and opportunities in ML, AI for Biomedical and Healthcare.
+I’m always open to collaborations, research discussions, and opportunities in AI for Biomedical and Healthcare.
 
 - **Email:** [myuyen.t.tran@gmail.com](mailto:myuyen.t.tran@gmail.com)
 - **LinkedIn:** [uyen-tran](https://www.linkedin.com/in/uyen-tran)
