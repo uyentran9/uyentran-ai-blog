@@ -6,7 +6,7 @@ pdf: /files/notes/Tabular-and-Time-Series-Data-Review-Notes-UyenTran.pdf
 hidden_date: true
 published: true
 ---
-Summary notes on tabular vs. time-series data — structure, common errors, and how each maps to a machine learning problem.
+Summary notes on tabular and time-series data — structure, common errors, and how each maps to a machine learning problem.
 <div class="report-actions">
   <a class="report-btn" href="{{ page.pdf | relative_url }}" download>⬇ Download PDF</a>
   <a class="report-btn report-secondary-btn" href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener">↗ Open full-screen</a>
