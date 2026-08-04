@@ -6,29 +6,23 @@ pdf: /files/notes/Tabular-and-Time-Series-Data-Review-Notes-UyenTran.pdf
 hidden_date: true
 published: true
 ---
-
 Summary notes on tabular vs. time-series data — structure, common errors, and how each maps to a machine learning problem.
-
 <div class="report-actions">
   <a class="report-btn" href="{{ page.pdf | relative_url }}" download>⬇ Download PDF</a>
   <a class="report-btn report-secondary-btn" href="{{ page.pdf | relative_url }}" target="_blank" rel="noopener">↗ Open full-screen</a>
 </div>
-
 <div class="report-wrap">
   <iframe src="{{ page.pdf | relative_url }}" loading="lazy"></iframe>
 </div>
-
 <style>
 .report-actions { margin: 1em 0 1.5em; display: flex; gap: 0.75em; flex-wrap: wrap; }
 .report-btn {
   display: inline-block; padding: 0.5em 1.1em; font-size: 0.9rem; font-weight: 600;
-  color: #fff !important; background: var(--global-base-color, #2f6f4f);
+  color: #fff !important; background: #2f4f5f;
   border-radius: 4px; text-decoration: none !important;
 }
-.report-btn {
-  background: #2f4f5f; /* điều chỉnh nếu cần khớp chính xác hơn */
-}
 .report-secondary-btn {
+  background: transparent;
   color: #2f4f5f !important;
   border: 1px solid #2f4f5f;
 }
@@ -47,7 +41,5 @@ Summary notes on tabular vs. time-series data — structure, common errors, and 
   display: block;
 }
 </style>
-
 ---
-
 *These are personal study notes — if you spot an error or have a suggestion, I'd genuinely appreciate you letting me know.*
