@@ -5,6 +5,7 @@ author_profile: true
 redirect_from:
   - /about/
   - /about.html
+published: false
 ---
 
 ### *From Mathematics → UC Berkeley Statistics & Economics → Abbott Biotech → Machine Learning → Toward Master’s & PhD in Computer Science (AI for Drug Discovery)*
