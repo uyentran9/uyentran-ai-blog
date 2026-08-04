@@ -133,7 +133,7 @@ My long-term vision is to develop computational methods that **bridge machine le
 ## ✉️ Connect With Me  
 I’m always open to collaborations, research discussions, and opportunities in ML, AI for science, and computational drug discovery.
 
-- **Email:** [uyen.victoria.tran@gmail.com](mailto:myuyen.t.tran@gmail.com)
+- **Email:** [uyen.victoria.tran@gmail.com] . [myuyen.t.tran@gmail.com]
 - **LinkedIn:** [uyen-tran](https://www.linkedin.com/in/uyen-tran)
 - **GitHub:** [uyentran9](https://github.com/uyentran9)
 - **Kaggle:** [victoriatranuyentran](https://www.kaggle.com/myuyentran)
