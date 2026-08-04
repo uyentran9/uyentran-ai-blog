@@ -2,7 +2,7 @@
 title: "Tabular & Time-Series Data"
 permalink: /notes/tabular-and-time-series-data/
 tags: [machine-learning, python, statistics]
-pdf: /files/notes/tabular-time-series-data-UyenTran.pdf
+pdf: /files/notes/Tabular-and-Time-Series-Data-Review-Notes-UyenTran.pdf
 hidden_date: true
 published: true #đổi sang false nếu không muốn chia sẻ
 ---
