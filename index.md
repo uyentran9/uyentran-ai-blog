@@ -76,7 +76,7 @@ I am applying for **Master’s programs in Computer Science (Fall 2027)** with t
 
 ---
  
-## 🧪🧬 Research Interests — Machine Learning for Drug Discovery  
+## 🧪🧬 Research Interests — Machine Learning for Biomedical  
 My research interests broadly lie in **AI for Biomedical and Healthcare**, with a focus on developing **scalable machine learning methods for complex, multimodal biological and medical data**. I am especially motivated by how deep learning, generative modeling, and representation learning can transform scientific discovery and decision-making.
 
 I am particularly interested in building strong foundations in:
