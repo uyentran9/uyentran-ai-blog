@@ -94,7 +94,7 @@ A controlled empirical investigation of how network depth and activation functio
 
 **What the project demonstrates:** The experiments provide evidence of a relationship between increasing network depth, early-layer gradient attenuation, and reduced trainability in Sigmoid MLPs. The study also demonstrates how layer-wise gradient measurements, parameter displacement, and optimization trajectories can complement predictive metrics in analyzing neural network behavior. Conclusions are limited to the architectures, initialization, optimizer, and dataset examined.  
 
-[View project website]( ) 
+[View project website](https://uyentran9.github.io/gradient-vanishing/) 
 
 <!--
 [View source code](https://github.com/uyentran9/hepatic-risk-prediction)
