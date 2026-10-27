@@ -136,4 +136,105 @@ body {
   .academic-content {
     padding: 32px 24px 70px;
   }
+}  
+
+
+/* =========================================
+   Academic Profile Sidebar 
+   ========================================= */
+
+/* Profile photograph */
+.profile-avatar {
+  display: block;
+  width: 108px;
+  height: 108px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  outline: 1px solid #b9d5e6;
+  margin: 0 auto 14px;
 }
+
+/* Profile name and academic role */
+.sidebar-content h2 {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 3px;
+  color: #193650;
+}
+
+.profile-role {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #7994aa;
+  margin: 0 0 26px;
+}
+
+/* Short biography */
+.profile-bio {
+  margin-bottom: 26px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #49667e;
+}
+
+/* Academic background */
+.profile-details,
+.profile-links {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.profile-details p {
+  margin: 0 0 14px;
+  line-height: 1.5;
+}
+
+/* Social and academic links */
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 18px;
+}
+
+.profile-links a {
+  color: #355d7a;
+  text-decoration: none;
+}
+
+.profile-links a:hover {
+  color: #1d76af;
+  text-decoration: underline;
+}
+
+/* Publication and project counters */
+.profile-stats {
+  border-top: 1px solid #d0e0ea;
+  margin-top: 25px;
+  padding-top: 17px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-stats p {
+  font-size: 13px;
+  margin: 0 0 12px;
+  color: #607e93;
+}
+
+.profile-stats p::first-letter {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  color: #287caf;
+}
+
+/* Preserve the Gothic library background */
+.academic-sidebar {
+  background-position: center, bottom center;
+  background-repeat: no-repeat;
+  background-size: cover, 100% auto;
+}
+
