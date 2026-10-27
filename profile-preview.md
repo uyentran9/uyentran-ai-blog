@@ -99,7 +99,7 @@ permalink: /profile-preview/
 
 
 <!-- =========================================
-     Section 02 — Selected Projects
+     Section 02 — Projects
      ========================================= -->
 <section class="projects-section" id="projects">
 
@@ -283,7 +283,8 @@ permalink: /profile-preview/
 
 </section>
 
-
+<div class="academic-bottom-grid">
+  
 <!-- =========================================
      Section 03 — Education
      ========================================= -->
@@ -427,4 +428,28 @@ permalink: /profile-preview/
   </div>
 
 </section>
+
+
+<!-- Section 06 — Visitors -->
+<section class="visitors-section" id="visitors">
+
+  <div class="section-heading">
+    <span class="section-number">06</span>
+    <div>
+      <span class="section-label">VISITORS</span>
+      <h2>Visitors</h2>
+    </div>
+  </div>
+
+  <div class="academic-entry">
+    <p class="entry-description">
+      Visitor statistics will be available
+      when website analytics are configured.
+    </p>
+  </div>
+
+</section>
+
+<!-- End four-column academic summary -->
+</div>
 
