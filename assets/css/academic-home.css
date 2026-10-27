@@ -1,7 +1,139 @@
-/*
- * Victoria (Uyen) Tran — Academic Homepage
- * Custom styles for the academic-home Jekyll layout.
- * Sky Blue / Ivory and Light / Dark themes.
- */
+/* Academic Homepage — Victoria Tran (Uyen Tran) */
 
-/* Homepage design styles will be added here. */
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #f7fbfd;
+  color: #203a50;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Two-column academic layout */
+.academic-layout {
+  display: grid;
+  grid-template-columns: 24% 76%;
+  min-height: 100vh;
+}
+
+/* Fixed left profile sidebar */
+.academic-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+
+  background-color: #edf7fc;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(247, 251, 253, 0.98) 0%,
+      rgba(247, 251, 253, 0.90) 60%,
+      rgba(247, 251, 253, 0.45) 100%
+    ),
+    url("../../images/gothic-library2.png");
+
+  background-repeat: no-repeat;
+  background-position: center, bottom center;
+  background-size: cover, 100% auto;
+  border-right: 1px solid #d5e5ef;
+}
+
+/* Sidebar content */
+.sidebar-content {
+  position: relative;
+  z-index: 1;
+  padding: 32px 24px;
+}
+
+.sidebar-content h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 12px;
+}
+
+.sidebar-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5c7284;
+}
+
+/* Main content area */
+.academic-main {
+  min-width: 0;
+}
+
+/* Gothic library banner */
+.academic-hero {
+  min-height: 300px;
+  padding: 75px 60px;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(247, 251, 253, 0.80),
+      rgba(247, 251, 253, 0.20)
+    ),
+    url("../../images/gothic-library.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-bottom: 1px solid #d5e5ef;
+}
+
+.academic-hero h1 {
+  font-size: clamp(38px, 4.5vw, 64px);
+  font-weight: normal;
+  margin: 0 0 12px;
+  color: #163a5b;
+}
+
+.academic-hero p {
+  font-size: 20px;
+  font-style: italic;
+  color: #456d91;
+  margin: 0;
+}
+
+/* Page content */
+.academic-content {
+  padding: 48px 60px 100px;
+  max-width: 1500px;
+}
+
+.academic-content h1,
+.academic-content h2 {
+  color: #203a50;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .academic-layout {
+    display: block;
+  }
+
+  .academic-sidebar {
+    position: relative;
+    height: auto;
+    min-height: 240px;
+  }
+
+  .academic-hero {
+    min-height: 230px;
+    padding: 55px 24px;
+  }
+
+  .academic-content {
+    padding: 32px 24px 70px;
+  }
+}
