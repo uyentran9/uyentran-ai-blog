@@ -96,3 +96,189 @@ permalink: /profile-preview/
   </div>
 
 </section>
+
+
+<!-- =========================================
+     Section 02 — Selected Projects
+     ========================================= -->
+<section class="projects-section" id="projects">
+
+  <div class="section-heading">
+    <span class="section-number">02</span>
+    <div>
+      <span class="section-label">SELECTED PROJECTS</span>
+      <h2>Building foundations for research.</h2>
+    </div>
+  </div>
+
+  <p class="projects-intro">
+    Selected machine learning and deep learning projects
+    developed to strengthen my foundations in model
+    implementation, experimental design, reproducibility,
+    and systematic evaluation, in preparation for research
+    in biological representation learning and multimodal AI.
+  </p>
+
+  <!-- Project status summary -->
+  <div class="projects-summary">
+    <span>2 Completed</span>
+    <span>1 In Progress</span>
+    <span>2 Planned</span>
+  </div>
+
+  <div class="project-list">
+
+    <!-- Project 1 -->
+    <article class="project-item">
+      <div class="project-meta">
+        <span class="project-number">01 / 05</span>
+        <span class="project-status status-completed">
+          Completed
+        </span>
+      </div>
+
+      <h3>Hepatic Risk Outcome Prediction</h3>
+
+      <p>
+        Developed a multiclass clinical outcome prediction
+        pipeline using gradient boosting ensembles,
+        feature engineering, stratified cross-validation,
+        and hyperparameter optimization.
+      </p>
+
+      <div class="project-tags">
+        <span>scikit-learn</span>
+        <span>XGBoost</span>
+        <span>LightGBM</span>
+        <span>CatBoost</span>
+      </div>
+
+      <a class="project-link"
+         href="https://uyentran9.github.io/hepatic-risk-prediction/">
+        View Project
+      </a>
+    </article>
+
+    <!-- Project 2 -->
+    <article class="project-item">
+      <div class="project-meta">
+        <span class="project-number">02 / 05</span>
+        <span class="project-status status-completed">
+          Completed
+        </span>
+      </div>
+
+      <h3>
+        Investigating Vanishing Gradients and Early-Layer
+        Trainability Across Network Depth in Deep MLPs
+      </h3>
+
+      <p>
+        Investigated depth-dependent gradient attenuation
+        and early-layer trainability in MLPs using BloodMNIST,
+        comparing network depths and activation functions
+        through controlled PyTorch experiments.
+      </p>
+
+      <div class="project-tags">
+        <span>PyTorch</span>
+        <span>MLP</span>
+        <span>Optimization</span>
+        <span>BloodMNIST</span>
+      </div>
+
+      <a class="project-link"
+         href="https://uyentran9.github.io/gradient-vanishing/">
+        View Project
+      </a>
+    </article>
+
+    <!-- Project 3 -->
+    <article class="project-item">
+      <div class="project-meta">
+        <span class="project-number">03 / 05</span>
+        <span class="project-status status-progress">
+          In Progress
+        </span>
+      </div>
+
+      <h3>
+        Comparative Evaluation of MLP and CNN Models
+        for Blood Cell Classification
+      </h3>
+
+      <p>
+        Developing and comparing MLP and CNN baselines
+        for BloodMNIST image classification, with a focus
+        on reusable PyTorch training pipelines and
+        systematic model evaluation.
+      </p>
+
+      <div class="project-tags">
+        <span>Computer Vision</span>
+        <span>CNN</span>
+        <span>PyTorch</span>
+        <span>BloodMNIST</span>
+      </div>
+    </article>
+
+    <!-- Project 4 -->
+    <article class="project-item">
+      <div class="project-meta">
+        <span class="project-number">04 / 05</span>
+        <span class="project-status status-planned">
+          Planned
+        </span>
+      </div>
+
+      <h3>
+        Biomedical Sentence Classification
+        with Transformer Models
+      </h3>
+
+      <p>
+        Planned exploration of pretrained transformer
+        models for biomedical sentence classification,
+        using PubMed RCT abstracts to practice
+        tokenization, fine-tuning, and evaluation.
+      </p>
+
+      <div class="project-tags">
+        <span>Biomedical NLP</span>
+        <span>Transformers</span>
+        <span>Fine-tuning</span>
+      </div>
+    </article>
+
+    <!-- Project 5 -->
+    <article class="project-item">
+      <div class="project-meta">
+        <span class="project-number">05 / 05</span>
+        <span class="project-status status-planned">
+          Planned
+        </span>
+      </div>
+
+      <h3>
+        Molecular Property Prediction
+        with Graph Neural Networks
+      </h3>
+
+      <p>
+        Planned investigation of graph neural network
+        baselines for molecular property prediction
+        using the OGBG-MolHIV benchmark, focusing
+        on molecular representations and evaluation.
+      </p>
+
+      <div class="project-tags">
+        <span>Graph Learning</span>
+        <span>GNNs</span>
+        <span>Molecular ML</span>
+        <span>OGBG-MolHIV</span>
+      </div>
+    </article>
+
+  </div>
+
+</section>
