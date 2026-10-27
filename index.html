@@ -1,0 +1,708 @@
+---
+layout: null
+permalink: /
+---
+<!DOCTYPE html>
+
+<html data-mode="light" data-theme="sky" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width,initial-scale=1" name="viewport"/>
+<meta content="#f6f9fb" name="theme-color"/>
+<meta content="Victoria Tran (Uyen Tran) · Academic portfolio: machine learning for biological and scientific discovery, biomedical computer vision, and graph learning." name="description"/>
+<meta content="website" property="og:type"/>
+<meta content="Victoria Tran (Uyen Tran) | Machine Learning for Scientific Discovery" property="og:title"/>
+<meta content="Research interests, reproducible projects and academic background in machine learning for biology and medicine." property="og:description"/>
+<title>Victoria Tran (Uyen Tran) · Academic Research Portfolio</title>
+<link href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI2NCIgaGVpZ2h0PSI2NCIgdmlld0JveD0iMCAwIDY0IDY0Ij48cmVjdCB3aWR0aD0iNjQiIGhlaWdodD0iNjQiIHJ4PSIxMiIgZmlsbD0iI2U1ZjJmOCIvPjx0ZXh0IHg9IjMyIiB5PSI0MSIgZm9udC1zaXplPSIyNyIgZmlsbD0iIzIxNDc2NyIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1mYW1pbHk9Ikdlb3JnaWEsc2VyaWYiPlZUPC90ZXh0Pjwvc3ZnPgo=" rel="icon" type="image/svg+xml"/>
+<style>@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=DM+Serif+Display:ital@0;1&display=swap');
+:root{--body:#f6f9fb;--paper:#fbfdfe;--panel:#fff;--side:#edf5fa;--side-2:#e5eff6;--ink:#203b4c;--ink-2:#385367;--muted:#617a8a;--muted-2:#8198a7;--accent:#427ba5;--accent-strong:#2c688d;--line:#dae6ee;--wash:#eef6fa;--quote:#e7f2f8;--shadow:rgba(29,59,78,.055);--heading:'DM Serif Display',Georgia,serif;--body-font:'DM Sans',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif}
+html[data-theme="ivory"]{--body:#fbfaf6;--paper:#fffefa;--panel:#fffefd;--side:#f5f1e9;--side-2:#ede5d9;--ink:#453b32;--ink-2:#615346;--muted:#827467;--muted-2:#a3988c;--accent:#937757;--accent-strong:#785f41;--line:#e8e0d6;--wash:#f8f4ec;--quote:#f4eee4;--shadow:rgba(79,59,34,.05)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--body);font:15px/1.75 var(--body-font);color:var(--ink);-webkit-font-smoothing:antialiased}button,a{font:inherit}a{color:inherit;text-decoration:none}button{cursor:pointer}button:focus-visible,a:focus-visible,[tabindex]:focus-visible{outline:3px solid var(--accent);outline-offset:3px}img{display:block;max-width:100%}h1,h2,h3,h4,p,blockquote{margin-top:0}.serif{font-family:var(--heading);font-weight:400}.site-shell{display:grid;grid-template-columns:minmax(315px,31%) minmax(0,1fr);height:100dvh;min-height:580px;overflow:hidden}.sidebar{height:100%;overflow-y:auto;background:var(--side);border-right:1px solid var(--line);scrollbar-color:var(--line) transparent;scrollbar-width:thin}.sidebar-inner{max-width:430px;min-height:100%;margin:0 auto;padding:32px clamp(25px,3.4vw,56px) 22px;display:flex;flex-direction:column}.side-kicker{display:flex;align-items:center;gap:13px;letter-spacing:2px;font-size:9px;font-weight:700;color:var(--muted);white-space:nowrap}.brand-glyph{font:italic 24px var(--heading);letter-spacing:-1px;color:var(--ink)}.brand-glyph span{color:var(--accent)}.portrait-ring{margin:46px auto 17px;width:144px;height:144px;border-radius:50%;background:var(--panel);padding:6px;border:1px solid var(--line);box-shadow:0 9px 30px var(--shadow)}.portrait{height:100%;width:100%;border-radius:50%;object-fit:cover;object-position:center 20%}.profile-name{text-align:center;font:400 clamp(26px,2.1vw,34px)/1.17 var(--heading);margin:7px -12px 5px;color:var(--ink)}.profile-name span{color:var(--accent)}.profile-role{text-align:center;color:var(--accent-strong);font-size:11px;font-weight:650;letter-spacing:.75px;margin:7px 0 19px}.profile-bio{font-size:12.5px;line-height:1.84;color:var(--ink-2);margin:0}.side-divider{height:1px;background:var(--line);margin:24px 0 19px}.divider-small{margin:15px 0 16px}.side-subtitle{font-size:10px;letter-spacing:1.9px;font-weight:700;color:var(--accent);margin-bottom:12px}.sidebar-facts{margin:0}.sidebar-facts>div{display:flex;justify-content:space-between;gap:10px;margin:11px 0;font-size:11.5px;line-height:1.45}.sidebar-facts dt{color:var(--muted);display:flex;align-items:center;gap:7px}.sidebar-facts dt span{color:var(--accent);font-size:16px;width:14px;text-align:center}.sidebar-facts dd{text-align:right;margin:0;font-weight:600;color:var(--ink-2)}.sidebar-links{display:grid;gap:1px}.sidebar-links a{display:flex;align-items:center;gap:12px;padding:9px 6px;border-radius:5px;font-size:12.5px;font-weight:550;transition:background .18s ease,color .18s ease}.sidebar-links a:hover{background:var(--side-2);color:var(--accent-strong)}.sidebar-links a[hidden]{display:none}.side-link-icon{color:var(--accent);display:inline-grid;place-items:center;width:19px;font-weight:700;font-size:16px}.ext-indicator{margin-left:auto;color:var(--muted-2)}.sidebar-footer{margin-top:auto;padding-top:38px;font-size:10px;color:var(--muted-2);display:grid;gap:15px;letter-spacing:.25px}.footer-line{width:37px;height:2px;background:var(--accent);opacity:.65}.right-pane{height:100%;overflow-y:auto;scrollbar-color:var(--line) transparent;scrollbar-width:thin;background:var(--paper);overscroll-behavior:contain}.topbar{position:sticky;top:0;z-index:10;display:flex;justify-content:space-between;align-items:center;gap:17px;min-height:75px;padding:0 clamp(26px,5.3vw,80px);background:color-mix(in srgb,var(--paper) 93%,transparent);border-bottom:1px solid var(--line);backdrop-filter:blur(17px)}.main-nav{display:flex;align-self:stretch;gap:31px}.nav-tab{border:0;border-bottom:2px solid transparent;background:none;padding:2px 1px 0;color:var(--muted);font-size:12px;font-weight:650;letter-spacing:.2px}.nav-tab:hover,.nav-tab.active{color:var(--ink)}.nav-tab.active{border-bottom-color:var(--accent)}.theme-switch{display:flex;gap:3px;padding:4px;border:1px solid var(--line);border-radius:50px;background:var(--wash);white-space:nowrap}.theme-choice{background:none;color:var(--muted);border:0;border-radius:50px;font-size:10px;display:flex;align-items:center;gap:5px;padding:6px 9px;font-weight:650}.theme-choice.active{background:var(--panel);color:var(--ink);box-shadow:0 1px 6px var(--shadow)}.palette-dot{height:9px;width:9px;border-radius:50%;border:1px solid #ffffffcc}.sky-dot{background:#9ec5dc}.ivory-dot{background:#dcc6a8}.page{max-width:1120px;margin:0 auto}.page[hidden]{display:none!important}.intro-hero{position:relative;overflow:hidden;padding:83px clamp(26px,5.3vw,80px) 78px;background:linear-gradient(110deg,var(--paper),var(--wash));border-bottom:1px solid var(--line)}.library-watermark{position:absolute;inset:0 0 0 auto;width:63%;background:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA5MDAgNTcwIiBmaWxsPSJub25lIiBzdHJva2U9IiM2Zjg4OTciIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCI+CiAgPGcgb3BhY2l0eT0iLjgyIiBzdHJva2Utd2lkdGg9IjEuNSI+CiAgIDxwYXRoIGQ9Ik04NyA0ODlIODIwTTExMSA1MDZINzk0TTEzNiA1MjNINzY5TTE2NyA1MzlINzQwTTEyNiA0NzdWNDY3SDc4MFY0NzdNMTM5IDQ2N1Y0NTVINzY3VjQ2NyIvPgogICA8cGF0aCBkPSJNMjEwIDQ1M1YyMDJNNjk2IDQ1M1YyMDJNMTk4IDIwMkw0NTMgNzAgNzExIDIwMk0yMjggMTg5TDQ1MyA5MSA2ODMgMTg5TTI1NCAxNzNMNDUzIDEwOSA2NTUgMTczIi8+CiAgIDxwYXRoIGQ9Ik0yODggMTcxTDQ1MiAxMTcgNjE5IDE3MU0zMDUgMTcwSDYwMU0yMDIgMjAySDcwM00yMTAgMjA4SDY5NE0yMDMgMjI1SDcwNE0yMDYgMjM4SDY5OSIvPgogICA8cGF0aCBkPSJNMjQ1IDIzOVY0MjVNMjcwIDIzOVY0MjVNMzI0IDIzOVY0MjVNMzQ5IDIzOVY0MjVNNDA0IDIzOVY0MjVNNDI5IDIzOVY0MjVNNDg0IDIzOVY0MjVNNTA5IDIzOVY0MjVNNTY0IDIzOVY0MjVNNTg5IDIzOVY0MjVNNjQ0IDIzOVY0MjVNNjY5IDIzOVY0MjUiLz4KICAgPHBhdGggZD0iTTIzMyAyMzlIMjgyTTMxNCAyMzlIMzYwTTM5NSAyMzlINDQwTTQ3NSAyMzlINTIwTTU1NCAyMzlINjAxTTYzNCAyMzlINjgwIi8+CiAgIDxwYXRoIGQ9Ik0yMzAgNDI1SDI4M00zMTAgNDI1SDM2MU0zOTAgNDI1SDQ0Mk00NzEgNDI1SDUyMU01NTEgNDI1SDYwM002MzEgNDI1SDY4MCIvPgogICA8cGF0aCBkPSJNMjI1IDQzM0g2ODVNMjExIDQ0NUg3MDFNMTg2IDQ1NUg3MjRNMjYwIDQyNlYyNTVNMzM2IDQyNlYyNTVNNDE3IDQyNlYyNTVNNDk4IDQyNlYyNTVNNTc4IDQyNlYyNTVNNjU3IDQyNlYyNTUiLz4KICAgPHBhdGggZD0iTTM4MCA0NTVWMzQ1QzM4MCAzMDYgNDA1IDI4MCA0NTEgMjgwUzUyNCAzMDYgNTI0IDM0NVY0NTVNMzk2IDQ1M1YzNDlDMzk2IDMxNiA0MTYgMjk3IDQ1MSAyOTdTNTA4IDMxNiA1MDggMzQ5VjQ1MyIvPgogICA8cGF0aCBkPSJNNDUwIDI5OFY0NTJNMzk2IDM1Nkg1MDhNMzk0IDQzM0g1MTAiLz4KICAgPHBhdGggZD0iTTI3NyAyOTZIMzE4VjM2NUgyNzdaTTM1MCAyOTZIMzc4VjM2NUgzNTBaTTUyNiAyOTZINTU0VjM2NUg1MjZaTTU5MyAyOTZINjMzVjM2NUg1OTNaIi8+CiAgIDxwYXRoIGQ9Ik0yNzcgMzIxSDMxOE0yNzcgMzQySDMxOE0zNTAgMzIxSDM3OE0zNTAgMzQySDM3OE01MjYgMzIxSDU1NE01MjYgMzQySDU1NE01OTMgMzIxSDYzM001OTMgMzQySDYzMyIvPgogICA8cGF0aCBkPSJNNDQ0IDE0M0g0NjNWMTYzSDQ0NFpNNDUxIDEyN1YxNzJNNDM4IDE1MUg0NzAiLz4KICAgPHBhdGggZD0iTTE4MCA0NTJMMTgwIDMxN003MjYgNDUyVjMxN00xNjcgMzE3TDE3OSAyODkgMTkxIDMxN003MTQgMzE3TDcyNiAyODkgNzM4IDMxN00xNjQgNDUySDE5NU03MTEgNDUySDc0MiIvPgogICA8cGF0aCBkPSJNOTggNTUwSDgxMk0xMTIgNTYwSDc5NyIvPgogIDwvZz4KICA8ZyBvcGFjaXR5PSIuNTUiIHN0cm9rZS13aWR0aD0iLjY1Ij48cGF0aCBkPSJNMjI1IDI1MEg2ODFNMjI2IDI2MEg2NzlNMjI3IDI3MEg2NzdNMjIwIDQ0NEg2ODhNMjE5IDQ0OEg2OTAiLz48cGF0aCBkPSJNMjEwIDIwOUw2OTUgMjA5TTIxMCAyMTRINjk1TTIxMCAyMjBINjk1Ii8+PC9nPgo8L3N2Zz4K") no-repeat right -42px bottom -15px;background-size:min(630px,85%);opacity:.18;pointer-events:none;filter:grayscale(.28)}html[data-theme="ivory"] .library-watermark{opacity:.16;filter:sepia(.5)}.intro-inner{position:relative;max-width:760px;z-index:1}.eyebrow,.section-index,.question-label{letter-spacing:2.1px;font-size:10px;font-weight:700;color:var(--accent)}.eyebrow{display:flex;gap:12px;align-items:center}.eyebrow-rule{display:inline-block;height:2px;width:28px;background:var(--accent)}.intro-hero h2{font:400 clamp(43px,5.2vw,70px)/1.11 var(--heading);letter-spacing:-.85px;margin:23px 0 27px;max-width:750px}.intro-hero h2 em,.outlook-heading em{font-weight:400;color:var(--accent);font-style:italic}.intro-lead{max-width:650px;font-size:16px;line-height:1.9;color:var(--ink-2);margin-bottom:12px}.intro-secondary{color:var(--muted);max-width:630px;font-size:13px;line-height:1.85;margin:0 0 23px}.subtle-action,.plain-link,.text-button{background:transparent;border:0;color:var(--accent-strong);font-size:12px;font-weight:700;letter-spacing:.2px;display:inline-flex;align-items:center;gap:14px;cursor:pointer}.subtle-action:hover,.plain-link:hover,.text-button:hover{text-decoration:underline}.content-section{padding:70px clamp(26px,5.3vw,80px) 75px;border-bottom:1px solid var(--line)}.section-index{display:flex;gap:18px;align-items:center;margin-bottom:23px}.section-index span:first-child{font:italic 24px var(--heading);letter-spacing:-.3px}.section-index span:last-child{letter-spacing:2.1px;font-size:10px}.section-title{font-size:clamp(34px,3.5vw,49px);line-height:1.2;letter-spacing:-.4px;margin-bottom:22px}.period{color:var(--accent)}.guiding-question{background:var(--quote);border-left:3px solid var(--accent);padding:30px 36px;margin:20px 0 26px}.question-label{display:block;font-size:9px;margin-bottom:14px}.guiding-question blockquote{font:400 clamp(22px,2.5vw,34px)/1.35 var(--heading);letter-spacing:-.15px;margin:0}.guiding-question blockquote em{color:var(--accent-strong);font-weight:400}.vision-bridge{font-size:13.5px;color:var(--muted);line-height:1.98;max-width:760px;margin-bottom:25px}.vision-bridge strong{color:var(--ink-2);font-weight:700}.research-steps{display:flex;flex-wrap:wrap;gap:13px;align-items:center}.research-steps span{font-size:12px;border:1px solid var(--line);padding:9px 13px;background:var(--panel);color:var(--ink-2)}.research-steps b{color:var(--accent);font-size:9px;margin-right:8px}.research-steps i{font-size:18px;color:var(--muted-2);font-style:normal}.interests-section{background:var(--paper)}.interest-list{border-top:1px solid var(--line);margin-top:26px}.interest-row{display:grid;grid-template-columns:55px 1fr;gap:15px;padding:25px 0;border-bottom:1px solid var(--line)}.interest-num{font:italic 25px var(--heading);color:var(--accent);padding-top:1px}.interest-row h3{font:400 clamp(20px,2.1vw,27px)/1.25 var(--heading);margin:0 0 8px}.interest-question{font-size:13px;font-style:italic;color:var(--accent-strong);margin:0 0 8px!important}.interest-row p:not(.interest-question){font-size:12.5px;line-height:1.9;color:var(--muted);margin:0 0 12px}.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{display:inline-block;padding:4px 9px;border:1px solid var(--line);font-size:10px;color:var(--accent-strong);background:var(--wash)}.exploratory-note{font-size:12px;color:var(--muted);margin:21px 0 0}.exploratory-note strong{color:var(--ink-2)}.featured-section{background:var(--wash)}.split-heading{display:flex;align-items:end;justify-content:space-between;gap:20px}.split-heading .section-title{margin-bottom:7px}.section-desc{max-width:630px;color:var(--muted);font-size:12.5px;line-height:1.8}.split-heading .plain-link{flex-shrink:0;margin-bottom:15px}.project-counts{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin:23px 0 19px}.project-counts span{border:1px solid var(--line);background:var(--panel);font-size:11px;color:var(--muted);padding:9px 13px}.project-counts strong{font-weight:700;color:var(--ink);font-size:14px;margin-right:7px}.project-scroll{max-height:410px;overflow-y:auto;border:1px solid var(--line);background:var(--panel);overscroll-behavior:contain;scrollbar-color:var(--accent) var(--wash);scrollbar-width:thin}.project-row{display:grid;grid-template-columns:165px minmax(0,1fr);gap:24px;padding:18px 20px;border-bottom:1px solid var(--line);background:var(--panel)}.project-row:last-child{border-bottom:0}.project-image{height:128px;width:100%;object-fit:cover;border:1px solid var(--line)}.project-content{min-width:0}.project-topline{display:flex;align-items:center;flex-wrap:wrap;gap:9px;color:var(--muted-2);font-size:10px;text-transform:uppercase;letter-spacing:.5px;font-weight:650;margin-bottom:8px}.status-tag{padding:2px 8px;background:var(--quote);font-size:10px;color:var(--accent-strong);letter-spacing:0;text-transform:none}.status-tag.in-progress{color:#8a6a49;background:#f6efe4}.status-tag.planned{color:#797a7b;background:#eeefee}.project-content h3{font:400 23px/1.3 var(--heading);margin:0 0 6px}.project-content h3 a:hover{color:var(--accent);text-decoration:underline}.project-content>p{font-size:11.5px;color:var(--muted);line-height:1.68;margin:0 0 11px}.project-links{display:flex;flex-wrap:wrap;gap:14px}.project-links a,.project-links span{font-weight:700;font-size:11px;color:var(--accent-strong)}.project-links a:hover{text-decoration:underline}.project-links span{font-weight:500;color:var(--muted-2)}.scroll-tip{font-size:11px;color:var(--muted);margin:12px 0 0}.scroll-tip button{padding:0;border:0;background:transparent;color:var(--accent-strong);font-size:inherit;font-weight:700}.background-section{background:var(--paper)}.timeline-group{margin-top:25px}.timeline-group>h3{font:400 27px var(--heading);margin:0 0 4px}.timeline-item{display:grid;grid-template-columns:145px 1fr;gap:20px;border-top:1px solid var(--line);padding:18px 0}.time-range{font-size:12px;letter-spacing:.3px;color:var(--muted);padding-top:3px}.timeline-item h4{font-weight:650;font-size:15px;margin:0 0 2px}.timeline-item p{font-size:12.5px;color:var(--muted);line-height:1.7;margin:0}.compact-timeline{opacity:.94}.outlook-section{background:var(--wash);padding-bottom:80px}.outlook-heading{font-size:clamp(42px,4.5vw,64px);line-height:1.16;margin:0 0 18px;letter-spacing:-.5px}.outlook-section p{max-width:750px;color:var(--ink-2);font-size:14px;line-height:1.9}.outlook-section .outlook-small{font-size:12.5px;color:var(--muted)}.main-footer{padding:28px clamp(26px,5.3vw,80px);font-size:10.5px;color:var(--muted-2);border-bottom:0}.main-footer span{color:var(--ink-2)}
+/* Notes, Projects and CV pages share a consistent academic layout. */
+.secondary-page{padding:64px clamp(26px,5.3vw,80px) 90px;min-height:calc(100dvh - 75px)}.secondary-head{max-width:780px;margin-bottom:36px}.secondary-head h2{font:400 clamp(43px,5vw,65px)/1.13 var(--heading);margin:24px 0 15px}.secondary-head p{font-size:14px;line-height:1.9;color:var(--muted);max-width:710px}.notes-empty,.cv-empty{background:var(--wash);padding:42px;border:1px solid var(--line);max-width:780px}.notes-empty h3,.cv-empty h3{font:400 30px var(--heading);margin:13px 0}.notes-empty p,.cv-empty p{font-size:13px;color:var(--muted)}.notes-mark{font:400 35px var(--heading);color:var(--accent)}.project-page-counts{margin-bottom:23px}.full-project-list{display:grid;gap:12px}.full-project-list .project-row{border:1px solid var(--line);grid-template-columns:minmax(180px,28%) 1fr;padding:20px}.full-project-list .project-image{height:175px}.full-project-list .project-content h3{font-size:29px}.full-project-list .project-content>p{font-size:13px}.document-icon{display:grid;place-items:center;width:56px;height:70px;background:var(--panel);border:1px solid var(--line);color:var(--accent);font:400 23px var(--heading)}.cv-empty code{font-size:12px}.cv-ready{max-width:900px}.cv-toolbar{display:flex;gap:20px;align-items:center;flex-wrap:wrap;margin-bottom:16px}.cv-download{background:var(--ink);color:white;padding:10px 17px;font-size:12px;font-weight:700}.cv-ready iframe{height:680px;width:100%;border:1px solid var(--line);background:white}.cv-mobile-note{font-size:12px;color:var(--muted)}.skip-link{position:fixed;top:-100px;left:10px;z-index:100;background:white;color:black;padding:9px 12px}.skip-link:focus{top:10px}
+@media(max-width:1130px){.site-shell{grid-template-columns:minmax(290px,32%) minmax(0,1fr)}.sidebar-inner{padding:30px 28px 20px}.topbar{padding-left:31px;padding-right:31px}.intro-hero,.content-section,.secondary-page{padding-left:39px;padding-right:39px}.main-footer{padding-left:39px;padding-right:39px}.intro-hero h2{font-size:55px}.project-row{grid-template-columns:132px 1fr;gap:16px}.project-image{height:117px}}
+@media(max-width:850px){.site-shell{display:block;height:auto;min-height:100dvh;overflow:visible}.sidebar{height:auto;overflow:visible;border-right:0;border-bottom:1px solid var(--line)}.sidebar-inner{max-width:100%;padding:22px 28px 22px;display:grid;grid-template-columns:100px minmax(0,1fr);column-gap:20px;align-items:center}.side-kicker{grid-column:1/3;margin-bottom:14px}.portrait-ring{grid-row:2/5;width:96px;height:96px;margin:0}.profile-name{text-align:left;margin:0;font-size:26px}.profile-role{text-align:left;margin:0 0 4px}.profile-bio{font-size:11.5px;grid-column:2;margin:0}.sidebar-inner>.side-divider,.sidebar-facts,.sidebar-inner>.side-subtitle,.sidebar-footer{display:none}.sidebar-links{grid-column:1/3;display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}.sidebar-links a{padding:6px 11px;border:1px solid var(--line);font-size:11px;background:var(--panel)}.ext-indicator{display:none}.right-pane{height:auto;overflow:visible}.topbar{position:sticky;top:0}.intro-hero{padding-top:70px;padding-bottom:65px}}
+@media(max-width:620px){.sidebar-inner{padding-left:21px;padding-right:21px}.topbar{padding:8px 16px;min-height:70px;flex-wrap:wrap;justify-content:center;gap:5px}.main-nav{gap:22px;justify-content:center;flex:1 0 100%;min-height:38px}.nav-tab{font-size:12px}.theme-switch{margin-top:2px}.intro-hero,.content-section,.secondary-page{padding-left:22px;padding-right:22px}.intro-hero{padding-top:60px}.intro-hero h2{font-size:clamp(40px,10vw,54px)}.intro-lead{font-size:14px}.section-title{font-size:37px}.guiding-question{padding:24px}.guiding-question blockquote{font-size:26px}.interest-row{grid-template-columns:35px 1fr;gap:12px}.interest-num{font-size:23px}.project-row{grid-template-columns:94px minmax(0,1fr);gap:14px;padding:12px}.project-image{height:92px}.project-content h3{font-size:19px}.project-content>p{font-size:11px}.project-scroll{max-height:480px}.project-topline{margin-bottom:3px}.full-project-list .project-row{grid-template-columns:1fr}.full-project-list .project-image{height:190px}.split-heading{display:block}.split-heading .plain-link{margin:2px 0 10px}.timeline-item{grid-template-columns:92px 1fr;gap:8px}.outlook-heading{font-size:45px}.research-steps{gap:6px}.research-steps span{padding:6px 8px;font-size:10px}.research-steps b{font-size:8px;margin-right:3px}.notes-empty,.cv-empty{padding:25px}.cv-ready iframe{height:550px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition-duration:0s!important;animation:none!important}}
+@media print{.site-shell{display:block;height:auto}.sidebar{display:none}.topbar{display:none}.right-pane{height:auto;overflow:visible}.intro-hero,.content-section{padding:25px 35px}.library-watermark{display:none}.page:not(#page-home){display:none!important}.project-scroll{max-height:none;overflow:visible}.main-footer{display:none}}
+
+
+/* V4 palette × contrast system — Sky/Ivory and Light/Dark */
+html[data-mode="dark"][data-theme="sky"]{--body:#101d2b;--paper:#132536;--panel:#172c40;--side:#142536;--side-2:#1e3449;--ink:#edf4fa;--ink-2:#d4e5f0;--muted:#aac0ce;--muted-2:#809aaa;--accent:#a6cde9;--accent-strong:#b6ddfa;--line:#345168;--wash:#172f45;--quote:#203b50;--shadow:rgba(0,0,0,.24)}
+html[data-mode="dark"][data-theme="ivory"]{--body:#211d1a;--paper:#27231e;--panel:#312b25;--side:#2c251f;--side-2:#352d25;--ink:#f8eee1;--ink-2:#edddcc;--muted:#cbbba9;--muted-2:#ad9b86;--accent:#ddbb8c;--accent-strong:#f4d5ad;--line:#504338;--wash:#322b24;--quote:#40372d;--shadow:rgba(0,0,0,.22)}
+html[data-mode="dark"]{color-scheme:dark}
+html[data-mode="light"]{color-scheme:light}
+/* Ensure native buttons and border treatments stay harmonious in dark mode. */
+html[data-mode="dark"] .topbar{background:color-mix(in srgb,var(--paper) 96%,transparent)}
+html[data-mode="dark"] .status-tag.in-progress{color:#f2d0a6;background:#594633}
+html[data-mode="dark"] .status-tag.planned{color:#e1d8ce;background:#4d4b48}
+html[data-mode="dark"] .cv-download{color:#172532;background:var(--accent)}
+html[data-mode="dark"] .notes-empty,html[data-mode="dark"] .cv-empty,html[data-mode="dark"] .empty-pub{background:var(--wash)}
+html[data-mode="dark"] .project-image{filter:brightness(.82)}
+/* Gothic library backdrop: original architecture illustration, never a school claim. */
+.intro-hero{background:linear-gradient(110deg,var(--paper) 4%,var(--wash) 100%);isolation:isolate}
+.library-watermark{width:100%;inset:0;background-image:linear-gradient(90deg,var(--paper) 2%,color-mix(in srgb,var(--paper) 86%,transparent) 44%,color-mix(in srgb,var(--paper) 42%,transparent) 100%),url("{{ '/images/gothic-library.png' | relative_url }}");background-repeat:no-repeat;background-size:cover;background-position:center right;opacity:.66;filter:none}
+html[data-theme="ivory"] .library-watermark{opacity:.57;filter:sepia(.33)}
+html[data-mode="dark"] .library-watermark{opacity:.29;filter:grayscale(.3) saturate(.65) brightness(.62)}
+.intro-inner{position:relative;z-index:1}
+.hero-art-note{font-size:9px;color:var(--muted-2);margin:26px 0 0;letter-spacing:.4px}
+/* Academically accurate counts in the sticky left profile */
+.metrics-divider{margin-top:15px}
+.academic-metrics{display:grid;grid-template-columns:1fr;gap:2px;margin:11px 0 5px}
+.academic-metrics .metric{display:flex;align-items:baseline;gap:14px;border-bottom:1px solid var(--line);padding:7px 0}
+.academic-metrics strong{font:400 26px/1 var(--heading);color:var(--accent-strong);width:32px;text-align:center;font-variant-numeric:tabular-nums}
+.academic-metrics span{font-size:11px;color:var(--muted)}
+.metric-context{font-size:9px;line-height:1.5;color:var(--muted-2);margin:7px 0 0}
+/* Unified research direction and three research interests */
+.research-interests-subtitle{margin:27px 0 10px;font:400 clamp(25px,2.4vw,33px)/1.2 var(--heading)}
+.vision-section .interest-list{margin-top:18px}
+.vision-section .interest-row h3{font-size:clamp(19px,2.1vw,26px)}
+.vision-section .interest-row{padding:22px 0}
+.vision-section .vision-bridge{max-width:880px}
+/* Keep controls compact, and include a light/dark mode button */
+.contrast-toggle{background:var(--panel);color:var(--ink-2);border:1px solid var(--line);border-radius:22px;min-height:34px;padding:3px 11px;display:inline-flex;align-items:center;gap:7px;font-size:11px;font-weight:650;white-space:nowrap}
+.contrast-toggle:hover{border-color:var(--accent)}
+.mode-icon{font-size:17px;line-height:1}
+/* Empty publications page */
+.empty-pub{padding:40px;border:1px solid var(--line);max-width:780px;background:var(--wash)}
+.empty-pub h3{font:400 28px var(--heading);margin:6px 0 10px}
+.empty-pub p{max-width:560px;font-size:13px;line-height:1.9;color:var(--muted)}
+.pub-mark{font-size:28px;color:var(--accent)}
+/* Publications become data-driven when real papers are added to PROFILE.publications */
+.publication-item{display:grid;grid-template-columns:80px minmax(0,1fr);gap:24px;border-top:1px solid var(--line);padding:22px 0}
+.publication-year{font-size:13px;color:var(--muted)}
+.publication-item h3{font:400 25px/1.3 var(--heading);margin:0 0 7px}
+.publication-item p{color:var(--muted);font-size:12px;margin:0 0 6px}
+.publication-links{display:flex;gap:16px;color:var(--accent-strong);font-size:12px;font-weight:650;margin-top:10px}
+/* optional tabs never appear until configured */
+.nav-optional[hidden]{display:none!important}
+@media(min-width:851px) and (max-width:1130px){.topbar{flex-wrap:wrap;gap:8px;padding-top:9px;padding-bottom:9px}.main-nav{gap:18px;min-height:34px}.theme-switch{margin-left:auto}}
+@media(max-width:850px){.sidebar-inner .metrics-divider,.sidebar-inner .academic-metrics,.sidebar-inner .metric-context{display:none} .hero-art-note{font-size:9px}}
+@media(max-width:620px){.topbar{gap:7px}.main-nav{gap:clamp(10px,2.4vw,21px);flex-wrap:wrap}.nav-tab{font-size:11.5px}.contrast-toggle{padding:3px 9px}.library-watermark{background-position:62% center;opacity:.5}.guiding-question blockquote{font-size:clamp(23px,6vw,28px)}}
+
+/* V5: full-width vertically stacked scholarly sections */
+.timeline-section{background:var(--paper)}
+#education{background:var(--wash)}
+#experience{background:var(--paper)}
+.academic-chronology{margin-top:27px;border-top:1px solid var(--line)}
+.chronology-entry{display:grid;grid-template-columns:minmax(120px,22%) 1fr;gap:25px;padding:23px 0;border-bottom:1px solid var(--line)}
+.chronology-entry h3{font:400 clamp(21px,2.15vw,28px)/1.26 var(--heading);margin:0 0 5px}
+.chronology-entry p{color:var(--muted);font-size:13px;margin:0}
+.experience-note{font-size:12px;color:var(--muted);margin:23px 0 0}
+.experience-note strong{color:var(--ink-2)}
+.publications-home-section{background:var(--wash)}
+.publication-home-scroll{border:1px solid var(--line);background:var(--panel);max-height:360px;overflow-y:auto;overscroll-behavior:contain;margin-top:20px}
+.publication-empty-home{font-size:13px;padding:32px;color:var(--muted)}
+.publication-entry{padding:20px 25px;border-bottom:1px solid var(--line)}
+.publication-entry:last-child{border-bottom:0}
+.publication-entry h3{font:400 23px/1.3 var(--heading);margin:0 0 8px}
+.publication-entry p{font-size:12px;color:var(--muted);margin-bottom:4px}
+.publication-entry a{font-size:12px;color:var(--accent-strong);font-weight:700}
+.optional-academic-section[hidden],.visitors-frame[hidden],.visitor-placeholder[hidden]{display:none!important}
+.visitors-section{background:var(--paper)}
+.visitors-frame{max-width:780px;height:320px;border:1px solid var(--line);background:var(--panel);margin:23px 0}
+.visitors-frame iframe{height:100%;width:100%;border:0}
+.visitor-placeholder{max-width:780px;min-height:180px;border:1px dashed var(--line);background:var(--wash);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;gap:8px;margin-top:23px;padding:20px}
+.visitor-placeholder .map-globe{font:400 55px var(--heading);color:var(--accent)}
+.visitor-placeholder p{max-width:460px;font-size:12px;color:var(--muted);margin:0}
+@media(max-width:620px){.chronology-entry{grid-template-columns:95px 1fr;gap:12px}.publication-entry{padding:17px}.publication-entry h3{font-size:20px}}
+
+/* V6 — project section: V3 layout × V4 illustrations, with independent scroll */
+.featured-section{background:var(--wash)}
+.featured-section>.section-index{margin-bottom:14px}
+.featured-section .section-title{font-size:clamp(38px,4.3vw,58px);line-height:1.15;margin-bottom:8px}
+.featured-section .section-desc{font-size:13px;max-width:630px;margin:0}
+.project-counts{gap:10px;margin:25px 0 19px}
+.project-counts>span{display:inline-flex;gap:7px;align-items:center;padding:10px 17px;background:var(--panel);border:1px solid var(--line);font-size:11px;color:var(--muted);min-height:43px}
+.project-counts strong{margin:0 2px 0 0;font-size:18px;color:var(--ink);font-family:var(--heading);font-weight:400}
+.project-scroll{height:455px;max-height:455px;border:1px solid var(--line);border-radius:3px;background:var(--panel);overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;scrollbar-width:thin;scrollbar-color:var(--accent) var(--wash)}
+.project-scroll:focus-visible{outline-offset:2px}
+.project-row{display:grid;grid-template-columns:clamp(125px,22%,170px) minmax(0,1fr);gap:22px;padding:19px 20px;border-bottom:1px solid var(--line);background:var(--panel);min-height:177px}
+.project-row:last-child{border-bottom:0}
+.project-visual{position:relative;align-self:start;overflow:hidden;border:1px solid var(--line);background:var(--wash)}
+.project-image{height:137px;width:100%;object-fit:cover;border:0;transition:transform .25s ease}
+.project-row:hover .project-image{transform:scale(1.035)}
+.project-content{display:flex;flex-direction:column;min-width:0}
+.project-topline{gap:10px;margin:0 0 8px;font-size:10px;line-height:1.45}
+.project-area{color:var(--muted-2);letter-spacing:.8px}
+.status-tag{font-weight:700;padding:4px 8px;border-radius:2px;background:var(--quote);color:var(--accent-strong)}
+.project-content h3{font:400 clamp(20px,2.1vw,25px)/1.24 var(--heading);margin:0 0 8px;letter-spacing:-.2px}
+.project-content>p{font-size:11.7px;line-height:1.6;color:var(--muted);margin:0 0 11px}
+.project-methods{display:flex;flex-wrap:wrap;gap:5px;margin:0 0 11px}
+.project-methods span{border:1px solid var(--line);padding:3px 7px;font-size:9px;line-height:1.5;color:var(--accent-strong);background:var(--wash)}
+.project-links{margin-top:auto;gap:18px;display:flex;align-items:center;flex-wrap:wrap}
+.project-links a{font-size:11px;color:var(--accent-strong);font-weight:700}
+.project-link-pending{font-weight:500!important;color:var(--muted-2)!important}
+.project-page-counts{margin-top:15px}
+.full-project-list .project-row{grid-template-columns:minmax(155px,27%) minmax(0,1fr);min-height:215px}
+.full-project-list .project-image{height:185px}
+.full-project-list .project-methods span{font-size:10px}
+.scroll-tip{margin-top:12px;font-size:11px}
+@media(max-width:1130px){.project-scroll .project-row{grid-template-columns:125px minmax(0,1fr);gap:15px;padding:16px}.project-scroll .project-image{height:123px}.project-scroll .project-content h3{font-size:21px}}
+@media(max-width:620px){.project-counts>span{padding:7px 9px;min-height:35px;font-size:10px}.project-counts strong{font-size:17px}.project-scroll{height:465px;max-height:465px}.project-scroll .project-row{grid-template-columns:98px minmax(0,1fr);gap:12px;padding:12px;min-height:160px}.project-scroll .project-image{height:92px}.project-scroll .project-content h3{font-size:18px;line-height:1.25}.project-topline{font-size:9px}.project-area{letter-spacing:0}.project-content>p{font-size:10.5px}.project-methods span{font-size:9px}.full-project-list .project-row{grid-template-columns:1fr}.full-project-list .project-image{height:190px}}
+@media(max-width:390px){.project-scroll .project-row{grid-template-columns:85px minmax(0,1fr)}.project-scroll .project-image{height:84px}}
+@media print{.project-scroll{height:auto;max-height:none;overflow:visible}}
+
+/* Keep Publications independently scrollable, including placeholder entries. */
+#home-publication-list{max-height:126px;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;}
+#home-publication-list .placeholder-paper{min-height:100px;}
+.chronology-no-dates{grid-template-columns:minmax(0,1fr)}.chronology-no-dates p+p{margin-top:5px}</style>
+<style id="v7-photo-match-overrides">
+/* V7 screenshot-aligned presentation; underlying V6 behavior remains intact. */
+.site-shell{grid-template-columns:clamp(220px,15.2vw,278px) minmax(0,1fr)}
+.sidebar-inner{padding:16px 21px 14px;max-width:none}
+.side-kicker{display:none}
+.portrait-ring{width:110px;height:110px;margin:3px auto 10px;padding:3px}
+.profile-name{font-size:21px;line-height:1.2;margin:0 -6px 4px}
+.profile-role{font-family:var(--heading);font-style:italic;font-size:12px;letter-spacing:0;text-transform:none;margin:3px 0 18px;font-weight:400}
+.profile-bio{font-size:11px;line-height:1.53;margin-bottom:9px}
+.side-divider{margin:16px 0 12px}
+.side-subtitle{display:none}
+.sidebar-facts>div{margin:6px 0;font-size:10px;line-height:1.35}
+.sidebar-facts dt{font-size:10px}.sidebar-facts dd{font-size:10px;max-width:120px}
+.sidebar-links{gap:0}.sidebar-links a{font-size:11px;padding:5px 4px}
+.academic-metrics .metric{display:flex;align-items:center;gap:16px;margin-bottom:4px;font-size:11px}
+.academic-metrics .metric strong{min-width:28px;font:italic 25px var(--heading);color:var(--accent)}
+.academic-metrics .metric span{color:var(--muted)}
+.metric-context{font-size:9px;line-height:1.4}
+.sidebar-footer{padding-top:12px}
+.topbar{min-height:44px;padding:0 28px}.main-nav{gap:25px}.nav-tab{font-size:11px}
+.theme-switch{transform:scale(.87);transform-origin:right center}
+.intro-hero{padding:25px 38px 26px;min-height:210px}
+.intro-inner{max-width:850px}
+.eyebrow{font-size:10px;letter-spacing:1.5px;margin:0 0 4px}
+.intro-hero #home-title{font:400 clamp(38px,4.2vw,59px)/1.15 var(--heading);margin:3px 0;color:var(--ink)}
+.intro-lead{font:italic 22px/1.4 var(--heading);color:var(--ink);margin:0 0 7px}
+.intro-secondary{font:italic 14px/1.4 var(--heading);color:var(--accent-strong);max-width:680px;margin:0}
+.library-watermark{opacity:.40;background-size:cover;background-position:right center}
+.content-section{padding:14px 36px 14px}
+.section-index{margin:0 0 4px;gap:10px}.section-index span:first-child{font-size:23px}.section-index span:last-child{font-size:9px}
+.section-title{font-size:28px;line-height:1.15;margin:0 0 7px}
+.vision-section .guiding-question{margin:6px 0;padding:10px 16px}
+.guiding-question blockquote{font-size:18px;line-height:1.3}
+.question-label{margin:0 0 4px;font-size:9px}
+.vision-bridge{font-size:11px;line-height:1.4;margin:4px 0}
+.vision-section .interest-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;border:0;margin-top:9px}
+.vision-section .interest-row{display:block;padding:13px;border:1px solid var(--line);background:var(--panel);border-radius:4px;min-width:0}
+.vision-section .interest-num{display:none}.vision-section .interest-row h3{font-size:15px;line-height:1.25;margin-bottom:5px}
+.vision-section .interest-question{font-size:11px;line-height:1.4!important}
+.vision-section .interest-row p:not(.interest-question){font-size:10px;line-height:1.38;margin:5px 0}
+.vision-section .tags{gap:4px}.vision-section .tags span{font-size:9px;padding:2px 5px}
+.vision-section .exploratory-note,.vision-section .research-steps{display:none}
+.featured-section{background:var(--paper)}
+.featured-section .split-heading{display:flex;align-items:center}
+.featured-section .section-title{font-size:17px;margin:0}.featured-section .section-desc{display:none}
+.featured-section .project-counts{margin:5px 0 6px;gap:8px}
+.featured-section .project-counts span{padding:2px 8px;font-size:10px}
+.featured-section .project-counts strong{font-size:13px}
+.project-scroll{max-height:230px;overflow-y:auto;border-radius:4px}
+.project-row{grid-template-columns:78px minmax(0,1fr);gap:10px;padding:5px 10px;min-height:56px}
+.project-image{height:50px;border-radius:3px}
+.project-topline{font-size:9px;margin-bottom:1px;gap:6px}
+.project-content h3{font:400 13px/1.25 var(--heading);margin:0 0 2px}
+.project-content>p{font-size:10px;line-height:1.25;margin:0 0 2px}
+.project-methods,.project-content .project-links{display:none}
+.status-tag{font-size:9px;padding:1px 5px}
+.scroll-tip{font-size:10px;margin:3px 0 0}
+.v7-bottom-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:start;gap:14px;padding:10px 36px 15px}
+.v7-bottom-grid>.content-section{padding:0;min-width:0;border:0;background:transparent}
+.v7-bottom-grid .section-title{font-size:18px;line-height:1.2;margin:2px 0 9px}
+.v7-bottom-grid .section-index{gap:7px}.v7-bottom-grid .section-index span:first-child{font-size:22px}
+.v7-bottom-grid .section-index span:last-child{font-size:8px;letter-spacing:1px}
+.v7-bottom-grid .section-desc{font-size:10px;line-height:1.4;margin:4px 0}
+.v7-bottom-grid .timeline-item{display:block;padding:7px 0}
+.v7-bottom-grid .timeline-item h4{font-size:12px;line-height:1.35}
+.v7-bottom-grid .timeline-item p,.v7-bottom-grid .time-range{font-size:10px}
+.v7-bottom-grid .timeline-group{margin-top:8px}
+.v7-bottom-grid .split-heading{display:block}
+.v7-bottom-grid .plain-link{font-size:10px;margin-bottom:5px}
+.publication-home-scroll{max-height:155px;overflow-y:auto;border:1px solid var(--line);border-radius:4px;background:var(--panel);scrollbar-width:thin}
+.v7-report{padding:9px 10px;border-bottom:1px solid var(--line)}
+.v7-report:last-child{border-bottom:0}.v7-report small{font-size:9px;color:var(--muted)}
+.v7-report h4{font:400 12px/1.35 var(--heading);margin:3px 0}
+.v7-report p{font-size:10px;color:var(--muted);margin:0}
+.v7-report a{font-size:10px;color:var(--accent-strong);font-weight:650}
+.v7-report a:hover{text-decoration:underline}
+.v7-bottom-grid #visitors .visitor-placeholder{min-height:95px;padding:6px;font-size:10px}
+.v7-bottom-grid .visitors-frame iframe{width:100%;min-height:170px}
+.outlook-section{padding:20px 36px}.outlook-heading{font-size:28px}
+.main-footer{padding:14px 36px}
+@media(max-width:1200px){.site-shell{grid-template-columns:230px minmax(0,1fr)}.v7-bottom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:850px){.site-shell{display:block;height:auto;overflow:visible}.sidebar{height:auto}.right-pane{height:auto;overflow:visible}.vision-section .interest-list{grid-template-columns:1fr}.v7-bottom-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:620px){.topbar{padding:8px 10px}.intro-hero{padding:20px}.content-section{padding:15px 20px}.v7-bottom-grid{grid-template-columns:1fr;padding:15px 20px}.intro-hero #home-title{font-size:35px}.intro-lead{font-size:17px}}
+</style><style id="fixed-hero-vertical-layout">
+/* V7 combined: sidebar + (menu and Gothic hero) stay in place while main content scrolls. */
+.site-shell{height:100dvh;min-height:540px;overflow:hidden;grid-template-columns:clamp(220px,15.2vw,278px) minmax(0,1fr)}
+.sidebar{height:100dvh;overflow-y:auto;position:relative}
+.right-pane{height:100dvh;overflow:hidden;display:flex;flex-direction:column;min-width:0}
+.fixed-top-composition{flex:none;z-index:12;position:relative;box-shadow:0 1px 0 var(--line)}
+.fixed-top-composition .topbar{position:relative;top:auto;z-index:3}
+.fixed-top-composition .intro-hero{min-height:208px;padding:25px 38px 26px;isolation:isolate;overflow:hidden}
+/* Reduce bright overlay so Gothic architectural details are more visible. */
+.fixed-top-composition .library-watermark{opacity:.86;filter:none;background-position:center center;background-size:cover}
+html[data-theme="ivory"] .fixed-top-composition .library-watermark{opacity:.80;filter:none}
+html[data-mode="dark"] .fixed-top-composition .library-watermark{opacity:.55}
+/* Avoid the hero being accidentally obscured by the page body. */
+#main-content{flex:1 1 0;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:var(--accent) var(--wash)}
+#page-home{max-width:none}
+#page-home>.content-section{border-bottom:1px solid var(--line)}
+#page-home>.timeline-section,#page-home>.publications-home-section,#page-home>.visitors-section{background:var(--paper);padding:24px 36px}
+#page-home>.timeline-section .section-title,#page-home>.publications-home-section .section-title,#page-home>.visitors-section .section-title{font-size:27px}
+#page-home>.timeline-section .timeline-group{margin-top:13px;max-width:760px}
+#page-home>.timeline-section .timeline-item{display:grid;grid-template-columns:110px 1fr;gap:15px}
+#page-home>.timeline-section .timeline-item h4{font-size:15px}
+#page-home>.timeline-section .timeline-item p{font-size:12px}
+#page-home>.publications-home-section .publication-home-scroll{height:185px;max-height:185px;overflow-y:auto;max-width:900px}
+#page-home>.publications-home-section .v7-report h4{font-size:15px}
+#page-home>.publications-home-section .v7-report{padding:14px 16px}
+#page-home>.visitors-section .visitor-placeholder{max-width:620px;padding:12px}
+#page-home>.visitors-section .visitors-frame{max-width:620px}
+/* Preserve left photo/sidebar and original Gothic footer treatment. */
+.sidebar{background-size:cover}
+/* No layout jump when opening another navigation tab. */
+.page.secondary-page{min-height:100%}
+@media(max-width:850px){
+ .site-shell{height:auto;min-height:100dvh;overflow:visible;display:block}
+ .sidebar{height:auto;overflow:visible}
+ .right-pane{height:auto;overflow:visible;display:block}
+ .fixed-top-composition{position:sticky;top:0;z-index:12}
+ .fixed-top-composition .intro-hero{min-height:155px;padding:16px 22px}
+ .fixed-top-composition .intro-hero #home-title{font-size:clamp(25px,4.8vw,40px)}
+ .fixed-top-composition .intro-lead{font-size:15px}
+ .fixed-top-composition .intro-secondary{font-size:11px}
+ #main-content{height:auto;overflow:visible}
+}
+@media(max-width:620px){
+ .fixed-top-composition .intro-hero{min-height:122px;padding:12px 16px}
+ .fixed-top-composition .intro-hero #home-title{font-size:25px}
+ .fixed-top-composition .eyebrow{font-size:7px}
+ .fixed-top-composition .intro-lead{font-size:12px}
+ .fixed-top-composition .intro-secondary{display:none}
+ #page-home>.timeline-section,#page-home>.publications-home-section,#page-home>.visitors-section{padding:19px 20px}
+}
+</style><style id="v7-sidebar-reference-matching">
+/* Match the supplied left profile column; both sidebar and complete Gothic header remain stationary on desktop. */
+.site-shell{grid-template-columns:clamp(214px,17.2vw,252px) minmax(0,1fr)}
+.sidebar{position:relative;height:100dvh;overflow-y:auto;background:#eaf5fb;border-right:1px solid #d0e0eb;isolation:isolate}
+.sidebar::before{content:"";position:absolute;left:0;right:0;bottom:0;height:185px;background:linear-gradient(to bottom,rgba(237,245,250,.65),rgba(237,245,250,.30)),url("{{ '/images/gothic-library2.png' | relative_url }}") center bottom / auto 205px no-repeat;opacity:.84;pointer-events:none;z-index:-1}
+.sidebar::after{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;background:linear-gradient(to bottom,rgba(241,249,253,.2) 0%,rgba(241,249,253,0) 67%,rgba(241,249,253,.13) 100%)}
+.v7-sidebar-inner{position:relative;max-width:none;margin:0;min-height:100%;padding:16px 24px 12px;display:flex;flex-direction:column}
+.v7-sidebar-inner .portrait-ring{height:104px;width:104px;padding:3px;margin:0 auto 8px;box-shadow:none;border:1px solid #adc5d5;flex:none}
+.v7-sidebar-inner .profile-name{font-family:Georgia,serif;font-size:19px;line-height:1.15;white-space:nowrap;text-align:center;margin:0 -12px 3px;color:#173754}
+.v7-sidebar-inner .profile-name span{color:inherit}
+.v7-sidebar-inner .profile-role{font:italic 13px Georgia,serif;color:#65819b;text-align:left;margin:0 0 22px;letter-spacing:0}
+.v7-sidebar-inner .profile-bio{font:11px/1.45 Arial,sans-serif;color:#2d526e;margin:0 0 20px}
+.v7-side-links{display:flex;flex-direction:column;gap:11px;font:11px/1.35 Arial,sans-serif;color:#3b5b75}
+.v7-side-links a,.v7-side-links .side-fact{display:grid;grid-template-columns:19px minmax(0,1fr);align-items:start;gap:12px;color:inherit;text-decoration:none}
+.v7-side-links a:hover{color:#1879b5;text-decoration:underline}
+.v7-side-links .side-icon{color:#2d526d;font-size:15px;line-height:1;min-width:19px;text-align:center;font-weight:600}
+.v7-side-links .kaggle-icon{color:#2699d5;font-family:Arial,sans-serif}
+.v7-side-links .muted{color:#738fa3}
+.v7-side-links i{font-family:Georgia,serif;font-weight:400}
+.v7-stats{border-top:1px solid #c6dce8;margin-top:20px;padding:17px 8px 0;display:grid;gap:8px;font:12px Arial,sans-serif;color:#6383a0}
+.v7-stat{display:grid;grid-template-columns:24px 1fr;gap:14px;align-items:center}
+.v7-stat strong{font:24px/1 Georgia,serif;color:#1b78b3;font-weight:normal}
+.v7-sidebar-quote{margin:auto 0 8px;padding-top:38px;font:italic 11px/1.35 Georgia,serif;color:#7195af}
+@media(max-width:850px){.site-shell{display:block;height:auto;overflow:visible}.sidebar{height:auto;overflow:visible}.v7-sidebar-inner{min-height:0;max-width:560px;margin:auto}.sidebar::before{opacity:.45;height:155px}.v7-sidebar-inner .profile-name{white-space:normal}}
+</style></head>
+<body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="site-shell">
+<!-- This sidebar stays in place on desktop; only the content pane scrolls. -->
+<aside aria-label="Profile and academic links" class="sidebar">
+  <div class="sidebar-inner v7-sidebar-inner">
+    <div class="portrait-ring"><img class="portrait" src="https://github.com/uyentran9.png" alt="Victoria Tran profile photograph"></div>
+    <h1 class="profile-name">Victoria Tran <span>(Uyen Tran)</span></h1>
+    <p class="profile-role">Aspiring AI Researcher</p>
+    <p class="profile-bio">Machine learning for biomedical and scientific discovery, with interests in representation learning, multimodal modeling, and reliable AI for real-world applications.</p>
+    <div class="v7-side-links" aria-label="Academic profile and links">
+      <div class="side-fact"><span class="side-icon" aria-hidden="true">📍</span><span>San Francisco Bay Area, USA</span></div>
+      <div class="side-fact"><span class="side-icon" aria-hidden="true">▥</span><span>UC Berkeley<br>Statistics &amp; Economics (B.A.)</span></div>
+      <div class="side-fact"><span class="side-icon" aria-hidden="true">▣</span><span>Abbott Diabetes Care<br>Former Pricing Analyst</span></div>
+      <a href="mailto:uyen.victoria.tran@gmail.com" id="email-profile"><span class="side-icon" aria-hidden="true">✉</span><span>uyen.victoria.tran@gmail.com</span></a>
+      <a href="https://github.com/uyentran9" target="_blank" rel="noopener noreferrer"><span class="side-icon" aria-hidden="true">●</span><span>GitHub</span></a>
+      <a href="https://www.kaggle.com/myuyentran" target="_blank" rel="noopener noreferrer"><span class="side-icon kaggle-icon" aria-hidden="true">k</span><span>Kaggle</span></a>
+      <a data-optional-link="scholar" href="#" hidden target="_blank" rel="noopener noreferrer"><span class="side-icon" aria-hidden="true">◆</span><span>Google Scholar</span></a>
+      <span class="side-fact muted"><span class="side-icon" aria-hidden="true">⚗</span><span>Research Lab <i>(coming soon)</i></span></span>
+    </div>
+    <div class="v7-stats" aria-label="Academic activity counters">
+      <div class="v7-stat"><strong id="metric-publications">0</strong><span>Publications</span></div>
+      <div class="v7-stat"><strong id="metric-projects">2</strong><span>Projects</span></div>
+      <div class="v7-stat"><strong id="metric-awards">0</strong><span>Awards &amp; Grants</span></div>
+    </div>
+    <blockquote class="v7-sidebar-quote">“Curiosity is the starting point<br>for many meaningful discoveries.”</blockquote>
+  </div>
+</aside>
+<!-- Top menu stays visible while the right-side content is scrolled. -->
+<div class="right-pane" id="right-pane">
+
+<div class="fixed-top-composition"><header class="topbar">
+<nav aria-label="Main navigation" class="main-nav">
+<button aria-current="page" class="nav-tab active" data-page="home" type="button">Home</button>
+<button class="nav-tab" data-page="notes" type="button">Notes</button>
+<button class="nav-tab" data-page="projects" type="button">Projects</button><button class="nav-tab" data-page="publications" type="button">Publications</button>
+<button class="nav-tab nav-optional" data-page="teaching" hidden="" type="button">Teaching</button><button class="nav-tab nav-optional" data-page="conferences" hidden="" type="button">Conferences</button><button class="nav-tab" data-page="cv" type="button">CV</button>
+</nav>
+<div aria-label="Color palette" class="theme-switch" role="group">
+<button aria-pressed="true" class="theme-choice active" data-set-theme="sky" type="button"><span class="palette-dot sky-dot"></span>Sky</button>
+<button aria-pressed="false" class="theme-choice" data-set-theme="ivory" type="button"><span class="palette-dot ivory-dot"></span>Ivory</button>
+</div><button aria-label="Switch to dark mode" aria-pressed="false" class="contrast-toggle" id="contrast-toggle" title="Toggle light and dark mode" type="button"><span aria-hidden="true" class="mode-icon">☾</span><span class="mode-label">Dark</span></button>
+</header><section aria-labelledby="home-title" class="intro-hero">
+<div aria-hidden="true" class="library-watermark"></div>
+<div class="intro-inner">
+<div class="eyebrow">MACHINE LEARNING FOR BIOMEDICAL &amp; SCIENTIFIC DISCOVERY</div>
+<h2 id="home-title">Victoria Tran (Uyen Tran)</h2>
+<p class="intro-lead">From Statistics to AI for Biomedical and Beyond</p>
+<p class="intro-secondary">“Toward generalizable AI models that help understand living systems and accelerate scientific discovery.”</p>
+</div>
+</section></div><main id="main-content" tabindex="-1">
+<div class="page active" data-view="home" id="page-home">
+
+<section aria-labelledby="research-directions-title" class="content-section vision-section" id="research-directions">
+<div class="section-index"><span>01</span><span>RESEARCH DIRECTIONS</span></div>
+<h2 class="section-title serif" id="research-directions-title">A question worth pursuing.</h2>
+<div class="guiding-question">
+<span class="question-label">GUIDING QUESTION</span>
+<blockquote>How can we develop <em>generalizable, multimodal AI foundation models</em> that learn across molecular, cellular, and biomedical imaging data to understand biological systems and accelerate scientific discovery?</blockquote>
+</div>
+<p class="vision-bridge">To pursue this question, I aim to <strong>develop and study machine learning models</strong> through three interconnected research interests: learning transferable biological representations, integrating visual and molecular evidence, and building reliable approaches to scientific prediction.</p>
+<div class="interest-list">
+<article class="interest-row"><div class="interest-num">01</div><div><h3>Biological Representation Learning &amp; Foundation Models</h3><p class="interest-question">What transferable patterns can models learn across DNA, RNA, proteins, molecular graphs, and cells?</p><p>Interested in self-supervised learning, graph representations, and foundation models that capture biological structure and relationships across contexts.</p><div class="tags"><span>Self-supervised learning</span><span>GNNs</span><span>Foundation models</span></div></div></article>
+<article class="interest-row"><div class="interest-num">02</div><div><h3>Multimodal Learning &amp; Biomedical Computer Vision</h3><p class="interest-question">How can visual, molecular, and clinical evidence inform one another?</p><p>Interested in medical images (MRI, CT, X-ray, pathology), cellular microscopy, and methods for combining imaging with relevant biological or clinical data.</p><div class="tags"><span>Computer vision</span><span>Medical imaging</span><span>Multimodal learning</span></div></div></article>
+<article class="interest-row"><div class="interest-num">03</div><div><h3>Reliable AI for Scientific Discovery</h3><p class="interest-question">When can model predictions generalize and support scientifically testable hypotheses?</p><p>Interested in robustness, distribution shift, uncertainty estimation, and rigorous evaluation as foundations for dependable scientific machine learning.</p><div class="tags"><span>Generalization</span><span>Uncertainty</span><span>Reproducibility</span></div></div></article>
+</div><p class="exploratory-note"><strong>Exploratory interest:</strong> Quantum machine learning methods where they may offer meaningful advantages for biomedical modeling.</p></section>
+<section aria-labelledby="featured-title" class="content-section featured-section" id="featured-projects">
+<div class="section-index"><span>02</span><span>PROJECTS</span></div>
+<div class="split-heading"><div><h2 class="section-title serif" id="featured-title">Projects</h2><p class="section-desc">Completed experiments, current work, and planned investigations, clearly distinguished by status.</p></div><button class="plain-link" data-page="projects" type="button">View all projects <span aria-hidden="true">↗</span></button></div>
+<div aria-label="Project status counts" class="project-counts" id="home-counts"><span><strong>2</strong>Completed</span><span><strong>1</strong>In progress</span><span><strong>2</strong>Planned / upcoming</span></div>
+<div aria-label="Projects — independently scrollable list of five projects" class="project-scroll" id="home-project-list" role="region" tabindex="0"><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Clinical tabular; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMGMzNDQ5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzc2Yzg5Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Im9yZ2FuIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZiNDdjIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiNjZjYxNGUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3ZDMzNDkiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9ImJsdXIiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIxIi8+PC9maWx0ZXI+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTMyIDBIMFYzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDRlN2YxIiBzdHJva2Utb3BhY2l0eT0iLjExIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNiZykiLz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNncmlkKSIvPjxlbGxpcHNlIGN4PSIzMDAiIGN5PSIxOTAiIHJ4PSIxNzAiIHJ5PSIxMTgiIGZpbGw9IiNmNjk5N2YiIG9wYWNpdHk9Ii4xNSIgZmlsdGVyPSJ1cmwoI2JsdXIpIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODAsMTgpIj48cGF0aCBkPSJNMTA1IDE1MGM0Ni04OCAxOTAtMTIwIDI4Ny00NyAyMCAxNSAyNyA0MiAxNyA2OC0yMSA1Ny02OSA3OC0xMjYgODAtMjMgMS01My00LTc3LTEwLTE1IDIyLTM2IDM0LTY2IDM1LTQ2IDAtODQtMzEtNzktNzMgNC0yNCAyMC00MyA0NC01M3oiIGZpbGw9InVybCgjb3JnYW4pIiBzdHJva2U9IiNmZmM5YTAiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik0yMTEgMTAwYzI5IDIyIDQwIDY0IDIyIDEwM00yODQgNzljLTE4IDM5LTEzIDg0IDggMTM5TTM0NiAxMTRjLTEzIDI2LTI1IDQ2LTU4IDUyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmQxYTciIHN0cm9rZS1vcGFjaXR5PSIuNTciIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGcgZmlsbD0iI2ZmZjJkNiI+PGNpcmNsZSBjeD0iMTU2IiBjeT0iMTU0IiByPSI2Ii8+PGNpcmNsZSBjeD0iMjkxIiBjeT0iMjAwIiByPSI3Ii8+PGNpcmNsZSBjeD0iMzU5IiBjeT0iMTM3IiByPSI1Ii8+PC9nPjwvZz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNhOWQ1ZWQiIHN0cm9rZS1vcGFjaXR5PSIuNzIiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTQxIDMyMUg1MTkiLz48cGF0aCBkPSJNNDEgMzE1VjMyNk01MTkgMzE1VjMyNiIvPjwvZz48dGV4dCB4PSI0MiIgeT0iMzU0IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNkNWU5ZjYiPkNMSU5JQ0FMIFBSRURJQ1RJT048L3RleHQ+PHRleHQgeD0iNTE5IiB5PSIzNTUiIHRleHQtYW5jaG9yPSJlbmQiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZmlsbD0iI2Q1ZTlmNiIgb3BhY2l0eT0iLjc1Ij5DT05DRVBUIEFSVDwvdGV4dD48L3N2Zz4="/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag completed">Completed</span><span class="project-area">Clinical tabular · Machine learning · 2026</span></div>
+<h3>Hepatic Risk Outcome Prediction</h3>
+<p>Clinical outcome prediction under class imbalance, with model comparison, stratified cross-validation, ensemble evaluation, and error analysis.</p>
+<div class="project-methods"><span>Boosting</span><span>Stratified CV</span><span>OOF ensembling</span><span>Log loss</span></div>
+<div class="project-links"><a href="https://uyentran9.github.io/hepatic-risk-prediction/" rel="noopener noreferrer" target="_blank">Project website <span aria-hidden="true">↗</span></a><a href="https://github.com/uyentran9/hepatic-risk-prediction" rel="noopener noreferrer" target="_blank">GitHub / code <span aria-hidden="true">↗</span></a></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Neural Network Optimization; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMTcyZjRiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzQ1NTc4Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0dGVybiBpZD0iZyIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNNDIgMEgwVjQyIiBmaWxsPSJub25lIiBzdHJva2U9IiNkM2U2ZmIiIHN0cm9rZS1vcGFjaXR5PSIuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIzODAiIGZpbGw9InVybCgjYmcpIi8+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIzODAiIGZpbGw9InVybCgjZykiLz48ZyBzdHJva2U9IiNhOGM3ZGUiIHN0cm9rZS1vcGFjaXR5PSIuMzUiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTY1IDU5VjMwMUg1MjAiIGZpbGw9Im5vbmUiLz48L2c+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNzEgOTRDMTMwIDExNCAxNjEgMTU3IDIxOCAyMjRTMzYyIDI4MCA1MTAgMjg0IiBzdHJva2U9IiNhMWRiZTUiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik03MSAxNDJDMTYyIDEzNiAxODMgMTg0IDI3NyAyMTNTNDExIDIzOCA1MTEgMjQ5IiBzdHJva2U9IiM3MmE4ZDkiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik03MSAxOTZDMTgyIDE5NCAyNDIgMTk0IDMxOCAyMDBTNDQxIDIwOSA1MTAgMjE4IiBzdHJva2U9IiNlZGM0YTciIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik03MCAyNDlDMTY3IDI0NCAyMjQgMjQyIDMwNSAyNDhTNDM0IDI1NSA1MTMgMjU4IiBzdHJva2U9IiNjMWQ3ZTUiIHN0cm9rZS1vcGFjaXR5PSIuNTIiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz48ZyBmaWxsPSIjZWNmN2ZmIj48Y2lyY2xlIGN4PSI3MiIgY3k9Ijk0IiByPSI3Ii8+PGNpcmNsZSBjeD0iNTA5IiBjeT0iMjg0IiByPSI3Ii8+PC9nPjx0ZXh0IHg9IjQzIiB5PSIzNDQiIGZpbGw9IiNkNWU3ZjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPkdSQURJRU5UIERZTkFNSUNTPC90ZXh0Pjx0ZXh0IHg9IjUyMyIgeT0iMzQ0IiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjZDZlYmY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIG9wYWNpdHk9Ii42Ij5TQ0hFTUFUSUM8L3RleHQ+PC9zdmc+"/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag completed">Completed</span><span class="project-area">Neural network optimization · 2026</span></div>
+<h3>Investigating Vanishing Gradients and Early-Layer Trainability Across Network Depth in Deep MLPs</h3>
+<p>Controlled BloodMNIST experiments investigating gradient propagation, early-layer trainability, network depth, initialization, and SGD optimization.</p>
+<div class="project-methods"><span>PyTorch</span><span>Deep MLPs</span><span>Backpropagation</span><span>Gradient analysis</span></div>
+<div class="project-links"><a href="https://github.com/uyentran9/gradient-vanishing" rel="noopener noreferrer" target="_blank">GitHub / code <span aria-hidden="true">↗</span></a></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Biomedical Computer Vision; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJiZyI+PHN0b3Agc3RvcC1jb2xvcj0iIzM0NjM4NyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE1MzY1MCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjZWxsIj48c3RvcCBzdG9wLWNvbG9yPSIjYzlhN2RmIi8+PHN0b3Agb2Zmc2V0PSIuNDUiIHN0b3AtY29sb3I9IiM4YTViOWQiLz48c3RvcCBvZmZzZXQ9Ii43IiBzdG9wLWNvbG9yPSIjYjk4Y2M2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWNjMmQzIi8+PC9yYWRpYWxHcmFkaWVudD48ZmlsdGVyIGlkPSJnbG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxOCIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNiZykiLz48Y2lyY2xlIGN4PSIyNzUiIGN5PSIxNzkiIHI9IjEzMiIgZmlsbD0iIzkxZGNlMSIgb3BhY2l0eT0iLjE4IiBmaWx0ZXI9InVybCgjZ2xvdykiLz48ZyBmaWxsPSIjZDJhNGJkIiBmaWxsLW9wYWNpdHk9Ii44NCIgc3Ryb2tlPSIjZWZjMWQ4IiBzdHJva2Utd2lkdGg9IjgiPjxlbGxpcHNlIGN4PSIxMTgiIGN5PSIxMjciIHJ4PSI1NyIgcnk9IjQ5Ii8+PGVsbGlwc2UgY3g9IjQ0MiIgY3k9IjEyNyIgcng9IjU4IiByeT0iNDkiLz48ZWxsaXBzZSBjeD0iMTU1IiBjeT0iMjg1IiByeD0iNTYiIHJ5PSI0NSIvPjxlbGxpcHNlIGN4PSI0MDkiIGN5PSIyOTIiIHJ4PSI1MyIgcnk9IjQ0Ii8+PC9nPjxnIGZpbGw9InVybCgjY2VsbCkiIHN0cm9rZT0iI2Y2ZGVlYSIgc3Ryb2tlLXdpZHRoPSI5Ij48Y2lyY2xlIGN4PSIyNzciIGN5PSIxOTIiIHI9Ijg5Ii8+PC9nPjxwYXRoIGQ9Ik0yMzAgMTYwYzI5LTQ0IDY0LTM0IDkwLTMgMTggMjMgMTMgNTYtOCA3Ni0yNSAyMy03MiAyNy05Mi0xMS0xMi0yMi0zLTQ0IDEwLTYyeiIgZmlsbD0iIzY5NGQ5NSIgc3Ryb2tlPSIjYjRhN2RiIiBzdHJva2Utd2lkdGg9IjciLz48ZyBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuMzQiPjxjaXJjbGUgY3g9IjIzOSIgY3k9IjExNSIgcj0iOSIvPjxjaXJjbGUgY3g9IjMyMiIgY3k9IjI3NyIgcj0iNiIvPjwvZz48dGV4dCB4PSIyNyIgeT0iMzQ3IiBmaWxsPSIjZWZmMmZiIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGxldHRlci1zcGFjaW5nPSIyIj5CTE9PRCBDRUxMIE1JQ1JPU0NPUFk8L3RleHQ+PHRleHQgeD0iNTMzIiB5PSIzNDciIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiNkOGU3ZWYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgb3BhY2l0eT0iLjciPkNPTkNFUFQgQVJUPC90ZXh0Pjwvc3ZnPg=="/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag in-progress">In progress</span><span class="project-area">Biomedical computer vision · 2026</span></div>
+<h3>Comparative Evaluation of MLP and CNN Models for Blood Cell Classification</h3>
+<p>Developing MLP and CNN baselines for eight-class blood-cell microscopy classification, image preprocessing, augmentation, and model evaluation.</p>
+<div class="project-methods"><span>PyTorch</span><span>MLPs</span><span>CNNs</span><span>Image augmentation</span></div>
+<div class="project-links"><span class="project-link-pending">Project materials forthcoming</span></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Biomedical NLP; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMTgzNzUxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2U3NTkyIi8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJzaGFkb3ciPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjEwIi8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiBmaWxsPSJ1cmwoI2JnKSIvPjxyZWN0IHg9IjExNSIgeT0iMzciIHdpZHRoPSIzMjAiIGhlaWdodD0iMjk3IiByeD0iOSIgZmlsbD0iIzA3MWIyZCIgb3BhY2l0eT0iLjI4IiBmaWx0ZXI9InVybCgjc2hhZG93KSIvPjxyZWN0IHg9IjExNCIgeT0iMzYiIHdpZHRoPSIzMTkiIGhlaWdodD0iMjkzIiByeD0iOSIgZmlsbD0iI2U5ZjNmNiIvPjxwYXRoIGQ9Ik0xNDYgODVIMzU2IiBzdHJva2U9IiMzMTZhOGEiIHN0cm9rZS13aWR0aD0iMTEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxnIHN0cm9rZT0iIzgwYWRjMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjkiPjxwYXRoIGQ9Ik0xNDYgMTI4SDM5Nk0xNDYgMTU2SDM3Mk0xNDYgMTg0SDM5M00xNDYgMjExSDM0NU0xNDYgMjQwSDM5MCIvPjwvZz48ZyBmaWxsPSIjZTZiNDdmIj48cmVjdCB4PSIxNDYiIHk9IjE1MSIgd2lkdGg9IjExMCIgaGVpZ2h0PSIxMiIgcng9IjMiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMjI5IiB5PSIyMDciIHdpZHRoPSIxMTMiIGhlaWdodD0iMTIiIHJ4PSIzIiBvcGFjaXR5PSIuOCIvPjwvZz48ZyBmaWxsPSIjNWE5NmI1Ij48Y2lyY2xlIGN4PSI0MTciIGN5PSIxMDMiIHI9IjI3Ii8+PGNpcmNsZSBjeD0iNDUxIiBjeT0iMTY0IiByPSIyNCIvPjxjaXJjbGUgY3g9IjQyNyIgY3k9IjI0MSIgcj0iMjMiLz48L2c+PGcgc3Ryb2tlPSIjYjhlMmYyIiBzdHJva2Utd2lkdGg9IjQiPjxwYXRoIGQ9Ik00MTYgMTI5TDQ0NyAxNDNNNDQ5IDE4OEw0MjkgMjE3Ii8+PC9nPjx0ZXh0IHg9IjI3IiB5PSIzNTUiIGZpbGw9IiNkY2VlZjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPkJJT01FRElDQUwgTkxQPC90ZXh0Pjx0ZXh0IHg9IjUzMSIgeT0iMzU1IiBmaWxsPSIjZGNlZWY1IiB0ZXh0LWFuY2hvcj0iZW5kIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIG9wYWNpdHk9Ii42NSI+Q09OQ0VQVCBBUlQ8L3RleHQ+PC9zdmc+"/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag planned">Planned</span><span class="project-area">Biomedical NLP · Upcoming</span></div>
+<h3>Biomedical Sentence Classification with Transformer Models</h3>
+<p>Planned biomedical sentence classification comparing TF-IDF baselines with pretrained transformer models and fine-tuning.</p>
+<div class="project-methods"><span>TF-IDF</span><span>Tokenization</span><span>Transformers</span><span>Fine-tuning</span></div>
+<div class="project-links"><span class="project-link-pending">Project materials forthcoming</span></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Molecular Machine Learning; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMGQzODRjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzQ2NDdjIi8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Im9yYiI+PHN0b3Agc3RvcC1jb2xvcj0iI2JiZThlYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzRhOWVhZiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiBmaWxsPSJ1cmwoI2JnKSIvPjxnIHN0cm9rZT0iIzliZGNlOCIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9Ii45MiI+PHBhdGggZD0iTTExOSAxODFMMTg1IDk5TDI5NyAxMTNMMzc2IDE4MEwzMjAgMjg2TDE5MSAyNzZMMTE5IDE4MU0xODUgOTlMMTkxIDI3Nk0yOTcgMTEzTDMyMCAyODZNMzc2IDE4MEw0NzkgMTY0TTMyMCAyODZMNDMyIDMxMU0xMTkgMTgxTDQ5IDEyOCIvPjwvZz48ZyBzdHJva2U9IiNkMGVmZjMiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0idXJsKCNvcmIpIj48Y2lyY2xlIGN4PSIxMTkiIGN5PSIxODEiIHI9IjI0Ii8+PGNpcmNsZSBjeD0iMTg1IiBjeT0iOTkiIHI9IjI3Ii8+PGNpcmNsZSBjeD0iMjk3IiBjeT0iMTEzIiByPSIyMyIvPjxjaXJjbGUgY3g9IjM3NiIgY3k9IjE4MCIgcj0iMzAiLz48Y2lyY2xlIGN4PSIzMjAiIGN5PSIyODYiIHI9IjI2Ii8+PGNpcmNsZSBjeD0iMTkxIiBjeT0iMjc2IiByPSIyMiIvPjxjaXJjbGUgY3g9IjQ3OSIgY3k9IjE2NCIgcj0iMjEiLz48Y2lyY2xlIGN4PSI0MzIiIGN5PSIzMTEiIHI9IjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSIxMjgiIHI9IjE5Ii8+PC9nPjxnIGZpbGw9IiMxNjNiNTciPjxjaXJjbGUgY3g9IjE4NSIgY3k9Ijk5IiByPSI4Ii8+PGNpcmNsZSBjeD0iMzc2IiBjeT0iMTgwIiByPSI5Ii8+PGNpcmNsZSBjeD0iMzIwIiBjeT0iMjg2IiByPSI3Ii8+PC9nPjx0ZXh0IHg9IjI2IiB5PSIzNTQiIGZpbGw9IiNkNGVhZmEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPk1PTEVDVUxBUiBHUkFQSCBMRUFSTklORzwvdGV4dD48dGV4dCB4PSI1MzMiIHk9IjM1NCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iI2QzZWFmYSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBvcGFjaXR5PSIuNjUiPkNPTkNFUFQgQVJUPC90ZXh0Pjwvc3ZnPg=="/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag planned">Planned</span><span class="project-area">Molecular machine learning · Upcoming</span></div>
+<h3>Molecular Property Prediction with Graph Neural Networks</h3>
+<p>Planned molecular graph classification using fingerprint baselines, graph neural networks, PyTorch Geometric, and scaffold splits.</p>
+<div class="project-methods"><span>Molecular graphs</span><span>GCN/GIN</span><span>PyTorch Geometric</span><span>Scaffold splits</span></div>
+<div class="project-links"><span class="project-link-pending">Project materials forthcoming</span></div>
+</div>
+</article></div>
+<p class="scroll-tip">Scroll inside this list for more projects · <button data-page="projects" type="button">Open the full Projects page ↗</button></p>
+</section>
+<section aria-labelledby="education-title" class="content-section timeline-section" id="education"><div class="section-index"><span>03</span><span>EDUCATION</span></div><h2 class="section-title serif" id="education-title">Education<span class="period">.</span></h2><div class="academic-chronology"><div class="chronology-entry chronology-no-dates"><div><h3>University of California, Berkeley</h3><p>B.A. in Statistics and Economics</p></div></div></div></section><section aria-labelledby="experience-title" class="content-section timeline-section" id="experience"><div class="section-index"><span>04</span><span>EXPERIENCE</span></div><h2 class="section-title serif" id="experience-title">Experience<span class="period">.</span></h2><div class="academic-chronology"><div class="chronology-entry chronology-no-dates"><div><h3>Abbott Diabetes Care</h3><p><strong>Pricing Analyst — Finance</strong></p><p>Quantitative pricing analysis, financial analysis, and data-driven decision support in the healthcare industry.</p></div></div></div></section><section aria-labelledby="home-publications-title" class="content-section publications-home-section" id="home-publications"><div class="section-index"><span>05</span><span>PUBLICATIONS</span></div><div class="split-heading"><div><h2 class="section-title serif" id="home-publications-title">Publications<span class="period">.</span></h2></div><button class="plain-link" data-page="publications" type="button">View publications ↗</button></div><div aria-label="Scrollable publications list" class="publication-home-scroll" id="home-publication-list" role="region" tabindex="0"><article class="v7-report placeholder-paper"><small>Future publication · Placeholder</small><h4>Paper 1</h4><p>Coming Soon</p></article><article class="v7-report placeholder-paper"><small>Future publication · Placeholder</small><h4>Paper 2</h4><p>Coming Soon</p></article></div></section><section aria-labelledby="visitors-title" class="content-section visitors-section" id="visitors"><div class="section-index"><span>06</span><span>VISITORS</span></div><h2 class="section-title serif" id="visitors-title">Visitors<span class="period">.</span></h2><p class="section-desc">An optional map of visits will appear here after connecting a visitor-map provider.</p><div class="visitors-frame" hidden="" id="visitor-map-container"><iframe id="visitor-map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Visitor map"></iframe></div><div class="visitor-placeholder" id="visitor-placeholder"><div aria-hidden="true" class="map-globe">◎</div><p>Visitor map not enabled yet. No visitor counts are displayed until a tracking service is configured.</p></div></section><section aria-labelledby="outlook-title" class="content-section outlook-section" id="long-term-outlook">
+<div class="section-index"><span>06</span><span>LONG-TERM VISION</span></div>
+<h2 class="outlook-heading serif" id="outlook-title">Beyond one model. <em>Beyond one domain.</em></h2>
+<p>My long-term goal is to contribute to generalizable machine learning methods that help researchers understand living systems and advance discovery in biomedicine and the broader life sciences.</p>
+<p class="outlook-small">Potential applications include human and animal health, drug discovery, agriculture, and environmental biotechnology.</p>
+</section>
+
+</div>
+<div class="page secondary-page" data-view="notes" hidden="" id="page-notes">
+<div class="secondary-head"><div class="section-index"><span>NOTES</span><span>LEARNING &amp; EXPLANATION</span></div><h2 class="serif">AI learning notes<span class="period">.</span></h2><p>Technical notes are a place to explain concepts, implementations, and insights from hands-on study—separate from formal research contributions.</p></div>
+<div class="notes-empty"><div class="notes-mark">{ }</div><h3>From understanding to clear explanations</h3><p>As reviewed notes become ready for publication, they can appear here with topics, dates, and links to source notebooks. No articles are represented as published in this template.</p><a class="text-button" href="https://uyentran9.github.io/uyentran-ai-blog/blog/" rel="noopener noreferrer" target="_blank">Visit existing learning notes (legacy site) ↗</a></div>
+</div>
+<div class="page secondary-page" data-view="projects" hidden="" id="page-projects">
+<div class="secondary-head"><div class="section-index"><span>PROJECTS</span><span>SELECTED WORK &amp; FUTURE IDEAS</span></div><h2 class="serif">Projects<span class="period">.</span></h2><p>Each project is identified by status. Completed work links to inspectable evidence; planned projects are clearly labeled and do not imply completed research.</p></div>
+<div class="project-counts project-page-counts" id="full-counts"><span><strong>2</strong>Completed</span><span><strong>1</strong>In progress</span><span><strong>2</strong>Planned / upcoming</span></div>
+<div class="full-project-list" id="full-project-list"><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Clinical tabular; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMGMzNDQ5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzc2Yzg5Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Im9yZ2FuIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZiNDdjIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiNjZjYxNGUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3ZDMzNDkiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9ImJsdXIiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIxIi8+PC9maWx0ZXI+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTMyIDBIMFYzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDRlN2YxIiBzdHJva2Utb3BhY2l0eT0iLjExIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNiZykiLz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNncmlkKSIvPjxlbGxpcHNlIGN4PSIzMDAiIGN5PSIxOTAiIHJ4PSIxNzAiIHJ5PSIxMTgiIGZpbGw9IiNmNjk5N2YiIG9wYWNpdHk9Ii4xNSIgZmlsdGVyPSJ1cmwoI2JsdXIpIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODAsMTgpIj48cGF0aCBkPSJNMTA1IDE1MGM0Ni04OCAxOTAtMTIwIDI4Ny00NyAyMCAxNSAyNyA0MiAxNyA2OC0yMSA1Ny02OSA3OC0xMjYgODAtMjMgMS01My00LTc3LTEwLTE1IDIyLTM2IDM0LTY2IDM1LTQ2IDAtODQtMzEtNzktNzMgNC0yNCAyMC00MyA0NC01M3oiIGZpbGw9InVybCgjb3JnYW4pIiBzdHJva2U9IiNmZmM5YTAiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik0yMTEgMTAwYzI5IDIyIDQwIDY0IDIyIDEwM00yODQgNzljLTE4IDM5LTEzIDg0IDggMTM5TTM0NiAxMTRjLTEzIDI2LTI1IDQ2LTU4IDUyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmQxYTciIHN0cm9rZS1vcGFjaXR5PSIuNTciIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGcgZmlsbD0iI2ZmZjJkNiI+PGNpcmNsZSBjeD0iMTU2IiBjeT0iMTU0IiByPSI2Ii8+PGNpcmNsZSBjeD0iMjkxIiBjeT0iMjAwIiByPSI3Ii8+PGNpcmNsZSBjeD0iMzU5IiBjeT0iMTM3IiByPSI1Ii8+PC9nPjwvZz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNhOWQ1ZWQiIHN0cm9rZS1vcGFjaXR5PSIuNzIiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTQxIDMyMUg1MTkiLz48cGF0aCBkPSJNNDEgMzE1VjMyNk01MTkgMzE1VjMyNiIvPjwvZz48dGV4dCB4PSI0MiIgeT0iMzU0IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNkNWU5ZjYiPkNMSU5JQ0FMIFBSRURJQ1RJT048L3RleHQ+PHRleHQgeD0iNTE5IiB5PSIzNTUiIHRleHQtYW5jaG9yPSJlbmQiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZmlsbD0iI2Q1ZTlmNiIgb3BhY2l0eT0iLjc1Ij5DT05DRVBUIEFSVDwvdGV4dD48L3N2Zz4="/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag completed">Completed</span><span class="project-area">Clinical tabular · Machine learning · 2026</span></div>
+<h3>Hepatic Risk Outcome Prediction</h3>
+<p>Clinical outcome prediction under class imbalance, with model comparison, stratified cross-validation, ensemble evaluation, and error analysis.</p>
+<div class="project-methods"><span>Boosting</span><span>Stratified CV</span><span>OOF ensembling</span><span>Log loss</span></div>
+<div class="project-links"><a href="https://uyentran9.github.io/hepatic-risk-prediction/" rel="noopener noreferrer" target="_blank">Project website <span aria-hidden="true">↗</span></a><a href="https://github.com/uyentran9/hepatic-risk-prediction" rel="noopener noreferrer" target="_blank">GitHub / code <span aria-hidden="true">↗</span></a></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Neural Network Optimization; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMTcyZjRiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzQ1NTc4Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0dGVybiBpZD0iZyIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNNDIgMEgwVjQyIiBmaWxsPSJub25lIiBzdHJva2U9IiNkM2U2ZmIiIHN0cm9rZS1vcGFjaXR5PSIuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIzODAiIGZpbGw9InVybCgjYmcpIi8+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIzODAiIGZpbGw9InVybCgjZykiLz48ZyBzdHJva2U9IiNhOGM3ZGUiIHN0cm9rZS1vcGFjaXR5PSIuMzUiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTY1IDU5VjMwMUg1MjAiIGZpbGw9Im5vbmUiLz48L2c+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNzEgOTRDMTMwIDExNCAxNjEgMTU3IDIxOCAyMjRTMzYyIDI4MCA1MTAgMjg0IiBzdHJva2U9IiNhMWRiZTUiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik03MSAxNDJDMTYyIDEzNiAxODMgMTg0IDI3NyAyMTNTNDExIDIzOCA1MTEgMjQ5IiBzdHJva2U9IiM3MmE4ZDkiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik03MSAxOTZDMTgyIDE5NCAyNDIgMTk0IDMxOCAyMDBTNDQxIDIwOSA1MTAgMjE4IiBzdHJva2U9IiNlZGM0YTciIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik03MCAyNDlDMTY3IDI0NCAyMjQgMjQyIDMwNSAyNDhTNDM0IDI1NSA1MTMgMjU4IiBzdHJva2U9IiNjMWQ3ZTUiIHN0cm9rZS1vcGFjaXR5PSIuNTIiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz48ZyBmaWxsPSIjZWNmN2ZmIj48Y2lyY2xlIGN4PSI3MiIgY3k9Ijk0IiByPSI3Ii8+PGNpcmNsZSBjeD0iNTA5IiBjeT0iMjg0IiByPSI3Ii8+PC9nPjx0ZXh0IHg9IjQzIiB5PSIzNDQiIGZpbGw9IiNkNWU3ZjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPkdSQURJRU5UIERZTkFNSUNTPC90ZXh0Pjx0ZXh0IHg9IjUyMyIgeT0iMzQ0IiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjZDZlYmY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIG9wYWNpdHk9Ii42Ij5TQ0hFTUFUSUM8L3RleHQ+PC9zdmc+"/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag completed">Completed</span><span class="project-area">Neural network optimization · 2026</span></div>
+<h3>Investigating Vanishing Gradients and Early-Layer Trainability Across Network Depth in Deep MLPs</h3>
+<p>Controlled BloodMNIST experiments investigating gradient propagation, early-layer trainability, network depth, initialization, and SGD optimization.</p>
+<div class="project-methods"><span>PyTorch</span><span>Deep MLPs</span><span>Backpropagation</span><span>Gradient analysis</span></div>
+<div class="project-links"><a href="https://github.com/uyentran9/gradient-vanishing" rel="noopener noreferrer" target="_blank">GitHub / code <span aria-hidden="true">↗</span></a></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Biomedical Computer Vision; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJiZyI+PHN0b3Agc3RvcC1jb2xvcj0iIzM0NjM4NyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE1MzY1MCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjZWxsIj48c3RvcCBzdG9wLWNvbG9yPSIjYzlhN2RmIi8+PHN0b3Agb2Zmc2V0PSIuNDUiIHN0b3AtY29sb3I9IiM4YTViOWQiLz48c3RvcCBvZmZzZXQ9Ii43IiBzdG9wLWNvbG9yPSIjYjk4Y2M2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWNjMmQzIi8+PC9yYWRpYWxHcmFkaWVudD48ZmlsdGVyIGlkPSJnbG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxOCIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNiZykiLz48Y2lyY2xlIGN4PSIyNzUiIGN5PSIxNzkiIHI9IjEzMiIgZmlsbD0iIzkxZGNlMSIgb3BhY2l0eT0iLjE4IiBmaWx0ZXI9InVybCgjZ2xvdykiLz48ZyBmaWxsPSIjZDJhNGJkIiBmaWxsLW9wYWNpdHk9Ii44NCIgc3Ryb2tlPSIjZWZjMWQ4IiBzdHJva2Utd2lkdGg9IjgiPjxlbGxpcHNlIGN4PSIxMTgiIGN5PSIxMjciIHJ4PSI1NyIgcnk9IjQ5Ii8+PGVsbGlwc2UgY3g9IjQ0MiIgY3k9IjEyNyIgcng9IjU4IiByeT0iNDkiLz48ZWxsaXBzZSBjeD0iMTU1IiBjeT0iMjg1IiByeD0iNTYiIHJ5PSI0NSIvPjxlbGxpcHNlIGN4PSI0MDkiIGN5PSIyOTIiIHJ4PSI1MyIgcnk9IjQ0Ii8+PC9nPjxnIGZpbGw9InVybCgjY2VsbCkiIHN0cm9rZT0iI2Y2ZGVlYSIgc3Ryb2tlLXdpZHRoPSI5Ij48Y2lyY2xlIGN4PSIyNzciIGN5PSIxOTIiIHI9Ijg5Ii8+PC9nPjxwYXRoIGQ9Ik0yMzAgMTYwYzI5LTQ0IDY0LTM0IDkwLTMgMTggMjMgMTMgNTYtOCA3Ni0yNSAyMy03MiAyNy05Mi0xMS0xMi0yMi0zLTQ0IDEwLTYyeiIgZmlsbD0iIzY5NGQ5NSIgc3Ryb2tlPSIjYjRhN2RiIiBzdHJva2Utd2lkdGg9IjciLz48ZyBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuMzQiPjxjaXJjbGUgY3g9IjIzOSIgY3k9IjExNSIgcj0iOSIvPjxjaXJjbGUgY3g9IjMyMiIgY3k9IjI3NyIgcj0iNiIvPjwvZz48dGV4dCB4PSIyNyIgeT0iMzQ3IiBmaWxsPSIjZWZmMmZiIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGxldHRlci1zcGFjaW5nPSIyIj5CTE9PRCBDRUxMIE1JQ1JPU0NPUFk8L3RleHQ+PHRleHQgeD0iNTMzIiB5PSIzNDciIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiNkOGU3ZWYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgb3BhY2l0eT0iLjciPkNPTkNFUFQgQVJUPC90ZXh0Pjwvc3ZnPg=="/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag in-progress">In progress</span><span class="project-area">Biomedical computer vision · 2026</span></div>
+<h3>Comparative Evaluation of MLP and CNN Models for Blood Cell Classification</h3>
+<p>Developing MLP and CNN baselines for eight-class blood-cell microscopy classification, image preprocessing, augmentation, and model evaluation.</p>
+<div class="project-methods"><span>PyTorch</span><span>MLPs</span><span>CNNs</span><span>Image augmentation</span></div>
+<div class="project-links"><span class="project-link-pending">Project materials forthcoming</span></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Biomedical NLP; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMTgzNzUxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2U3NTkyIi8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJzaGFkb3ciPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjEwIi8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiBmaWxsPSJ1cmwoI2JnKSIvPjxyZWN0IHg9IjExNSIgeT0iMzciIHdpZHRoPSIzMjAiIGhlaWdodD0iMjk3IiByeD0iOSIgZmlsbD0iIzA3MWIyZCIgb3BhY2l0eT0iLjI4IiBmaWx0ZXI9InVybCgjc2hhZG93KSIvPjxyZWN0IHg9IjExNCIgeT0iMzYiIHdpZHRoPSIzMTkiIGhlaWdodD0iMjkzIiByeD0iOSIgZmlsbD0iI2U5ZjNmNiIvPjxwYXRoIGQ9Ik0xNDYgODVIMzU2IiBzdHJva2U9IiMzMTZhOGEiIHN0cm9rZS13aWR0aD0iMTEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxnIHN0cm9rZT0iIzgwYWRjMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjkiPjxwYXRoIGQ9Ik0xNDYgMTI4SDM5Nk0xNDYgMTU2SDM3Mk0xNDYgMTg0SDM5M00xNDYgMjExSDM0NU0xNDYgMjQwSDM5MCIvPjwvZz48ZyBmaWxsPSIjZTZiNDdmIj48cmVjdCB4PSIxNDYiIHk9IjE1MSIgd2lkdGg9IjExMCIgaGVpZ2h0PSIxMiIgcng9IjMiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMjI5IiB5PSIyMDciIHdpZHRoPSIxMTMiIGhlaWdodD0iMTIiIHJ4PSIzIiBvcGFjaXR5PSIuOCIvPjwvZz48ZyBmaWxsPSIjNWE5NmI1Ij48Y2lyY2xlIGN4PSI0MTciIGN5PSIxMDMiIHI9IjI3Ii8+PGNpcmNsZSBjeD0iNDUxIiBjeT0iMTY0IiByPSIyNCIvPjxjaXJjbGUgY3g9IjQyNyIgY3k9IjI0MSIgcj0iMjMiLz48L2c+PGcgc3Ryb2tlPSIjYjhlMmYyIiBzdHJva2Utd2lkdGg9IjQiPjxwYXRoIGQ9Ik00MTYgMTI5TDQ0NyAxNDNNNDQ5IDE4OEw0MjkgMjE3Ii8+PC9nPjx0ZXh0IHg9IjI3IiB5PSIzNTUiIGZpbGw9IiNkY2VlZjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPkJJT01FRElDQUwgTkxQPC90ZXh0Pjx0ZXh0IHg9IjUzMSIgeT0iMzU1IiBmaWxsPSIjZGNlZWY1IiB0ZXh0LWFuY2hvcj0iZW5kIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIG9wYWNpdHk9Ii42NSI+Q09OQ0VQVCBBUlQ8L3RleHQ+PC9zdmc+"/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag planned">Planned</span><span class="project-area">Biomedical NLP · Upcoming</span></div>
+<h3>Biomedical Sentence Classification with Transformer Models</h3>
+<p>Planned biomedical sentence classification comparing TF-IDF baselines with pretrained transformer models and fine-tuning.</p>
+<div class="project-methods"><span>TF-IDF</span><span>Tokenization</span><span>Transformers</span><span>Fine-tuning</span></div>
+<div class="project-links"><span class="project-link-pending">Project materials forthcoming</span></div>
+</div>
+</article><article class="project-row">
+<div class="project-visual"><img alt="Conceptual artwork for Molecular Machine Learning; not an experimental figure" class="project-image" loading="lazy" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMGQzODRjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzQ2NDdjIi8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Im9yYiI+PHN0b3Agc3RvcC1jb2xvcj0iI2JiZThlYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzRhOWVhZiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiBmaWxsPSJ1cmwoI2JnKSIvPjxnIHN0cm9rZT0iIzliZGNlOCIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9Ii45MiI+PHBhdGggZD0iTTExOSAxODFMMTg1IDk5TDI5NyAxMTNMMzc2IDE4MEwzMjAgMjg2TDE5MSAyNzZMMTE5IDE4MU0xODUgOTlMMTkxIDI3Nk0yOTcgMTEzTDMyMCAyODZNMzc2IDE4MEw0NzkgMTY0TTMyMCAyODZMNDMyIDMxMU0xMTkgMTgxTDQ5IDEyOCIvPjwvZz48ZyBzdHJva2U9IiNkMGVmZjMiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0idXJsKCNvcmIpIj48Y2lyY2xlIGN4PSIxMTkiIGN5PSIxODEiIHI9IjI0Ii8+PGNpcmNsZSBjeD0iMTg1IiBjeT0iOTkiIHI9IjI3Ii8+PGNpcmNsZSBjeD0iMjk3IiBjeT0iMTEzIiByPSIyMyIvPjxjaXJjbGUgY3g9IjM3NiIgY3k9IjE4MCIgcj0iMzAiLz48Y2lyY2xlIGN4PSIzMjAiIGN5PSIyODYiIHI9IjI2Ii8+PGNpcmNsZSBjeD0iMTkxIiBjeT0iMjc2IiByPSIyMiIvPjxjaXJjbGUgY3g9IjQ3OSIgY3k9IjE2NCIgcj0iMjEiLz48Y2lyY2xlIGN4PSI0MzIiIGN5PSIzMTEiIHI9IjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSIxMjgiIHI9IjE5Ii8+PC9nPjxnIGZpbGw9IiMxNjNiNTciPjxjaXJjbGUgY3g9IjE4NSIgY3k9Ijk5IiByPSI4Ii8+PGNpcmNsZSBjeD0iMzc2IiBjeT0iMTgwIiByPSI5Ii8+PGNpcmNsZSBjeD0iMzIwIiBjeT0iMjg2IiByPSI3Ii8+PC9nPjx0ZXh0IHg9IjI2IiB5PSIzNTQiIGZpbGw9IiNkNGVhZmEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPk1PTEVDVUxBUiBHUkFQSCBMRUFSTklORzwvdGV4dD48dGV4dCB4PSI1MzMiIHk9IjM1NCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iI2QzZWFmYSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBvcGFjaXR5PSIuNjUiPkNPTkNFUFQgQVJUPC90ZXh0Pjwvc3ZnPg=="/></div>
+<div class="project-content">
+<div class="project-topline"><span class="status-tag planned">Planned</span><span class="project-area">Molecular machine learning · Upcoming</span></div>
+<h3>Molecular Property Prediction with Graph Neural Networks</h3>
+<p>Planned molecular graph classification using fingerprint baselines, graph neural networks, PyTorch Geometric, and scaffold splits.</p>
+<div class="project-methods"><span>Molecular graphs</span><span>GCN/GIN</span><span>PyTorch Geometric</span><span>Scaffold splits</span></div>
+<div class="project-links"><span class="project-link-pending">Project materials forthcoming</span></div>
+</div>
+</article></div>
+</div>
+<div class="page secondary-page" data-view="publications" hidden="" id="page-publications">
+<div class="secondary-head"><div class="section-index"><span>PUBLICATIONS</span><span>RESEARCH OUTPUTS</span></div><h2 class="serif">Publications<span class="period">.</span></h2>
+<p>Peer-reviewed papers and preprints will be listed here once available.</p></div>
+<div class="empty-pub" id="publication-empty"><span class="pub-mark">∅</span><h3>0 Publications</h3><p>Paper 1 and Paper 2 are placeholders for future publications. Technical reports remain within their respective project pages.</p></div><div class="publication-list" hidden="" id="publication-list"></div>
+</div><div class="page secondary-page" data-view="teaching" hidden="" id="page-teaching"><div class="secondary-head"><div class="section-index"><span>TEACHING</span><span>FUTURE ACADEMIC SERVICE</span></div><h2 class="serif">Teaching<span class="period">.</span></h2><p>Teaching appointments and course materials can be added after official roles begin.</p></div><div class="empty-pub"><h3>No teaching appointments listed</h3><p>This navigation item is hidden until teaching information is ready.</p></div></div><div class="page secondary-page" data-view="conferences" hidden="" id="page-conferences"><div class="secondary-head"><div class="section-index"><span>CONFERENCES</span><span>EVENTS &amp; RESEARCH COMMUNITY</span></div><h2 class="serif">Conferences<span class="period">.</span></h2><p>Verified conference presentations and participation can be added here in the future.</p></div><div class="empty-pub"><h3>Conference record coming later</h3><p>This navigation item is hidden until there is relevant content.</p></div></div><div class="page secondary-page" data-view="cv" hidden="" id="page-cv">
+<div class="secondary-head"><div class="section-index"><span>CV</span><span>ACADEMIC CURRICULUM VITAE</span></div><h2 class="serif">Curriculum Vitae<span class="period">.</span></h2><p>A PDF preview and download link will appear here when the reviewed academic CV has been added. The same navigation entry can be kept throughout graduate school and later research positions.</p></div>
+<div class="cv-empty" id="cv-empty"><div aria-hidden="true" class="document-icon">CV</div><h3>Academic CV — preparing final PDF</h3><p>No unverified or placeholder CV has been published. Add your finalized PDF to <code>assets/academic-cv.pdf</code> and update one configuration line to enable preview and download.</p></div>
+<div class="cv-ready" hidden="" id="cv-ready"><div class="cv-toolbar"><a class="cv-download" download="Victoria_Uyen_Tran_CV.pdf" href="#" id="cv-download">Download CV (PDF) ↓</a><a class="text-button" href="#" id="cv-open" rel="noopener noreferrer" target="_blank">Open full screen ↗</a></div><iframe id="cv-frame" loading="lazy" title="Academic CV PDF preview"></iframe><p class="cv-mobile-note">If the preview does not display on your device, use Open full screen or Download CV.</p></div>
+</div>
+</main>
+</div>
+</div>
+<script>'use strict';
+
+// PUBLIC PROFILE CONFIG: edit these values when a verified link becomes available.
+const PROFILE = {
+  email: 'uyen.victoria.tran@gmail.com', // Confirm before publishing.
+  kaggleUrl: '',                         // Paste your actual Kaggle profile URL.
+  scholarUrl: '',                        // Fill when you have a Google Scholar profile.
+  labUrl: '',                            // Fill only after officially joining a lab.
+  labName: 'Research Lab',
+  visitorEmbedUrl: '',                  // Opt-in: paste an HTTPS visitor-map embed URL after setting up a provider.
+  researchGroupName: '',                // Filled only once an official affiliation exists.
+  researchGroupDescription: '',
+  honors: [],                            // Verified honors and grants only.
+  publications: [],                       // Add verified publications here in a future version.
+  awardsAndGrantsCount: 0,                 // Update only with verified awards or grants.
+  showTeaching: false,                    // Change to true when there are teaching roles to list.
+  showConferences: false,                 // Change to true when there are conference entries.
+  cvPdf: ''                              // Example: 'assets/academic-cv.pdf' after uploading the file.
+};
+
+// Add projects here; both project views and status counts update automatically.
+// Never present a planned project as completed research.
+const PROJECTS = [
+  {title: "Hepatic Risk Outcome Prediction", status: "completed", year: "2026", category: "Clinical tabular · Machine learning", research_area: "Clinical tabular", summary: "Clinical outcome prediction under class imbalance, with model comparison, stratified cross-validation, ensemble evaluation, and error analysis.", methods: ["Boosting", "Stratified CV", "OOF ensembling", "Log loss"], image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMGMzNDQ5Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzc2Yzg5Ii8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Im9yZ2FuIj48c3RvcCBzdG9wLWNvbG9yPSIjZmZiNDdjIi8+PHN0b3Agb2Zmc2V0PSIuNTgiIHN0b3AtY29sb3I9IiNjZjYxNGUiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM3ZDMzNDkiLz48L3JhZGlhbEdyYWRpZW50PjxmaWx0ZXIgaWQ9ImJsdXIiPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjIxIi8+PC9maWx0ZXI+PHBhdHRlcm4gaWQ9ImdyaWQiIHdpZHRoPSIzMiIgaGVpZ2h0PSIzMiIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTMyIDBIMFYzMiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjZDRlN2YxIiBzdHJva2Utb3BhY2l0eT0iLjExIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNiZykiLz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNncmlkKSIvPjxlbGxpcHNlIGN4PSIzMDAiIGN5PSIxOTAiIHJ4PSIxNzAiIHJ5PSIxMTgiIGZpbGw9IiNmNjk5N2YiIG9wYWNpdHk9Ii4xNSIgZmlsdGVyPSJ1cmwoI2JsdXIpIi8+PGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoODAsMTgpIj48cGF0aCBkPSJNMTA1IDE1MGM0Ni04OCAxOTAtMTIwIDI4Ny00NyAyMCAxNSAyNyA0MiAxNyA2OC0yMSA1Ny02OSA3OC0xMjYgODAtMjMgMS01My00LTc3LTEwLTE1IDIyLTM2IDM0LTY2IDM1LTQ2IDAtODQtMzEtNzktNzMgNC0yNCAyMC00MyA0NC01M3oiIGZpbGw9InVybCgjb3JnYW4pIiBzdHJva2U9IiNmZmM5YTAiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik0yMTEgMTAwYzI5IDIyIDQwIDY0IDIyIDEwM00yODQgNzljLTE4IDM5LTEzIDg0IDggMTM5TTM0NiAxMTRjLTEzIDI2LTI1IDQ2LTU4IDUyIiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmQxYTciIHN0cm9rZS1vcGFjaXR5PSIuNTciIHN0cm9rZS13aWR0aD0iNyIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIi8+PGcgZmlsbD0iI2ZmZjJkNiI+PGNpcmNsZSBjeD0iMTU2IiBjeT0iMTU0IiByPSI2Ii8+PGNpcmNsZSBjeD0iMjkxIiBjeT0iMjAwIiByPSI3Ii8+PGNpcmNsZSBjeD0iMzU5IiBjeT0iMTM3IiByPSI1Ii8+PC9nPjwvZz48ZyBmaWxsPSJub25lIiBzdHJva2U9IiNhOWQ1ZWQiIHN0cm9rZS1vcGFjaXR5PSIuNzIiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTQxIDMyMUg1MTkiLz48cGF0aCBkPSJNNDEgMzE1VjMyNk01MTkgMzE1VjMyNiIvPjwvZz48dGV4dCB4PSI0MiIgeT0iMzU0IiBmb250LWZhbWlseT0iQXJpYWwsc2Fucy1zZXJpZiIgZm9udC1zaXplPSIxMyIgbGV0dGVyLXNwYWNpbmc9IjIiIGZpbGw9IiNkNWU5ZjYiPkNMSU5JQ0FMIFBSRURJQ1RJT048L3RleHQ+PHRleHQgeD0iNTE5IiB5PSIzNTUiIHRleHQtYW5jaG9yPSJlbmQiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZmlsbD0iI2Q1ZTlmNiIgb3BhY2l0eT0iLjc1Ij5DT05DRVBUIEFSVDwvdGV4dD48L3N2Zz4=", website: "https://uyentran9.github.io/hepatic-risk-prediction/", code: "https://github.com/uyentran9/hepatic-risk-prediction"},
+  {title: "Investigating Vanishing Gradients and Early-Layer Trainability in Deep MLPs", status: "completed", year: "2026", category: "Neural network optimization", research_area: "Neural Network Optimization", summary: "Controlled BloodMNIST experiments investigating gradient propagation, early-layer trainability, network depth, initialization, and SGD optimization.", methods: ["PyTorch", "Deep MLPs", "Backpropagation", "Gradient analysis"], image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMTcyZjRiIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzQ1NTc4Ii8+PC9saW5lYXJHcmFkaWVudD48cGF0dGVybiBpZD0iZyIgd2lkdGg9IjQyIiBoZWlnaHQ9IjQyIiBwYXR0ZXJuVW5pdHM9InVzZXJTcGFjZU9uVXNlIj48cGF0aCBkPSJNNDIgMEgwVjQyIiBmaWxsPSJub25lIiBzdHJva2U9IiNkM2U2ZmIiIHN0cm9rZS1vcGFjaXR5PSIuMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIzODAiIGZpbGw9InVybCgjYmcpIi8+PHJlY3Qgd2lkdGg9IjU2MCIgaGVpZ2h0PSIzODAiIGZpbGw9InVybCgjZykiLz48ZyBzdHJva2U9IiNhOGM3ZGUiIHN0cm9rZS1vcGFjaXR5PSIuMzUiIHN0cm9rZS13aWR0aD0iMiI+PHBhdGggZD0iTTY1IDU5VjMwMUg1MjAiIGZpbGw9Im5vbmUiLz48L2c+PGcgZmlsbD0ibm9uZSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj48cGF0aCBkPSJNNzEgOTRDMTMwIDExNCAxNjEgMTU3IDIxOCAyMjRTMzYyIDI4MCA1MTAgMjg0IiBzdHJva2U9IiNhMWRiZTUiIHN0cm9rZS13aWR0aD0iNiIvPjxwYXRoIGQ9Ik03MSAxNDJDMTYyIDEzNiAxODMgMTg0IDI3NyAyMTNTNDExIDIzOCA1MTEgMjQ5IiBzdHJva2U9IiM3MmE4ZDkiIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik03MSAxOTZDMTgyIDE5NCAyNDIgMTk0IDMxOCAyMDBTNDQxIDIwOSA1MTAgMjE4IiBzdHJva2U9IiNlZGM0YTciIHN0cm9rZS13aWR0aD0iNSIvPjxwYXRoIGQ9Ik03MCAyNDlDMTY3IDI0NCAyMjQgMjQyIDMwNSAyNDhTNDM0IDI1NSA1MTMgMjU4IiBzdHJva2U9IiNjMWQ3ZTUiIHN0cm9rZS1vcGFjaXR5PSIuNTIiIHN0cm9rZS13aWR0aD0iMyIvPjwvZz48ZyBmaWxsPSIjZWNmN2ZmIj48Y2lyY2xlIGN4PSI3MiIgY3k9Ijk0IiByPSI3Ii8+PGNpcmNsZSBjeD0iNTA5IiBjeT0iMjg0IiByPSI3Ii8+PC9nPjx0ZXh0IHg9IjQzIiB5PSIzNDQiIGZpbGw9IiNkNWU3ZjgiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPkdSQURJRU5UIERZTkFNSUNTPC90ZXh0Pjx0ZXh0IHg9IjUyMyIgeT0iMzQ0IiB0ZXh0LWFuY2hvcj0iZW5kIiBmaWxsPSIjZDZlYmY1IiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIG9wYWNpdHk9Ii42Ij5TQ0hFTUFUSUM8L3RleHQ+PC9zdmc+", website: "", code: "https://github.com/uyentran9/gradient-vanishing"},
+  {title: "Comparative Evaluation of MLP and CNN Models for Blood Cell Classification", status: "in-progress", year: "2026", category: "Biomedical computer vision", research_area: "Biomedical Computer Vision", summary: "Developing MLP and CNN baselines for eight-class blood-cell microscopy classification, image preprocessing, augmentation, and model evaluation.", methods: ["PyTorch", "MLPs", "CNNs", "Image augmentation"], image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PHJhZGlhbEdyYWRpZW50IGlkPSJiZyI+PHN0b3Agc3RvcC1jb2xvcj0iIzM0NjM4NyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzE1MzY1MCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJjZWxsIj48c3RvcCBzdG9wLWNvbG9yPSIjYzlhN2RmIi8+PHN0b3Agb2Zmc2V0PSIuNDUiIHN0b3AtY29sb3I9IiM4YTViOWQiLz48c3RvcCBvZmZzZXQ9Ii43IiBzdG9wLWNvbG9yPSIjYjk4Y2M2Ii8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjZWNjMmQzIi8+PC9yYWRpYWxHcmFkaWVudD48ZmlsdGVyIGlkPSJnbG93Ij48ZmVHYXVzc2lhbkJsdXIgc3RkRGV2aWF0aW9uPSIxOCIvPjwvZmlsdGVyPjwvZGVmcz48cmVjdCB3aWR0aD0iNTYwIiBoZWlnaHQ9IjM4MCIgZmlsbD0idXJsKCNiZykiLz48Y2lyY2xlIGN4PSIyNzUiIGN5PSIxNzkiIHI9IjEzMiIgZmlsbD0iIzkxZGNlMSIgb3BhY2l0eT0iLjE4IiBmaWx0ZXI9InVybCgjZ2xvdykiLz48ZyBmaWxsPSIjZDJhNGJkIiBmaWxsLW9wYWNpdHk9Ii44NCIgc3Ryb2tlPSIjZWZjMWQ4IiBzdHJva2Utd2lkdGg9IjgiPjxlbGxpcHNlIGN4PSIxMTgiIGN5PSIxMjciIHJ4PSI1NyIgcnk9IjQ5Ii8+PGVsbGlwc2UgY3g9IjQ0MiIgY3k9IjEyNyIgcng9IjU4IiByeT0iNDkiLz48ZWxsaXBzZSBjeD0iMTU1IiBjeT0iMjg1IiByeD0iNTYiIHJ5PSI0NSIvPjxlbGxpcHNlIGN4PSI0MDkiIGN5PSIyOTIiIHJ4PSI1MyIgcnk9IjQ0Ii8+PC9nPjxnIGZpbGw9InVybCgjY2VsbCkiIHN0cm9rZT0iI2Y2ZGVlYSIgc3Ryb2tlLXdpZHRoPSI5Ij48Y2lyY2xlIGN4PSIyNzciIGN5PSIxOTIiIHI9Ijg5Ii8+PC9nPjxwYXRoIGQ9Ik0yMzAgMTYwYzI5LTQ0IDY0LTM0IDkwLTMgMTggMjMgMTMgNTYtOCA3Ni0yNSAyMy03MiAyNy05Mi0xMS0xMi0yMi0zLTQ0IDEwLTYyeiIgZmlsbD0iIzY5NGQ5NSIgc3Ryb2tlPSIjYjRhN2RiIiBzdHJva2Utd2lkdGg9IjciLz48ZyBmaWxsPSIjZmZmZmZmIiBvcGFjaXR5PSIuMzQiPjxjaXJjbGUgY3g9IjIzOSIgY3k9IjExNSIgcj0iOSIvPjxjaXJjbGUgY3g9IjMyMiIgY3k9IjI3NyIgcj0iNiIvPjwvZz48dGV4dCB4PSIyNyIgeT0iMzQ3IiBmaWxsPSIjZWZmMmZiIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTMiIGxldHRlci1zcGFjaW5nPSIyIj5CTE9PRCBDRUxMIE1JQ1JPU0NPUFk8L3RleHQ+PHRleHQgeD0iNTMzIiB5PSIzNDciIHRleHQtYW5jaG9yPSJlbmQiIGZpbGw9IiNkOGU3ZWYiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxMiIgb3BhY2l0eT0iLjciPkNPTkNFUFQgQVJUPC90ZXh0Pjwvc3ZnPg==", website: "", code: ""},
+  {title: "Biomedical Sentence Classification with Transformer Models", status: "planned", year: "Upcoming", category: "Biomedical NLP", research_area: "Biomedical NLP", summary: "Planned biomedical sentence classification comparing TF-IDF baselines with pretrained transformer models and fine-tuning.", methods: ["TF-IDF", "Tokenization", "Transformers", "Fine-tuning"], image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMTgzNzUxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjM2U3NTkyIi8+PC9saW5lYXJHcmFkaWVudD48ZmlsdGVyIGlkPSJzaGFkb3ciPjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjEwIi8+PC9maWx0ZXI+PC9kZWZzPjxyZWN0IHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiBmaWxsPSJ1cmwoI2JnKSIvPjxyZWN0IHg9IjExNSIgeT0iMzciIHdpZHRoPSIzMjAiIGhlaWdodD0iMjk3IiByeD0iOSIgZmlsbD0iIzA3MWIyZCIgb3BhY2l0eT0iLjI4IiBmaWx0ZXI9InVybCgjc2hhZG93KSIvPjxyZWN0IHg9IjExNCIgeT0iMzYiIHdpZHRoPSIzMTkiIGhlaWdodD0iMjkzIiByeD0iOSIgZmlsbD0iI2U5ZjNmNiIvPjxwYXRoIGQ9Ik0xNDYgODVIMzU2IiBzdHJva2U9IiMzMTZhOGEiIHN0cm9rZS13aWR0aD0iMTEiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIvPjxnIHN0cm9rZT0iIzgwYWRjMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2Utd2lkdGg9IjkiPjxwYXRoIGQ9Ik0xNDYgMTI4SDM5Nk0xNDYgMTU2SDM3Mk0xNDYgMTg0SDM5M00xNDYgMjExSDM0NU0xNDYgMjQwSDM5MCIvPjwvZz48ZyBmaWxsPSIjZTZiNDdmIj48cmVjdCB4PSIxNDYiIHk9IjE1MSIgd2lkdGg9IjExMCIgaGVpZ2h0PSIxMiIgcng9IjMiIG9wYWNpdHk9Ii44Ii8+PHJlY3QgeD0iMjI5IiB5PSIyMDciIHdpZHRoPSIxMTMiIGhlaWdodD0iMTIiIHJ4PSIzIiBvcGFjaXR5PSIuOCIvPjwvZz48ZyBmaWxsPSIjNWE5NmI1Ij48Y2lyY2xlIGN4PSI0MTciIGN5PSIxMDMiIHI9IjI3Ii8+PGNpcmNsZSBjeD0iNDUxIiBjeT0iMTY0IiByPSIyNCIvPjxjaXJjbGUgY3g9IjQyNyIgY3k9IjI0MSIgcj0iMjMiLz48L2c+PGcgc3Ryb2tlPSIjYjhlMmYyIiBzdHJva2Utd2lkdGg9IjQiPjxwYXRoIGQ9Ik00MTYgMTI5TDQ0NyAxNDNNNDQ5IDE4OEw0MjkgMjE3Ii8+PC9nPjx0ZXh0IHg9IjI3IiB5PSIzNTUiIGZpbGw9IiNkY2VlZjUiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPkJJT01FRElDQUwgTkxQPC90ZXh0Pjx0ZXh0IHg9IjUzMSIgeT0iMzU1IiBmaWxsPSIjZGNlZWY1IiB0ZXh0LWFuY2hvcj0iZW5kIiBmb250LWZhbWlseT0iQXJpYWwiIGZvbnQtc2l6ZT0iMTIiIG9wYWNpdHk9Ii42NSI+Q09OQ0VQVCBBUlQ8L3RleHQ+PC9zdmc+", website: "", code: ""},
+  {title: "Molecular Property Prediction with Graph Neural Networks", status: "planned", year: "Upcoming", category: "Molecular machine learning", research_area: "Molecular Machine Learning", summary: "Planned molecular graph classification using fingerprint baselines, graph neural networks, PyTorch Geometric, and scaffold splits.", methods: ["Molecular graphs", "GCN/GIN", "PyTorch Geometric", "Scaffold splits"], image: "data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiB2aWV3Qm94PSIwIDAgNTYwIDM4MCI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJiZyIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjMGQzODRjIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMzQ2NDdjIi8+PC9saW5lYXJHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Im9yYiI+PHN0b3Agc3RvcC1jb2xvcj0iI2JiZThlYSIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzRhOWVhZiIvPjwvcmFkaWFsR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHdpZHRoPSI1NjAiIGhlaWdodD0iMzgwIiBmaWxsPSJ1cmwoI2JnKSIvPjxnIHN0cm9rZT0iIzliZGNlOCIgc3Ryb2tlLXdpZHRoPSI5IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9Ii45MiI+PHBhdGggZD0iTTExOSAxODFMMTg1IDk5TDI5NyAxMTNMMzc2IDE4MEwzMjAgMjg2TDE5MSAyNzZMMTE5IDE4MU0xODUgOTlMMTkxIDI3Nk0yOTcgMTEzTDMyMCAyODZNMzc2IDE4MEw0NzkgMTY0TTMyMCAyODZMNDMyIDMxMU0xMTkgMTgxTDQ5IDEyOCIvPjwvZz48ZyBzdHJva2U9IiNkMGVmZjMiIHN0cm9rZS13aWR0aD0iMyIgZmlsbD0idXJsKCNvcmIpIj48Y2lyY2xlIGN4PSIxMTkiIGN5PSIxODEiIHI9IjI0Ii8+PGNpcmNsZSBjeD0iMTg1IiBjeT0iOTkiIHI9IjI3Ii8+PGNpcmNsZSBjeD0iMjk3IiBjeT0iMTEzIiByPSIyMyIvPjxjaXJjbGUgY3g9IjM3NiIgY3k9IjE4MCIgcj0iMzAiLz48Y2lyY2xlIGN4PSIzMjAiIGN5PSIyODYiIHI9IjI2Ii8+PGNpcmNsZSBjeD0iMTkxIiBjeT0iMjc2IiByPSIyMiIvPjxjaXJjbGUgY3g9IjQ3OSIgY3k9IjE2NCIgcj0iMjEiLz48Y2lyY2xlIGN4PSI0MzIiIGN5PSIzMTEiIHI9IjE2Ii8+PGNpcmNsZSBjeD0iNDkiIGN5PSIxMjgiIHI9IjE5Ii8+PC9nPjxnIGZpbGw9IiMxNjNiNTciPjxjaXJjbGUgY3g9IjE4NSIgY3k9Ijk5IiByPSI4Ii8+PGNpcmNsZSBjeD0iMzc2IiBjeT0iMTgwIiByPSI5Ii8+PGNpcmNsZSBjeD0iMzIwIiBjeT0iMjg2IiByPSI3Ii8+PC9nPjx0ZXh0IHg9IjI2IiB5PSIzNTQiIGZpbGw9IiNkNGVhZmEiIGZvbnQtZmFtaWx5PSJBcmlhbCIgZm9udC1zaXplPSIxNCIgbGV0dGVyLXNwYWNpbmc9IjIiPk1PTEVDVUxBUiBHUkFQSCBMRUFSTklORzwvdGV4dD48dGV4dCB4PSI1MzMiIHk9IjM1NCIgdGV4dC1hbmNob3I9ImVuZCIgZmlsbD0iI2QzZWFmYSIgZm9udC1mYW1pbHk9IkFyaWFsIiBmb250LXNpemU9IjEyIiBvcGFjaXR5PSIuNjUiPkNPTkNFUFQgQVJUPC90ZXh0Pjwvc3ZnPg==", website: "", code: ""}
+];
+
+const pane = document.getElementById('right-pane');
+const pages = [...document.querySelectorAll('.page')];
+const availablePages = ['home','notes','projects','publications','cv','teaching','conferences'];
+const tabButtons = [...document.querySelectorAll('.nav-tab')];
+
+function applyTheme(theme) {
+  const value = theme === 'ivory' ? 'ivory' : 'sky';
+  document.documentElement.dataset.theme = value;
+  document.querySelectorAll('[data-set-theme]').forEach(btn => {
+    const selected = btn.dataset.setTheme === value;
+    btn.classList.toggle('active', selected);
+    btn.setAttribute('aria-pressed', String(selected));
+  });
+  // No storage dependency: the standalone preview remains functional offline.
+}
+
+document.querySelectorAll('[data-set-theme]').forEach(btn => btn.addEventListener('click', () => applyTheme(btn.dataset.setTheme)));
+function applyMode(mode) {
+  const dark = mode === 'dark';
+  document.documentElement.dataset.mode = dark ? 'dark' : 'light';
+  const btn = document.getElementById('contrast-toggle');
+  if (btn) {
+    btn.setAttribute('aria-pressed', String(dark));
+    btn.setAttribute('aria-label', dark ? 'Switch to light mode' : 'Switch to dark mode');
+    btn.querySelector('.mode-icon').textContent = dark ? '☀' : '☾';
+    btn.querySelector('.mode-label').textContent = dark ? 'Light' : 'Dark';
+  }
+}
+document.getElementById('contrast-toggle').addEventListener('click', () => applyMode(document.documentElement.dataset.mode === 'dark' ? 'light' : 'dark'));
+
+
+function showPage(pageName, updateHash = true) {
+  const selectedName = availablePages.includes(pageName) && (pageName !== 'teaching' || PROFILE.showTeaching) && (pageName !== 'conferences' || PROFILE.showConferences) ? pageName : 'home';
+  pages.forEach(page => {
+    const selected = page.dataset.view === selectedName;
+    page.hidden = !selected;
+    page.classList.toggle('active', selected);
+  });
+  tabButtons.forEach(tab => {
+    const selected = tab.dataset.page === selectedName;
+    tab.classList.toggle('active', selected);
+    if (selected) tab.setAttribute('aria-current', 'page');
+    else tab.removeAttribute('aria-current');
+  });
+  if (updateHash) history.replaceState(null, '', `#${selectedName}`);
+  if (window.matchMedia('(min-width:851px)').matches) pane.scrollTop = 0;
+  else window.scrollTo({ top: 0, behavior: 'instant' });
+}
+
+document.querySelectorAll('[data-page]').forEach(btn => {
+  btn.addEventListener('click', () => showPage(btn.dataset.page));
+});
+
+function setExternalLink(which, url) {
+  const link = document.querySelector(`[data-optional-link="${which}"]`);
+  if (!link || !url || !/^https:\/\//i.test(url)) return;
+  link.href = url;
+  link.hidden = false;
+}
+
+function initProfile() {
+  document.getElementById('email-profile').href = `mailto:${PROFILE.email}`;
+  setExternalLink('kaggle', PROFILE.kaggleUrl);
+  setExternalLink('scholar', PROFILE.scholarUrl);
+  setExternalLink('lab', PROFILE.labUrl);
+  const labLabel = document.getElementById('lab-link-label');
+  if (labLabel) labLabel.textContent = PROFILE.labName;
+  const yearLabel = document.getElementById('year');
+  if (yearLabel) yearLabel.textContent = String(new Date().getFullYear());
+  document.querySelectorAll('.nav-optional').forEach(tab => {
+    tab.hidden = tab.dataset.page === 'teaching' ? !PROFILE.showTeaching : !PROFILE.showConferences;
+  });
+}
+
+function safeText(value) { return String(value || '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c])); }
+
+function projectCard(item) {
+  const label = {'completed':'Completed', 'in-progress':'In progress', 'planned':'Planned'}[item.status] || 'Status unspecified';
+  const title = safeText(item.title);
+  const links = [];
+  if (item.website) links.push(`<a href="${safeText(item.website)}" target="_blank" rel="noopener noreferrer">Project website <span aria-hidden="true">↗</span></a>`);
+  if (item.code) links.push(`<a href="${safeText(item.code)}" target="_blank" rel="noopener noreferrer">GitHub / code <span aria-hidden="true">↗</span></a>`);
+  if (!links.length) links.push('<span class="project-link-pending">Project materials forthcoming</span>');
+  const tags = (item.methods || []).map(method => `<span>${safeText(method)}</span>`).join('');
+  return `<article class="project-row">
+    <div class="project-visual"><img class="project-image" src="${safeText(item.image)}" alt="Conceptual artwork for ${safeText(item.research_area)}; not an experimental figure" loading="lazy"></div>
+    <div class="project-content"><div class="project-topline"><span class="status-tag ${safeText(item.status)}">${label}</span><span class="project-area">${safeText(item.category)} · ${safeText(item.year)}</span></div>
+      <h3>${title}</h3><p>${safeText(item.summary)}</p>
+      <div class="project-methods">${tags}</div><div class="project-links">${links.join('')}</div>
+    </div></article>`;
+}
+
+function statusCounters() {
+  const counts = {completed:0, 'in-progress':0, planned:0};
+  PROJECTS.forEach(project => { if (project.status in counts) counts[project.status]++; });
+  const titles = [['completed','Completed'],['in-progress','In progress'],['planned','Planned / upcoming']];
+  return titles.map(([key,label]) => `<span><strong>${counts[key]}</strong>${label}</span>`).join('');
+}
+
+function initProjects() {
+  document.getElementById('home-counts').innerHTML = statusCounters();
+  document.getElementById('full-counts').innerHTML = statusCounters();
+  document.getElementById('metric-projects').textContent = String(PROJECTS.filter(p => p.status !== 'planned').length);
+  document.getElementById('metric-publications').textContent = String(PROFILE.publications.length);
+  document.getElementById('metric-awards').textContent = String(PROFILE.honors.length || PROFILE.awardsAndGrantsCount);
+  const cards = PROJECTS.map(projectCard).join('');
+  document.getElementById('home-project-list').innerHTML = cards;
+  document.getElementById('full-project-list').innerHTML = cards;
+}
+
+function initCV() {
+  if (!PROFILE.cvPdf) return;
+  document.getElementById('cv-empty').hidden = true;
+  const ready = document.getElementById('cv-ready');
+  ready.hidden = false;
+  document.getElementById('cv-download').href = PROFILE.cvPdf;
+  document.getElementById('cv-open').href = PROFILE.cvPdf;
+  document.getElementById('cv-frame').src = `${PROFILE.cvPdf}#toolbar=1`;
+}
+
+// Keep internal scrolling independent from the outer content navigation.
+document.querySelectorAll('[data-home-anchor]').forEach(anchor => anchor.addEventListener('click', event => {
+  event.preventDefault();
+  document.getElementById('featured-projects').scrollIntoView({behavior:'smooth', block:'start'});
+}));
+window.addEventListener('hashchange', () => {
+  const hash = location.hash.slice(1);
+  if (availablePages.includes(hash)) showPage(hash, false);
+});
+
+function initPublications() {
+  const items = PROFILE.publications;
+  const list = document.getElementById('home-publication-list');
+  const full = document.getElementById('publication-list');
+  const empty = document.getElementById('publication-empty');
+  if (!items.length) return;
+  const render = item => {
+    const title = safeText(item.title);
+    const meta = [item.authors, item.venue, item.year].filter(Boolean).map(safeText).join(' · ');
+    const link = item.url && /^https:\/\//i.test(item.url) ? `<a href="${safeText(item.url)}" target="_blank" rel="noopener noreferrer">Read paper ↗</a>` : '';
+    return `<article class="publication-entry"><h3>${title}</h3><p>${meta}</p>${link}</article>`;
+  };
+  list.innerHTML = items.map(render).join('');
+  full.innerHTML = items.map(render).join('');
+  full.hidden = false;
+  empty.hidden = true;
+}
+function initFutureSections() {
+  if (PROFILE.researchGroupName.trim()) {
+    const labSection = document.getElementById('home-lab');
+    if (labSection) labSection.hidden = false;
+    const el = document.getElementById('lab-details');
+    if (el) el.textContent = PROFILE.researchGroupName + (PROFILE.researchGroupDescription ? ' — ' + PROFILE.researchGroupDescription : '');
+  }
+  if (PROFILE.honors.length) {
+    const honorsSection = document.getElementById('home-honors');
+    if (honorsSection) honorsSection.hidden = false;
+    const honorsList = document.getElementById('honors-list');
+    if (honorsList) honorsList.innerHTML = PROFILE.honors.map(x => `<p>${safeText(x)}</p>`).join('');
+  }
+  const url = PROFILE.visitorEmbedUrl;
+  if (url && /^https:\/\//i.test(url)) {
+    document.getElementById('visitor-map').src = url;
+    document.getElementById('visitor-map-container').hidden = false;
+    document.getElementById('visitor-placeholder').hidden = true;
+  }
+}
+
+initProfile();
+initProjects();
+initPublications();
+initFutureSections();
+initCV();
+applyTheme('sky');
+applyMode('light');
+showPage(availablePages.includes(location.hash.slice(1)) ? location.hash.slice(1) : 'home', false);
+</script></body>
+</html>
