@@ -479,3 +479,190 @@ body {
     padding: 22px;
   }
 }
+
+
+/* =========================================
+   Section 02 — Selected Projects
+   Academic Homepage V7
+   ========================================= */
+
+/* Projects section */
+.projects-section {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* Introductory paragraph */
+.projects-intro {
+  max-width: 790px;
+  margin: 0 0 22px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #61798c;
+}
+
+/* Project status summary */
+.projects-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 22px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: #64849b;
+}
+
+.projects-summary span {
+  padding: 7px 12px;
+  background: #edf6fb;
+  border: 1px solid #dceaf3;
+  border-radius: 5px;
+}
+
+/* Scrollable project list */
+.project-list {
+  max-height: 590px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  background: #ffffff;
+  border: 1px solid #d7e5ee;
+  border-radius: 9px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #b4ccdc #f5f9fc;
+}
+
+/* Individual project */
+.project-item {
+  padding: 24px 27px;
+  border-bottom: 1px solid #e0eaf0;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+/* Project number and status */
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 11px;
+}
+
+.project-number {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #88a1b2;
+}
+
+/* Status labels */
+.project-status {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5px 9px;
+  border-radius: 4px;
+}
+
+.status-completed {
+  color: #397861;
+  background: #eaf5ef;
+}
+
+.status-progress {
+  color: #8c6c34;
+  background: #fbf3e2;
+}
+
+.status-planned {
+  color: #648098;
+  background: #edf2f6;
+}
+
+/* Project title */
+.project-item h3 {
+  margin: 0 0 11px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #234c69;
+}
+
+/* Project description */
+.project-item p {
+  max-width: 850px;
+  margin: 0 0 15px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #61798c;
+}
+
+/* Technical keywords */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 12px;
+}
+
+.project-tags span {
+  padding: 5px 8px;
+  background: #f1f7fa;
+  border: 1px solid #e0eaf0;
+  border-radius: 4px;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #5b819b;
+}
+
+/* Link to completed project */
+.project-link {
+  display: inline-block;
+  margin-top: 2px;
+
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #277cae;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #14577e;
+  text-decoration: underline;
+}
+
+/* Keyboard accessibility */
+.project-link:focus-visible {
+  outline: 2px solid #277cae;
+  outline-offset: 4px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .project-list {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .project-item {
+    padding: 21px 18px;
+  }
+
+  .project-item h3 {
+    font-size: 18px;
+  }
+
+  .projects-summary {
+    gap: 8px;
+  }
+}
+
