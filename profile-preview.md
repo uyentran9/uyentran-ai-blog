@@ -282,3 +282,73 @@ permalink: /profile-preview/
   </div>
 
 </section>
+
+
+<!-- =========================================
+     Section 03 — Education
+     ========================================= -->
+<section class="education-section" id="education">
+
+  <div class="section-heading">
+    <span class="section-number">03</span>
+    <div>
+      <span class="section-label">ACADEMIC BACKGROUND</span>
+      <h2>Education</h2>
+    </div>
+  </div>
+
+  <div class="academic-entry">
+
+    <div class="entry-header">
+      <h3>University of California, Berkeley</h3>
+      <span class="entry-date">2019</span>
+    </div>
+
+    <p class="entry-subtitle">
+      Bachelor of Arts in Statistics and Economics
+    </p>
+
+    <p class="entry-description">
+      Undergraduate training in statistics,
+      quantitative analysis, and economics.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================
+     Section 04 — Professional Experience
+     ========================================= -->
+<section class="experience-section" id="experience">
+
+  <div class="section-heading">
+    <span class="section-number">04</span>
+    <div>
+      <span class="section-label">PROFESSIONAL BACKGROUND</span>
+      <h2>Experience</h2>
+    </div>
+  </div>
+
+  <div class="academic-entry">
+
+    <div class="entry-header">
+      <h3>Abbott Diabetes Care</h3>
+      <span class="entry-date">Former</span>
+    </div>
+
+    <p class="entry-subtitle">
+      Pricing Analyst — Finance
+    </p>
+
+    <p class="entry-description">
+      Professional experience in quantitative
+      analysis, pricing, and financial
+      decision support within the healthcare industry.
+    </p>
+
+  </div>
+
+</section>
+
