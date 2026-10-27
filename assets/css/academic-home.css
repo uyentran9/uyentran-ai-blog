@@ -761,3 +761,121 @@ body {
   }
 }
 
+
+/* =========================================
+   Sections 03–06 — Academic Bottom Grid
+   ========================================= */
+
+/* Four-column academic summary */
+.academic-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  margin: 38px 0 60px;
+}
+
+/* Reset section spacing inside the grid */
+.academic-bottom-grid > section {
+  min-width: 0;
+  margin: 0;
+}
+
+/* Compact section headings */
+.academic-bottom-grid .section-heading {
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.academic-bottom-grid .section-number {
+  font-size: 28px;
+}
+
+.academic-bottom-grid .section-label {
+  font-size: 9px;
+  letter-spacing: 1.4px;
+}
+
+.academic-bottom-grid .section-heading h2 {
+  font-size: 19px;
+  line-height: 1.25;
+}
+
+/* Compact education and experience cards */
+.academic-bottom-grid .academic-entry {
+  padding: 16px;
+  box-shadow: none;
+}
+
+.academic-bottom-grid .entry-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.academic-bottom-grid .entry-header h3 {
+  font-size: 16px;
+}
+
+.academic-bottom-grid .entry-subtitle {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.academic-bottom-grid .entry-description {
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+/* Compact publications */
+.academic-bottom-grid .publication-group {
+  margin-bottom: 14px;
+}
+
+.academic-bottom-grid .publication-group h3 {
+  margin: 0 0 9px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+
+.academic-bottom-grid .publication-empty {
+  padding: 9px 11px;
+  font-size: 11px;
+}
+
+.academic-bottom-grid .publication-item {
+  padding: 12px;
+  margin-bottom: 9px;
+}
+
+.academic-bottom-grid .publication-item h4 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.academic-bottom-grid .publication-authors,
+.academic-bottom-grid .publication-type,
+.academic-bottom-grid .publication-item a {
+  font-size: 10px;
+}
+
+/* Visitors placeholder */
+.academic-bottom-grid .visitors-section .academic-entry {
+  background: #f0f7fb;
+}
+
+/* Medium screens: two columns */
+@media (max-width: 1300px) {
+  .academic-bottom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small screens: one column */
+@media (max-width: 700px) {
+  .academic-bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
