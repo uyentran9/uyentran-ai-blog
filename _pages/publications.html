@@ -4,7 +4,35 @@ title: "Publications"
 permalink: /publications/
 author_profile: true 
 ---
-<p>Coming soon.</p>
+
+<!--
+<p>Coming soon.</p>  
+-->  
+
+{% assign publications = site.data.publications %}
+
+{% if publications and publications.size > 0 %}
+<p><strong>{{ publications.size }} publication{% if publications.size != 1 %}s{% endif %}</strong> listed.</p>
+
+{% assign sorted_publications = publications | sort: "year" | reverse %}
+{% for paper in sorted_publications %}
+<article class="publication-entry" style="margin: 0 0 2rem; padding: 0 0 1.5rem; border-bottom: 1px solid var(--line);">
+  <h2 style="margin-bottom: 0.5rem;">{{ paper.title | escape }}</h2>
+  {% if paper.authors %}<p style="margin-bottom: 0.4rem;">{{ paper.authors | escape }}</p>{% endif %}
+  <p style="margin-bottom: 0.75rem;">
+    {% if paper.venue and paper.venue != "" %}<em>{{ paper.venue | escape }}</em>{% endif %}
+    {% if paper.year %}{% if paper.venue and paper.venue != "" %} · {% endif %}{{ paper.year | escape }}{% endif %}
+    {% if paper.status and paper.status != "" %} · {{ paper.status | escape }}{% endif %}
+  </p>
+  {% if paper.url and paper.url != "" %}<a href="{{ paper.url | escape }}" rel="noopener noreferrer">Read paper</a>{% endif %}
+  {% if paper.doi and paper.doi != "" %} · <a href="https://doi.org/{{ paper.doi | escape }}" rel="noopener noreferrer">DOI</a>{% endif %}
+</article>
+{% endfor %}
+
+{% else %}
+<p>No research publications listed yet.</p>
+<p>Peer-reviewed papers and preprints will be added here when available. Project technical reports are available on their respective project pages.</p>
+{% endif %}
 
 <!--
 {% if site.author.googlescholar %}
