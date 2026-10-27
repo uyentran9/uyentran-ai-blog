@@ -1,0 +1,89 @@
+# Single source of truth for research projects.
+# Valid status values: completed, in-progress, planned.
+# Images are paths relative to the website root; templates will apply relative_url.
+# Only update a project's status when its actual progress changes.
+
+- title: "Hepatic Risk Outcome Prediction"
+  status: completed
+  year: "2026"
+  category: "Clinical tabular · Machine learning"
+  research_area: "Clinical tabular"
+  summary: >-
+    Clinical outcome prediction under class imbalance, with model comparison,
+    stratified cross-validation, ensemble evaluation, and error analysis.
+  methods:
+    - Boosting
+    - Stratified CV
+    - OOF ensembling
+    - Log loss
+  image: "/images/hepatic-risk.png"
+  website: "https://uyentran9.github.io/hepatic-risk-prediction/"
+  code: "https://github.com/uyentran9/hepatic-risk-prediction"
+
+- title: "Investigating Vanishing Gradients and Early-Layer Trainability in Deep MLPs"
+  status: completed
+  year: "2026"
+  category: "Neural network optimization"
+  research_area: "Neural Network Optimization"
+  summary: >-
+    Controlled BloodMNIST experiments investigating gradient propagation,
+    early-layer trainability, network depth, initialization, and SGD optimization.
+  methods:
+    - PyTorch
+    - Deep MLPs
+    - Backpropagation
+    - Gradient analysis
+  image: "/images/gradient_vanishing.png"
+  website: ""
+  code: "https://github.com/uyentran9/gradient-vanishing"
+
+- title: "Comparative Evaluation of MLP and CNN Models for Blood Cell Classification"
+  status: in-progress
+  year: "2026"
+  category: "Biomedical computer vision"
+  research_area: "Biomedical Computer Vision"
+  summary: >-
+    Developing MLP and CNN baselines for eight-class blood-cell microscopy
+    classification, image preprocessing, augmentation, and model evaluation.
+  methods:
+    - PyTorch
+    - MLPs
+    - CNNs
+    - Image augmentation
+  image: "/images/bloodmnist-mlp-cnn.png"
+  website: ""
+  code: ""
+
+- title: "Biomedical Sentence Classification with Transformer Models"
+  status: planned
+  year: "Upcoming"
+  category: "Biomedical NLP"
+  research_area: "Biomedical NLP"
+  summary: >-
+    Planned biomedical sentence classification comparing TF-IDF baselines
+    with pretrained transformer models and fine-tuning.
+  methods:
+    - TF-IDF
+    - Tokenization
+    - Transformers
+    - Fine-tuning
+  image: "/images/pubmed-transformer.png"
+  website: ""
+  code: ""
+
+- title: "Molecular Property Prediction with Graph Neural Networks"
+  status: planned
+  year: "Upcoming"
+  category: "Molecular machine learning"
+  research_area: "Molecular Machine Learning"
+  summary: >-
+    Planned molecular graph classification using fingerprint baselines,
+    graph neural networks, PyTorch Geometric, and scaffold splits.
+  methods:
+    - Molecular graphs
+    - GCN/GIN
+    - PyTorch Geometric
+    - Scaffold splits
+  image: "/images/GNN_OGBG_MolHIV.png"
+  website: ""
+  code: ""
