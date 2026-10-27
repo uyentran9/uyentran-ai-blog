@@ -312,7 +312,109 @@ html[data-mode="dark"] .fixed-top-composition .library-watermark{opacity:.55}
 .v7-stat strong{font:24px/1 Georgia,serif;color:#1b78b3;font-weight:normal}
 .v7-sidebar-quote{margin:auto 0 8px;padding-top:38px;font:italic 11px/1.35 Georgia,serif;color:#7195af}
 @media(max-width:850px){.site-shell{display:block;height:auto;overflow:visible}.sidebar{height:auto;overflow:visible}.v7-sidebar-inner{min-height:0;max-width:560px;margin:auto}.sidebar::before{opacity:.45;height:155px}.v7-sidebar-inner .profile-name{white-space:normal}}
-</style></head>
+</style><style id="v7-readability-and-gothic-upgrade">
+/* V7 readability upgrade: larger type without changing authored wording or interactive behavior. */
+@media(min-width:851px){
+ .site-shell{grid-template-columns:clamp(248px,18.6vw,310px) minmax(0,1fr)}
+ .v7-sidebar-inner{padding:20px 22px 16px}
+ .v7-sidebar-inner .portrait-ring{width:116px;height:116px;margin-bottom:12px}
+ .v7-sidebar-inner .profile-name{font-size:clamp(20px,1.40vw,24px);white-space:normal;line-height:1.22;margin:0 0 4px}
+ .v7-sidebar-inner .profile-role{font-size:15px;margin-bottom:18px}
+ .v7-sidebar-inner .profile-bio{font:14px/1.58 var(--body-font);margin-bottom:17px}
+ .v7-side-links{font:14px/1.45 var(--body-font);gap:11px}
+ .v7-side-links a,.v7-side-links .side-fact{grid-template-columns:20px minmax(0,1fr);gap:9px}
+ .v7-side-links .side-icon{font-size:17px}
+ .v7-stats{font:14px/1.5 var(--body-font);gap:9px;margin-top:16px;padding-top:15px}
+ .v7-stat strong{font-size:27px}
+ .v7-sidebar-quote{font-size:13px;line-height:1.5}
+}
+/* Make muted text readable in both dark palettes while retaining color identity. */
+html[data-mode="dark"][data-theme="sky"]{--ink:#ffffff;--ink-2:#f2f8fd;--muted:#cfdfed;--muted-2:#b6cbdb;--accent:#bcdfff;--accent-strong:#d0eaff;--line:#49647b;--panel:#1b344a;--quote:#24465e}
+html[data-mode="dark"][data-theme="ivory"]{--ink:#fff9ef;--ink-2:#f6eadc;--muted:#e0d0bd;--muted-2:#c9b59e;--accent:#f2d19f;--accent-strong:#ffe3b9;--line:#665548;--panel:#382f28;--quote:#4c3f32}
+html[data-mode="dark"] .project-content>p,html[data-mode="dark"] .vision-section .interest-row p:not(.interest-question),html[data-mode="dark"] .v7-bottom-grid .section-desc{color:var(--muted)}
+html[data-mode="dark"] .project-image{filter:none}
+html[data-mode="dark"] .vision-section .interest-row{background:var(--panel)}
+/* Nav and research cards: more generous font sizing, padding and line-height. */
+.topbar{min-height:52px}.nav-tab{font-size:14px;font-weight:650}
+.theme-choice{font-size:12px}.theme-switch{transform:none}
+.eyebrow{font-size:11px;letter-spacing:1.35px}
+.intro-hero #home-title{font-size:clamp(39px,3.7vw,61px)}
+.intro-lead{font-size:clamp(19px,1.45vw,24px)}
+.intro-secondary{font-size:15px;line-height:1.55}
+.section-index span:last-child{font-size:11px;letter-spacing:1.5px}
+.section-title{font-size:clamp(27px,2vw,34px)}
+.vision-section .guiding-question{padding:16px 21px;margin:9px 0 10px}
+.guiding-question blockquote{font-size:clamp(20px,1.55vw,27px);line-height:1.39}
+.question-label{font-size:11px}
+.vision-bridge{font-size:14px;line-height:1.6;margin:9px 0}
+.vision-section .interest-list{gap:14px;margin-top:14px}
+.vision-section .interest-row{padding:18px 17px}
+.vision-section .interest-row h3{font-size:clamp(17px,1.2vw,20px);line-height:1.3}
+.vision-section .interest-question{font-size:14px;line-height:1.5!important}
+.vision-section .interest-row p:not(.interest-question){font-size:13.5px;line-height:1.56;margin:9px 0}
+.vision-section .tags span{font-size:11.5px;padding:4px 7px}
+.content-section{padding:22px 34px}
+/* Project list remains independently scrollable, now has genuinely legible entries. */
+.featured-section .section-title{font-size:25px}
+.featured-section .project-counts{margin:10px 0 11px}
+.featured-section .project-counts span{font-size:12px;padding:7px 11px}
+.project-scroll{max-height:min(52vh,520px)}
+.project-row{grid-template-columns:128px minmax(0,1fr);gap:17px;min-height:112px;padding:13px 15px}
+.project-image{height:86px;object-fit:cover}
+.project-topline{font-size:11px;line-height:1.4;margin-bottom:6px}
+.status-tag{font-size:11px;padding:3px 7px}
+.project-content h3{font:400 clamp(17px,1.15vw,20px)/1.32 var(--heading);margin:0 0 5px}
+.project-content>p{font-size:13.5px;line-height:1.5;margin:0 0 4px}
+.scroll-tip{font-size:12px}
+/* Keep the secondary pages, education, experience, publication, visitor and footer typography coherent. */
+#page-home>.timeline-section .timeline-item h4{font-size:17px}
+#page-home>.timeline-section .timeline-item p,.time-range{font-size:14px;line-height:1.6}
+#page-home>.publications-home-section .v7-report h4{font-size:18px}
+.v7-report p,.v7-report a,.v7-report small{font-size:13px}
+.section-desc,.secondary-head p,.notes-empty p,.cv-empty p{font-size:15px;line-height:1.7}
+.secondary-page .project-content>p{font-size:15px}
+.secondary-page .project-content h3{font-size:25px}
+.visitors-section p,.privacy-note{font-size:13px;line-height:1.6}
+/* Architectural images from the existing repository: bolder but behind readable text. */
+.fixed-top-composition .intro-hero{background:var(--paper)}
+.fixed-top-composition .library-watermark{
+ background-image:linear-gradient(90deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 91%,transparent) 28%,color-mix(in srgb,var(--paper) 48%,transparent) 67%,color-mix(in srgb,var(--paper) 12%,transparent) 100%),url("{{ '/images/gothic-library.png' | relative_url }}");
+ background-size:cover; background-position:center 47%;opacity:1;filter:none
+}
+html[data-mode="dark"] .fixed-top-composition .library-watermark{
+ background-image:linear-gradient(90deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 89%,transparent) 29%,rgba(12,20,28,.46) 69%,rgba(12,20,28,.25) 100%),url("{{ '/images/gothic-library.png' | relative_url }}");opacity:1;filter:none
+}
+html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition .library-watermark{
+ background-image:linear-gradient(90deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 89%,transparent) 29%,rgba(30,24,20,.49) 69%,rgba(30,24,20,.23) 100%),url("{{ '/images/gothic-library.png' | relative_url }}");opacity:1
+}
+.sidebar::before{height:300px;background:linear-gradient(to bottom,rgba(237,245,250,.88) 0%,rgba(237,245,250,.12) 53%,rgba(237,245,250,.02) 100%),url("{{ '/images/gothic-library2.png' | relative_url }}") center bottom / cover no-repeat;opacity:.97}
+.sidebar::after{background:linear-gradient(to bottom,rgba(241,249,253,.02),rgba(241,249,253,0) 67%,rgba(241,249,253,.03))}
+.v7-sidebar-inner{z-index:1}
+@media(max-width:1100px) and (min-width:851px){
+ .vision-section .interest-list{grid-template-columns:1fr}
+ .project-row{grid-template-columns:106px 1fr}
+ .project-image{height:80px}
+}
+@media(max-width:850px){
+ .sidebar::before{height:175px;opacity:.72}
+ .v7-sidebar-inner .profile-bio,.v7-side-links{font-size:14px}
+ .vision-section .interest-list{grid-template-columns:1fr}
+ .vision-section .interest-row p:not(.interest-question){font-size:14px}
+ .project-scroll{max-height:480px}
+}
+@media(max-width:620px){
+ .nav-tab{font-size:13px}
+ .fixed-top-composition .eyebrow{font-size:9px}
+ .fixed-top-composition .intro-lead{font-size:15px}
+ .project-row{grid-template-columns:95px 1fr;gap:11px;padding:12px}
+ .project-image{height:83px}
+ .project-content h3{font-size:17px}
+ .project-content>p{font-size:13px}
+ .section-title{font-size:27px}
+ .guiding-question blockquote{font-size:21px}
+}
+</style>
+</head>
 <body>
 <a class="skip-link" href="#main-content">Skip to main content</a>
 <div class="site-shell">
