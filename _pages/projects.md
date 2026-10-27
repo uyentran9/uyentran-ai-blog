@@ -30,7 +30,12 @@ I prioritize **rigorous empirical evaluation over headline performance metrics**
 
 <table>
   <thead>
-    <tr><th>Project</th><th>Research Area</th><th>Methods and Technologies<th style="white-space: nowrap; min-width: 130px;">Status</th></tr>
+    <tr>
+  <th>Project</th>
+  <th>Research Area</th>
+  <th>Methods and Technologies</th>
+  <th style="white-space: nowrap; min-width: 130px;">Status</th>
+</tr>
   </thead>
   <tbody>
   {% for project in project_items %}
