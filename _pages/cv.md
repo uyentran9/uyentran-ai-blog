@@ -1,5 +1,5 @@
 ---
-layout: archive
+layout: v7-inner
 title: "CV"
 permalink: /cv/
 author_profile: true
