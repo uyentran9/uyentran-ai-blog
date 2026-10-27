@@ -19,6 +19,10 @@
   image: "/images/hepatic-risk.png"
   website: "https://uyentran9.github.io/hepatic-risk-prediction/"
   code: "https://github.com/uyentran9/hepatic-risk-prediction"
+  id: "hepatic-risk"
+  overview_title: "Hepatic Risk Outcome Prediction"
+  overview_research_area: "Clinical tabular"
+  overview_methods: "Tabular ML, boosting, Stratified Cross-Validation, OOF Ensembling, Log Loss"
 
 - title: "Investigating Vanishing Gradients and Early-Layer Trainability in Deep MLPs"
   status: completed
@@ -36,6 +40,10 @@
   image: "/images/gradient_vanishing.png"
   website: ""
   code: "https://github.com/uyentran9/gradient-vanishing"
+  id: "gradient-vanishing"
+  overview_title: "Investigating Vanishing Gradients and Early-Layer Trainability in Deep MLPs"
+  overview_research_area: "Neural Network Optimization"
+  overview_methods: "PyTorch, Deep MLPs, Backpropagation, Gradient Analysis, Weight Initialization, SGD"
 
 - title: "Comparative Evaluation of MLP and CNN Models for Blood Cell Classification"
   status: in-progress
@@ -53,6 +61,10 @@
   image: "/images/bloodmnist-mlp-cnn.png"
   website: ""
   code: ""
+  id: "bloodmnist-cnn"
+  overview_title: "Biomedical Microscopy Classification with MLP and CNN Baselines (BloodMNIST)"
+  overview_research_area: "Biomedical Computer Vision"
+  overview_methods: "PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Evaluation"
 
 - title: "Biomedical Sentence Classification with Transformer Models"
   status: planned
@@ -70,6 +82,10 @@
   image: "/images/pubmed-transformer.png"
   website: ""
   code: ""
+  id: "pubmed-rct"
+  overview_title: "PubMed RCT Sentence Classification with Transformer Models"
+  overview_research_area: "Biomedical NLP"
+  overview_methods: "TF-IDF Baselines, Tokenization, Embeddings, Pretrained Transformers, Fine-Tuning"
 
 - title: "Molecular Property Prediction with Graph Neural Networks"
   status: planned
@@ -87,3 +103,7 @@
   image: "/images/GNN_OGBG_MolHIV.png"
   website: ""
   code: ""
+  id: "molhiv-gnn"
+  overview_title: "Molecular Graph Classification with GNN Baselines (OGBG-MolHIV)"
+  overview_research_area: "Molecular Machine Learning"
+  overview_methods: "Molecular Graphs, Fingerprint Baselines, Message Passing, GCN/GIN, PyTorch Geometric, Scaffold Splits"
