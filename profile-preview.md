@@ -352,3 +352,79 @@ permalink: /profile-preview/
 
 </section>
 
+
+<!-- =========================================
+     Section 05 — Publications & Research Outputs
+     ========================================= -->
+<section class="publications-section" id="publications">
+
+  <div class="section-heading">
+    <span class="section-number">05</span>
+    <div>
+      <span class="section-label">SCHOLARLY WORK</span>
+      <h2>Publications &amp; Research Outputs</h2>
+    </div>
+  </div>
+
+  <!-- Peer-reviewed publications -->
+  <div class="publication-group">
+    <h3>Peer-Reviewed Publications</h3>
+
+    <p class="publication-empty">
+      No peer-reviewed publications to date.
+    </p>
+  </div>
+
+  <!-- Independent technical reports -->
+  <div class="publication-group">
+    <h3>Technical Reports</h3>
+
+    <article class="publication-item">
+      <span class="publication-year">2026</span>
+
+      <h4>
+        Investigating Vanishing Gradients and Early-Layer
+        Trainability Across Network Depth in Deep MLPs
+      </h4>
+
+      <p class="publication-authors">
+        Victoria Tran
+      </p>
+
+      <p class="publication-type">
+        Independent Technical Report
+      </p>
+
+      <a
+        href="https://uyentran9.github.io/gradient-vanishing/files/gradient_vanishing_technical_report_uyentran.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Technical Report
+      </a>
+    </article>
+
+    <article class="publication-item">
+      <span class="publication-year">2026</span>
+
+      <h4>Hepatic Risk Outcome Prediction</h4>
+
+      <p class="publication-authors">
+        Victoria Tran
+      </p>
+
+      <p class="publication-type">
+        Kaggle Competition Technical Report
+      </p>
+
+      <a
+        href="https://uyentran9.github.io/hepatic-risk-prediction/files/HepaticRisk_TechnicalReport_UyenTran.pdf"
+        target="_blank"
+        rel="noopener noreferrer">
+        View Technical Report
+      </a>
+    </article>
+
+  </div>
+
+</section>
+
