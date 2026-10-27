@@ -69,7 +69,7 @@ html[data-mode="dark"] .library-watermark{opacity:.29;filter:grayscale(.3) satur
 .empty-pub h3{font:400 28px var(--heading);margin:6px 0 10px}
 .empty-pub p{max-width:560px;font-size:13px;line-height:1.9;color:var(--muted)}
 .pub-mark{font-size:28px;color:var(--accent)}
-/* Publications become data-driven when real papers are added to PROFILE.publications */
+/* Publications are populated from Jekyll _data/publications.yml. */
 .publication-item{display:grid;grid-template-columns:80px minmax(0,1fr);gap:24px;border-top:1px solid var(--line);padding:22px 0}
 .publication-year{font-size:13px;color:var(--muted)}
 .publication-item h3{font:400 25px/1.3 var(--heading);margin:0 0 7px}
@@ -597,7 +597,7 @@ html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition .library-water
       </div>
     </div>
   </div>
-</section><section aria-labelledby="home-publications-title" class="content-section publications-home-section" id="home-publications"><div class="section-index"><span>05</span><span>PUBLICATIONS</span></div><div class="split-heading"><div><h2 class="section-title serif" id="home-publications-title">Publications<span class="period">.</span></h2></div><a class="plain-link" href="{{ '/publications/' | relative_url }}">View publications ↗</a></div><div aria-label="Scrollable publications list" class="publication-home-scroll" id="home-publication-list" role="region" tabindex="0"><article class="v7-report placeholder-paper"><small>Future publication · Placeholder</small><h4>Paper 1</h4><p>Coming Soon</p></article><article class="v7-report placeholder-paper"><small>Future publication · Placeholder</small><h4>Paper 2</h4><p>Coming Soon</p></article></div></section><section aria-labelledby="outlook-title" class="content-section outlook-section" id="long-term-outlook">
+</section><section aria-labelledby="home-publications-title" class="content-section publications-home-section" id="home-publications"><div class="section-index"><span>05</span><span>PUBLICATIONS</span></div><div class="split-heading"><div><h2 class="section-title serif" id="home-publications-title">Publications<span class="period">.</span></h2></div><a class="plain-link" href="{{ '/publications/' | relative_url }}">View publications ↗</a></div><div aria-label="Publication count" class="project-counts" id="home-publication-counts"><span><strong id="home-publication-total">0</strong>Publications</span></div><div aria-label="Scrollable publications list" class="publication-home-scroll" id="home-publication-list" role="region" tabindex="0"><article class="v7-report placeholder-paper"><small>Future publication · Placeholder</small><h4>Paper 1</h4><p>Coming Soon</p></article><article class="v7-report placeholder-paper"><small>Future publication · Placeholder</small><h4>Paper 2</h4><p>Coming Soon</p></article></div></section><section aria-labelledby="outlook-title" class="content-section outlook-section" id="long-term-outlook">
 <div class="section-index"><span>06</span><span>LONG-TERM VISION</span></div>
 <h2 class="outlook-heading serif" id="outlook-title">Beyond one model. <em>Beyond one domain.</em></h2>
 <p>My long-term goal is to contribute to generalizable machine learning methods that help researchers understand living systems and advance discovery in biomedical and the broader life sciences.</p>
@@ -694,22 +694,23 @@ const PROFILE = {
   researchGroupName: '',                // Filled only once an official affiliation exists.
   researchGroupDescription: '',
   honors: [],                            // Verified honors and grants only.
-  publications: [],                       // Add verified publications here in a future version.
   awardsAndGrantsCount: 0,                 // Update only with verified awards or grants.
   showTeaching: false,                    // Change to true when there are teaching roles to list.
   showConferences: false,                 // Change to true when there are conference entries.
   cvPdf: ''                              // Example: 'assets/academic-cv.pdf' after uploading the file.
 };
 
-// Add projects here; both project views and status counts update automatically.
-// Never present a planned project as completed research.
-const PROJECTS = [
-  {title: "Hepatic Risk Outcome Prediction", status: "completed", year: "2026", category: "Clinical tabular · Machine learning", research_area: "Clinical tabular", summary: "Clinical outcome prediction under class imbalance, with model comparison, stratified cross-validation, ensemble evaluation, and error analysis.", methods: ["Boosting", "Stratified CV", "OOF ensembling", "Log loss"], image: "{{ '/images/hepatic-risk.png' | relative_url }}", website: "https://uyentran9.github.io/hepatic-risk-prediction/", code: "https://github.com/uyentran9/hepatic-risk-prediction"},
-  {title: "Investigating Vanishing Gradients and Early-Layer Trainability in Deep MLPs", status: "completed", year: "2026", category: "Neural network optimization", research_area: "Neural Network Optimization", summary: "Controlled BloodMNIST experiments investigating gradient propagation, early-layer trainability, network depth, initialization, and SGD optimization.", methods: ["PyTorch", "Deep MLPs", "Backpropagation", "Gradient analysis"], image: "{{ '/images/gradient_vanishing.png' | relative_url }}", website: "", code: "https://github.com/uyentran9/gradient-vanishing"},
-  {title: "Comparative Evaluation of MLP and CNN Models for Blood Cell Classification", status: "in-progress", year: "2026", category: "Biomedical computer vision", research_area: "Biomedical Computer Vision", summary: "Developing MLP and CNN baselines for eight-class blood-cell microscopy classification, image preprocessing, augmentation, and model evaluation.", methods: ["PyTorch", "MLPs", "CNNs", "Image augmentation"], image: "{{ '/images/bloodmnist-mlp-cnn.png' | relative_url }}", website: "", code: ""},
-  {title: "Biomedical Sentence Classification with Transformer Models", status: "planned", year: "Upcoming", category: "Biomedical NLP", research_area: "Biomedical NLP", summary: "Planned biomedical sentence classification comparing TF-IDF baselines with pretrained transformer models and fine-tuning.", methods: ["TF-IDF", "Tokenization", "Transformers", "Fine-tuning"], image: "{{ '/images/pubmed-transformer.png' | relative_url }}", website: "", code: ""},
-  {title: "Molecular Property Prediction with Graph Neural Networks", status: "planned", year: "Upcoming", category: "Molecular machine learning", research_area: "Molecular Machine Learning", summary: "Planned molecular graph classification using fingerprint baselines, graph neural networks, PyTorch Geometric, and scaffold splits.", methods: ["Molecular graphs", "GCN/GIN", "PyTorch Geometric", "Scaffold splits"], image: "{{ '/images/GNN_OGBG_MolHIV.png' | relative_url }}", website: "", code: ""}
-];
+// Jekyll reads _data/projects.yml and _data/publications.yml at build time.
+// Update those YAML files; Home counters and project/publication lists update automatically.
+// The image paths in projects.yml are site-root-relative, so prepend Jekyll's baseurl.
+const SITE_BASEURL = {{ site.baseurl | default: '' | jsonify }};
+const PROJECTS = ({{ site.data.projects | jsonify }} || []).map(project => ({
+  ...project,
+  image: project.image && project.image.startsWith('/')
+    ? `${SITE_BASEURL}${project.image}`
+    : (project.image || '')
+}));
+const PUBLICATIONS = {{ site.data.publications | jsonify }} || [];
 
 const pane = document.getElementById('right-pane');
 const pages = [...document.querySelectorAll('.page')];
@@ -815,7 +816,7 @@ function initProjects() {
   document.getElementById('home-counts').innerHTML = statusCounters();
   document.getElementById('full-counts').innerHTML = statusCounters();
   document.getElementById('metric-projects').textContent = String(PROJECTS.filter(p => p.status !== 'planned').length);
-  document.getElementById('metric-publications').textContent = String(PROFILE.publications.length);
+  document.getElementById('metric-publications').textContent = String(PUBLICATIONS.length);
   document.getElementById('metric-awards').textContent = String(PROFILE.honors.length || PROFILE.awardsAndGrantsCount);
   const cards = PROJECTS.map(projectCard).join('');
   document.getElementById('home-project-list').innerHTML = cards;
@@ -843,7 +844,9 @@ window.addEventListener('hashchange', () => {
 });
 
 function initPublications() {
-  const items = PROFILE.publications;
+  const items = PUBLICATIONS;
+  const count = document.getElementById('home-publication-total');
+  if (count) count.textContent = String(items.length);
   const list = document.getElementById('home-publication-list');
   const full = document.getElementById('publication-list');
   const empty = document.getElementById('publication-empty');
