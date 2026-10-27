@@ -1,4 +1,5 @@
----
+---  
+layout: v7-inner
 title: "Tabular & Time-Series Data"
 permalink: /notes/tabular-and-time-series-data/
 tags: [machine-learning, python, statistics]
