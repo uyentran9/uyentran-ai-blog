@@ -30,7 +30,7 @@ I prioritize **rigorous empirical evaluation over headline performance metrics**
 
 <table>
   <thead>
-    <tr><th>Project</th><th>Research Area</th><th>Methods and Technologies</th><th>Status</th></tr>
+    <tr><th>Project</th><th>Research Area</th><th>Methods and Technologies<th style="white-space: nowrap; min-width: 130px;">Status</th></tr>
   </thead>
   <tbody>
   {% for project in project_items %}
@@ -38,7 +38,7 @@ I prioritize **rigorous empirical evaluation over headline performance metrics**
       <td>{{ project.overview_title | default: project.title | escape }}</td>
       <td>{{ project.overview_research_area | default: project.research_area | escape }}</td>
       <td>{% if project.overview_methods %}{{ project.overview_methods | escape }}{% else %}{% for method in project.methods %}{{ method | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</td>
-      <td>{% case project.status %}{% when 'completed' %}Completed{% when 'in-progress' %}In progress{% when 'planned' %}Planned{% else %}{{ project.status | escape }}{% endcase %}</td>
+      <td style="white-space: nowrap; min-width: 130px;">{% case project.status %}{% when 'completed' %}Completed{% when 'in-progress' %}In progress{% when 'planned' %}Planned{% else %}{{ project.status | escape }}{% endcase %}</td>
     </tr>
   {% endfor %}
   </tbody>
