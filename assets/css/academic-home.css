@@ -666,3 +666,98 @@ body {
   }
 }
 
+
+/* =========================================
+   Sections 03–04 — Education & Experience
+   Academic Homepage 
+   ========================================= */
+
+/* Section spacing */
+.education-section,
+.experience-section {
+  width: 100%;
+  margin-bottom: 76px;
+}
+
+/* Education and experience entry */
+.academic-entry {
+  padding: 26px 30px;
+  background: #ffffff;
+  border: 1px solid #d7e5ee;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(38, 78, 107, 0.035);
+}
+
+/* Institution or employer and date */
+.entry-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.entry-header h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #234c69;
+}
+
+/* Graduation year or employment period */
+.entry-date {
+  flex-shrink: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #7895a9;
+}
+
+/* Degree or job title */
+.entry-subtitle {
+  margin: 0 0 13px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #427393;
+}
+
+/* Short description */
+.entry-description {
+  max-width: 760px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #61798c;
+}
+
+/* Subtle hover treatment */
+.academic-entry:hover {
+  border-color: #bfd8e8;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .education-section,
+  .experience-section {
+    margin-bottom: 55px;
+  }
+
+  .academic-entry {
+    padding: 22px 19px;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .entry-header h3 {
+    font-size: 19px;
+  }
+}
+
