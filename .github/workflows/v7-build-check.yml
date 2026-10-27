@@ -1,0 +1,41 @@
+name: V7 Jekyll Build Check
+
+on:
+  pull_request:
+    branches: [master]
+  push:
+    branches: [academic-website-v7-10262026]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout website
+        uses: actions/checkout@v4
+      - name: Setup Ruby and dependencies
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+      - name: Build Jekyll site without publishing
+        env:
+          JEKYLL_ENV: production
+        run: bundle exec jekyll build --baseurl /uyentran-ai-blog --destination _site
+      - name: Validate V7 homepage and Gothic assets
+        shell: bash
+        run: |
+          test -f _site/index.html
+          test -f _site/images/gothic-library.png
+          test -f _site/images/gothic-library2.png
+          grep -q 'Paper 1' _site/index.html
+          grep -q 'Paper 2' _site/index.html
+      - name: Save generated website for inspection
+        uses: actions/upload-artifact@v4
+        with:
+          name: v7-built-website
+          path: _site/
+          retention-days: 7

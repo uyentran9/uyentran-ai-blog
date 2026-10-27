@@ -1,0 +1,122 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title | default: site.title }}</title>
+
+  <link rel="stylesheet"
+        href="{{ '/assets/css/academic-home.css' | relative_url }}">
+</head>
+
+<body>
+  <div class="academic-layout">
+
+
+<!-- Fixed profile sidebar -->
+<aside class="academic-sidebar">
+  <div class="sidebar-content">
+
+    <!-- Profile photo -->
+    <img
+      class="profile-avatar"
+      src="{{ '/images/avatar.jpg' | relative_url }}"
+      alt="Victoria (Uyen) Tran">
+
+    <!-- Name and academic identity -->
+    <h2>Victoria Tran (Uyen Tran)</h2>
+    <p class="profile-role">Aspiring AI Researcher</p>
+
+    <!-- Short academic biography -->
+    <p class="profile-bio">
+      Machine learning for biomedical and scientific discovery,
+      with interests in representation learning, multimodal
+      modeling, and reliable AI for real-world applications.
+    </p>
+
+    
+<!-- Education and professional background -->
+<div class="profile-details">
+  <p>⌖ &nbsp; San Francisco Bay Area, USA</p>
+  <p>▣ &nbsp; UC Berkeley<br>
+     &emsp; Statistics &amp; Economics (B.A.)</p>
+  <p>▣ &nbsp; Abbott Diabetes Care<br>
+     &emsp; Former Pricing Analyst</p>
+</div>
+
+<!-- Academic and professional links -->
+<div class="profile-links">
+  <a href="mailto:myuyen.t.tran@gmail.com">✉ &nbsp; Email</a>
+  <a href="https://github.com/uyentran9">◉ &nbsp; GitHub</a>
+  <a href="https://www.kaggle.com/myuyentran">K &nbsp; Kaggle</a>
+</div>
+
+<!-- Academic statistics -->
+<div class="profile-stats">
+  <p>0 &nbsp;&nbsp; Publications</p>
+  <p>2 &nbsp;&nbsp; Projects</p>
+  <p>0 &nbsp;&nbsp; Awards &amp; Grants</p>
+  <p>0 &nbsp;&nbsp; Conferences</p>
+  <p>0 &nbsp;&nbsp; Teaching</p>
+</div>
+
+
+    <!-- Academic and professional links -->
+    <div class="profile-links">
+      <a href="mailto:myuyen.t.tran@gmail.com">Email</a>
+      <a href="https://github.com/uyentran9">GitHub</a>
+      <a href="https://www.kaggle.com/myuyentran">Kaggle</a>
+    </div>
+
+    <!-- Academic statistics -->
+    <div class="profile-stats">
+      <p>0 — Publications</p>
+      <p>2 — Completed Projects</p>
+      <p>0 — Awards &amp; Grants</p>
+    </div>
+
+  </div>
+</aside>
+
+
+    <!-- Main website area -->
+    <div class="academic-main">
+
+      <!-- Fixed top navigation -->
+      <nav class="academic-nav" aria-label="Main navigation">
+
+      <a href="{{ '/' | relative_url }}">Home</a>
+
+      <a href="{{ '/blog/' | relative_url }}">Notes</a>
+
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+
+      <a href="{{ '/publications/' | relative_url }}">Publications</a>
+
+      <a href="{{ '/cv/' | relative_url }}">CV</a>
+
+      </nav>
+
+      <!-- Gothic library banner -->
+      <header class="academic-hero">
+        <h1>Victoria (Uyen) Tran</h1>
+        <p>From Statistics to AI for Biomedical and Beyond</p>
+      </header>
+
+      <!-- Content from profile-preview.md or index.md -->
+      <main class="academic-content">
+        {{ content }}
+      </main>
+
+    </div>
+  </div>
+
+  <script defer
+          src="{{ '/assets/js/academic-home.js' | relative_url }}">
+  </script>
+</body>
+</html>

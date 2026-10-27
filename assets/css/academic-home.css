@@ -1,0 +1,881 @@
+/* Academic Homepage — Victoria Tran (Uyen Tran) */
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  background: #f7fbfd;
+  color: #203a50;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Two-column academic layout */
+.academic-layout {
+  display: grid;
+  grid-template-columns: 24% 76%;
+  min-height: 100vh;
+}
+
+/* Fixed left profile sidebar */
+.academic-sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+
+  background-color: #edf7fc;
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(247, 251, 253, 0.98) 0%,
+      rgba(247, 251, 253, 0.90) 60%,
+      rgba(247, 251, 253, 0.45) 100%
+    ),
+    url("../../images/gothic-library2.png");
+
+  background-repeat: no-repeat;
+  background-position: center, bottom center;
+  background-size: cover, 100% auto;
+  border-right: 1px solid #d5e5ef;
+}
+
+/* Sidebar content */
+.sidebar-content {
+  position: relative;
+  z-index: 1;
+  padding: 32px 24px;
+}
+
+.sidebar-content h2 {
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 0 12px;
+}
+
+.sidebar-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #5c7284;
+}
+
+/* Main content area */
+.academic-main {
+  min-width: 0;
+}
+
+/* Gothic library banner */
+.academic-hero {
+  min-height: 300px;
+  padding: 75px 60px;
+
+  background-image:
+    linear-gradient(
+      to right,
+      rgba(247, 251, 253, 0.80),
+      rgba(247, 251, 253, 0.20)
+    ),
+    url("../../images/gothic-library.png");
+
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  border-bottom: 1px solid #d5e5ef;
+}
+
+.academic-hero h1 {
+  font-size: clamp(38px, 4.5vw, 64px);
+  font-weight: normal;
+  margin: 0 0 12px;
+  color: #163a5b;
+}
+
+.academic-hero p {
+  font-size: 20px;
+  font-style: italic;
+  color: #456d91;
+  margin: 0;
+}
+
+/* Page content */
+.academic-content {
+  padding: 48px 60px 100px;
+  max-width: 1500px;
+}
+
+.academic-content h1,
+.academic-content h2 {
+  color: #203a50;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+  .academic-layout {
+    display: block;
+  }
+
+  .academic-sidebar {
+    position: relative;
+    height: auto;
+    min-height: 240px;
+  }
+
+  .academic-hero {
+    min-height: 230px;
+    padding: 55px 24px;
+  }
+
+  .academic-content {
+    padding: 32px 24px 70px;
+  }
+}  
+
+
+/* =========================================
+   Academic Profile Sidebar 
+   ========================================= */
+
+/* Profile photograph */
+.profile-avatar {
+  display: block;
+  width: 108px;
+  height: 108px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  outline: 1px solid #b9d5e6;
+  margin: 0 auto 14px;
+}
+
+/* Profile name and academic role */
+.sidebar-content h2 {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 3px;
+  color: #193650;
+}
+
+.profile-role {
+  text-align: center;
+  font-family: Georgia, serif;
+  font-size: 13px;
+  font-style: italic;
+  color: #7994aa;
+  margin: 0 0 26px;
+}
+
+/* Short biography */
+.profile-bio {
+  margin-bottom: 26px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.6;
+  color: #49667e;
+}
+
+/* Academic background */
+.profile-details,
+.profile-links {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.profile-details p {
+  margin: 0 0 14px;
+  line-height: 1.5;
+}
+
+/* Social and academic links */
+.profile-links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  margin-top: 18px;
+}
+
+.profile-links a {
+  color: #355d7a;
+  text-decoration: none;
+}
+
+.profile-links a:hover {
+  color: #1d76af;
+  text-decoration: underline;
+}
+
+/* Publication and project counters */
+.profile-stats {
+  border-top: 1px solid #d0e0ea;
+  margin-top: 25px;
+  padding-top: 17px;
+  font-family: Arial, sans-serif;
+}
+
+.profile-stats p {
+  font-size: 13px;
+  margin: 0 0 12px;
+  color: #607e93;
+}
+
+.profile-stats p::first-letter {
+  font-family: Georgia, serif;
+  font-size: 23px;
+  color: #287caf;
+}
+
+/* Preserve the Gothic library background */
+.academic-sidebar {
+  background-position: center, bottom center;
+  background-repeat: no-repeat;
+  background-size: cover, 100% auto;
+}
+
+
+/* =========================================
+   Academic Homepage — Top Navigation
+   ========================================= */
+
+/* Keep the top menu visible while scrolling */
+.academic-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  gap: 34px;
+
+  min-height: 48px;
+  padding: 0 32px;
+
+  background: rgba(247, 251, 253, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #d8e5ed;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation links */
+.academic-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+
+  color: #354f66;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.academic-nav a:hover {
+  color: #1c6b9c;
+  border-bottom-color: #75a8c8;
+}
+
+/* Highlight Home on the homepage */
+.academic-nav a:first-child {
+  color: #185f94;
+  font-weight: 600;
+  border-bottom-color: #287caf;
+}
+
+/* Adapt navigation to narrow screens */
+@media (max-width: 800px) {
+  .academic-nav {
+    gap: 22px;
+    padding: 0 18px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .academic-nav a {
+    flex-shrink: 0;
+  }
+}
+
+
+/* =========================================
+   Research Directions — Academic 
+   ========================================= */
+
+/* Research section */
+.research-section {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* Section heading */
+.section-heading {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.section-number {
+  font-family: Georgia, serif;
+  font-size: 38px;
+  font-weight: 400;
+  line-height: 1;
+  color: #aac8da;
+}
+
+.section-label {
+  display: block;
+  margin-bottom: 8px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #4981a5;
+}
+
+.section-heading h2 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(27px, 3vw, 38px);
+  font-weight: 400;
+  color: #193b57;
+}
+
+/* Central research question */
+.research-question {
+  padding: 30px 34px;
+  margin-bottom: 25px;
+
+  background: #edf6fb;
+  border-left: 3px solid #78aaca;
+  border-radius: 0 8px 8px 0;
+}
+
+.question-label {
+  display: block;
+  margin-bottom: 12px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.7px;
+  color: #4f87aa;
+}
+
+.research-question p {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(17px, 2vw, 22px);
+  line-height: 1.65;
+  color: #24445d;
+}
+
+.research-question em {
+  color: #1c6798;
+}
+
+/* Introductory paragraph */
+.research-intro {
+  max-width: 760px;
+  margin: 0 0 26px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #61798c;
+}
+
+/* Three research cards */
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.research-card {
+  min-width: 0;
+  padding: 24px 21px;
+  background: #ffffff;
+  border: 1px solid #d7e5ee;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(38, 78, 107, 0.04);
+}
+
+.research-card h3 {
+  margin: 0 0 18px;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #214963;
+}
+
+.research-card p {
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #61798c;
+}
+
+/* Research question inside each card */
+.research-card .research-card-question {
+  color: #326b91;
+  font-style: italic;
+}
+
+/* Research keywords */
+.research-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 20px;
+}
+
+.research-tags span {
+  padding: 5px 8px;
+  background: #f0f7fb;
+  border: 1px solid #dcebf3;
+  border-radius: 4px;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #527f9c;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+  .research-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+  .section-heading {
+    gap: 12px;
+  }
+
+  .section-number {
+    font-size: 30px;
+  }
+
+  .research-question {
+    padding: 22px;
+  }
+
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .research-card {
+    padding: 22px;
+  }
+}
+
+
+/* =========================================
+   Section 02 — Selected Projects
+   Academic Homepage V7
+   ========================================= */
+
+/* Projects section */
+.projects-section {
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+/* Introductory paragraph */
+.projects-intro {
+  max-width: 790px;
+  margin: 0 0 22px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.8;
+  color: #61798c;
+}
+
+/* Project status summary */
+.projects-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: 22px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  color: #64849b;
+}
+
+.projects-summary span {
+  padding: 7px 12px;
+  background: #edf6fb;
+  border: 1px solid #dceaf3;
+  border-radius: 5px;
+}
+
+/* Scrollable project list */
+.project-list {
+  max-height: 590px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+
+  background: #ffffff;
+  border: 1px solid #d7e5ee;
+  border-radius: 9px;
+
+  scrollbar-width: thin;
+  scrollbar-color: #b4ccdc #f5f9fc;
+}
+
+/* Individual project */
+.project-item {
+  padding: 24px 27px;
+  border-bottom: 1px solid #e0eaf0;
+}
+
+.project-item:last-child {
+  border-bottom: none;
+}
+
+/* Project number and status */
+.project-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 11px;
+}
+
+.project-number {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  color: #88a1b2;
+}
+
+/* Status labels */
+.project-status {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  padding: 5px 9px;
+  border-radius: 4px;
+}
+
+.status-completed {
+  color: #397861;
+  background: #eaf5ef;
+}
+
+.status-progress {
+  color: #8c6c34;
+  background: #fbf3e2;
+}
+
+.status-planned {
+  color: #648098;
+  background: #edf2f6;
+}
+
+/* Project title */
+.project-item h3 {
+  margin: 0 0 11px;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: #234c69;
+}
+
+/* Project description */
+.project-item p {
+  max-width: 850px;
+  margin: 0 0 15px;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.75;
+  color: #61798c;
+}
+
+/* Technical keywords */
+.project-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 12px;
+}
+
+.project-tags span {
+  padding: 5px 8px;
+  background: #f1f7fa;
+  border: 1px solid #e0eaf0;
+  border-radius: 4px;
+
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  color: #5b819b;
+}
+
+/* Link to completed project */
+.project-link {
+  display: inline-block;
+  margin-top: 2px;
+
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  color: #277cae;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  color: #14577e;
+  text-decoration: underline;
+}
+
+/* Keyboard accessibility */
+.project-link:focus-visible {
+  outline: 2px solid #277cae;
+  outline-offset: 4px;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .project-list {
+    max-height: none;
+    overflow: visible;
+  }
+
+  .project-item {
+    padding: 21px 18px;
+  }
+
+  .project-item h3 {
+    font-size: 18px;
+  }
+
+  .projects-summary {
+    gap: 8px;
+  }
+}
+
+
+/* =========================================
+   Sections 03–04 — Education & Experience
+   Academic Homepage 
+   ========================================= */
+
+/* Section spacing */
+.education-section,
+.experience-section {
+  width: 100%;
+  margin-bottom: 76px;
+}
+
+/* Education and experience entry */
+.academic-entry {
+  padding: 26px 30px;
+  background: #ffffff;
+  border: 1px solid #d7e5ee;
+  border-radius: 8px;
+  box-shadow: 0 3px 12px rgba(38, 78, 107, 0.035);
+}
+
+/* Institution or employer and date */
+.entry-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 8px;
+}
+
+.entry-header h3 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #234c69;
+}
+
+/* Graduation year or employment period */
+.entry-date {
+  flex-shrink: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  color: #7895a9;
+}
+
+/* Degree or job title */
+.entry-subtitle {
+  margin: 0 0 13px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #427393;
+}
+
+/* Short description */
+.entry-description {
+  max-width: 760px;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #61798c;
+}
+
+/* Subtle hover treatment */
+.academic-entry:hover {
+  border-color: #bfd8e8;
+}
+
+/* Mobile layout */
+@media (max-width: 700px) {
+  .education-section,
+  .experience-section {
+    margin-bottom: 55px;
+  }
+
+  .academic-entry {
+    padding: 22px 19px;
+  }
+
+  .entry-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+
+  .entry-header h3 {
+    font-size: 19px;
+  }
+}
+
+
+/* =========================================
+   Sections 03–06 — Academic Bottom Grid
+   ========================================= */
+
+/* Four-column academic summary */
+.academic-bottom-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 20px;
+  align-items: start;
+  margin: 38px 0 60px;
+}
+
+/* Reset section spacing inside the grid */
+.academic-bottom-grid > section {
+  min-width: 0;
+  margin: 0;
+}
+
+/* Compact section headings */
+.academic-bottom-grid .section-heading {
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.academic-bottom-grid .section-number {
+  font-size: 28px;
+}
+
+.academic-bottom-grid .section-label {
+  font-size: 9px;
+  letter-spacing: 1.4px;
+}
+
+.academic-bottom-grid .section-heading h2 {
+  font-size: 19px;
+  line-height: 1.25;
+}
+
+/* Compact education and experience cards */
+.academic-bottom-grid .academic-entry {
+  padding: 16px;
+  box-shadow: none;
+}
+
+.academic-bottom-grid .entry-header {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.academic-bottom-grid .entry-header h3 {
+  font-size: 16px;
+}
+
+.academic-bottom-grid .entry-subtitle {
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.academic-bottom-grid .entry-description {
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+/* Compact publications */
+.academic-bottom-grid .publication-group {
+  margin-bottom: 14px;
+}
+
+.academic-bottom-grid .publication-group h3 {
+  margin: 0 0 9px;
+  padding-bottom: 7px;
+  font-size: 14px;
+}
+
+.academic-bottom-grid .publication-empty {
+  padding: 9px 11px;
+  font-size: 11px;
+}
+
+.academic-bottom-grid .publication-item {
+  padding: 12px;
+  margin-bottom: 9px;
+}
+
+.academic-bottom-grid .publication-item h4 {
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.academic-bottom-grid .publication-authors,
+.academic-bottom-grid .publication-type,
+.academic-bottom-grid .publication-item a {
+  font-size: 10px;
+}
+
+/* Visitors placeholder */
+.academic-bottom-grid .visitors-section .academic-entry {
+  background: #f0f7fb;
+}
+
+/* Medium screens: two columns */
+@media (max-width: 1300px) {
+  .academic-bottom-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Small screens: one column */
+@media (max-width: 700px) {
+  .academic-bottom-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
