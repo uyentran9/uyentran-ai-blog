@@ -9,17 +9,41 @@ layout: null
 
   <title>{{ page.title | default: site.title }}</title>
 
-  <!-- Custom academic homepage stylesheet -->
   <link rel="stylesheet"
         href="{{ '/assets/css/academic-home.css' | relative_url }}">
-
-  <!-- Custom academic homepage JavaScript -->
-  <script defer
-          src="{{ '/assets/js/academic-home.js' | relative_url }}">
-  </script>
 </head>
 
 <body>
-  {{ content }}
+  <div class="academic-layout">
+
+    <!-- Fixed profile sidebar -->
+    <aside class="academic-sidebar">
+      <div class="sidebar-content">
+        <h2>Victoria (Uyen) Tran</h2>
+        <p>Aspiring AI Researcher</p>
+        <p>Machine Learning for Biological & Scientific Discovery</p>
+      </div>
+    </aside>
+
+    <!-- Main website area -->
+    <div class="academic-main">
+
+      <!-- Gothic library banner -->
+      <header class="academic-hero">
+        <h1>Victoria (Uyen) Tran</h1>
+        <p>From Mathematics to AI for Biomedicine and Beyond</p>
+      </header>
+
+      <!-- Content from profile-preview.md or index.md -->
+      <main class="academic-content">
+        {{ content }}
+      </main>
+
+    </div>
+  </div>
+
+  <script defer
+          src="{{ '/assets/js/academic-home.js' | relative_url }}">
+  </script>
 </body>
 </html>
