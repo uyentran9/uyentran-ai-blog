@@ -17,20 +17,40 @@ I prioritize **rigorous empirical evaluation over headline performance metrics**
 
 ## Project Overview
 
-| Project | Research Area | Methods and Technologies | Status |
-|---|---|---|---|
-| Hepatic Risk Outcome Prediction | Clinical tabular | Tabular ML, boosting, Stratified Cross-Validation, OOF Ensembling, Log Loss | Completed |
-| Investigating Vanishing Gradients and Early-Layer Trainability in Deep MLPs | Neural Network Optimization | PyTorch, Deep MLPs, Backpropagation, Gradient Analysis, Weight Initialization, SGD | Completed |
-| Biomedical Microscopy Classification with MLP and CNN Baselines (BloodMNIST) | Biomedical Computer Vision | PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Evaluation | In progress |
-| PubMed RCT Sentence Classification with Transformer Models | Biomedical NLP | TF-IDF Baselines, Tokenization, Embeddings, Pretrained Transformers, Fine-Tuning | Planned |
-| Molecular Graph Classification with GNN Baselines (OGBG-MolHIV) | Molecular Machine Learning | Molecular Graphs, Fingerprint Baselines, Message Passing, GCN/GIN, PyTorch Geometric, Scaffold Splits | Planned |  
+{% assign project_items = site.data.projects %}
+{% assign completed_projects = project_items | where: "status", "completed" %}
+{% assign active_projects = project_items | where: "status", "in-progress" %}
+{% assign planned_projects = project_items | where: "status", "planned" %}
+
+<div class="project-counts" aria-label="Project counts">
+  <span><strong>{{ completed_projects.size }}</strong> Completed</span>
+  <span><strong>{{ active_projects.size }}</strong> In progress</span>
+  <span><strong>{{ planned_projects.size }}</strong> Planned</span>
+</div>
+
+<table>
+  <thead>
+    <tr><th>Project</th><th>Research Area</th><th>Methods and Technologies</th><th>Status</th></tr>
+  </thead>
+  <tbody>
+  {% for project in project_items %}
+    <tr>
+      <td>{{ project.overview_title | default: project.title | escape }}</td>
+      <td>{{ project.overview_research_area | default: project.research_area | escape }}</td>
+      <td>{% if project.overview_methods %}{{ project.overview_methods | escape }}{% else %}{% for method in project.methods %}{{ method | escape }}{% unless forloop.last %}, {% endunless %}{% endfor %}{% endif %}</td>
+      <td>{% case project.status %}{% when 'completed' %}Completed{% when 'in-progress' %}In progress{% when 'planned' %}Planned{% else %}{{ project.status | escape }}{% endcase %}</td>
+    </tr>
+  {% endfor %}
+  </tbody>
+</table>
 
 ---
 
 ## Completed Projects
 
+{% assign detail_project_1 = project_items | where: "id", "hepatic-risk" | first %}
 ### Hepatic Risk Outcome Prediction
-**Status:** Completed 
+**Status:** {% case detail_project_1.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_1.status | escape }}{% endcase %} 
 **Research Area:** Clinical Tabular Machine Learning 
 **Task:** Multiclass probability prediction  
 **Methods:** Logistic Regression, XGBoost, LightGBM, CatBoost, Optuna, Stratified Cross-Validation, Out-of-Fold Ensembling
@@ -63,9 +83,10 @@ A reproducible machine-learning pipeline for predicting three cirrhosis outcomes
 [View source code](https://github.com/uyentran9/hepatic-risk-prediction)
 --> 
 
+{% assign detail_project_2 = project_items | where: "id", "gradient-vanishing" | first %}
 ### Investigating Vanishing Gradients and Early-Layer Trainability Across Network Depth in Deep MLPs on BloodMNIST
 
-**Status:** Completed  
+**Status:** {% case detail_project_2.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_2.status | escape }}{% endcase %}  
 **Research Area:** Deep Learning and Neural Network Optimization  
 **Task:** Empirical Analysis of Gradient Propagation and Early-Layer Trainability  
 **Dataset:** BloodMNIST (MedMNIST v2)  
@@ -106,9 +127,10 @@ A controlled empirical investigation of how network depth and activation functio
 
 ## In Progress
 
+{% assign detail_project_3 = project_items | where: "id", "bloodmnist-cnn" | first %}
 ### Biomedical Microscopy Classification with MLP and CNN Baselines (BloodMNIST)
 
-**Status:** In progress  
+**Status:** {% case detail_project_3.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_3.status | escape }}{% endcase %}  
 **Research Area:** Biomedical Computer Vision  
 **Task:** Multiclass Microscopic Image Classification  
 **Dataset:** BloodMNIST (MedMNIST v2)  
@@ -134,9 +156,10 @@ A comparative investigation of fully connected and convolutional neural networks
 ---
 ## Upcoming
 
+{% assign detail_project_4 = project_items | where: "id", "pubmed-rct" | first %}
 ### PubMed RCT Sentence Classification with Transformer Models
 
-**Status:** Planned  
+**Status:** {% case detail_project_4.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_4.status | escape }}{% endcase %}  
 **Research Area:** Biomedical Natural Language Processing  
 **Task:** Sentence-Level Classification of Randomized Controlled Trial Abstracts  
 **Dataset:** PubMed RCT  
@@ -161,9 +184,10 @@ A comparative study of traditional text-classification approaches and Transforme
 
 ---  
 
+{% assign detail_project_5 = project_items | where: "id", "molhiv-gnn" | first %}
 ### Molecular Graph Classification with GNN Baselines (OGBG-MolHIV)
 
-**Status:** Planned  
+**Status:** {% case detail_project_5.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_5.status | escape }}{% endcase %}  
 **Research Area:** Molecular Machine Learning and Graph Representation Learning  
 **Task:** Binary Molecular Property Prediction  
 **Dataset:** OGBG-MolHIV (Open Graph Benchmark)  
@@ -219,8 +243,9 @@ A complete record of repositories, notebooks, source code, and project updates i
 
 [View all repositories](https://github.com/uyentran9)
 
+
 <p style="margin-top:24px;">
 <a href="{{ '/' | relative_url }}" style="background:#1f4d7a;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600;font-size:14px;"> 🏠 Back to Home </a>
-</p>
+</p> 
 
-Thank you for visiting — and for being part of my journey 🌱  
+Thank you for visiting — and for being part of my journey 🌱
