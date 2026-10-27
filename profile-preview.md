@@ -339,7 +339,7 @@ permalink: /profile-preview/
     </div>
 
     <p class="entry-subtitle">
-      Pricing Analyst — Finance
+      Pricing Analyst — Quantitative Finance
     </p>
 
     <p class="entry-description">
