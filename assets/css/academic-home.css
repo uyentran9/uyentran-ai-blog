@@ -238,3 +238,71 @@ body {
   background-size: cover, 100% auto;
 }
 
+
+/* =========================================
+   Academic Homepage — Top Navigation
+   ========================================= */
+
+/* Keep the top menu visible while scrolling */
+.academic-nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+
+  display: flex;
+  align-items: center;
+  gap: 34px;
+
+  min-height: 48px;
+  padding: 0 32px;
+
+  background: rgba(247, 251, 253, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid #d8e5ed;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation links */
+.academic-nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 48px;
+
+  color: #354f66;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease;
+}
+
+/* Hover effect */
+.academic-nav a:hover {
+  color: #1c6b9c;
+  border-bottom-color: #75a8c8;
+}
+
+/* Highlight Home on the homepage */
+.academic-nav a:first-child {
+  color: #185f94;
+  font-weight: 600;
+  border-bottom-color: #287caf;
+}
+
+/* Adapt navigation to narrow screens */
+@media (max-width: 800px) {
+  .academic-nav {
+    gap: 22px;
+    padding: 0 18px;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+
+  .academic-nav a {
+    flex-shrink: 0;
+  }
+}
+
