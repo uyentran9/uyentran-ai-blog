@@ -377,10 +377,36 @@ html[data-mode="dark"] .vision-section .interest-row{background:var(--panel)}
 .visitors-section p,.privacy-note{font-size:13px;line-height:1.6}
 /* Architectural images from the existing repository: bolder but behind readable text. */
 .fixed-top-composition .intro-hero{background:var(--paper)}
-.fixed-top-composition .library-watermark{
- background-image:linear-gradient(90deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 91%,transparent) 28%,color-mix(in srgb,var(--paper) 48%,transparent) 67%,color-mix(in srgb,var(--paper) 12%,transparent) 100%),url("{{ '/images/gothic-library.png' | relative_url }}");
- background-size:cover; background-position:center 47%;opacity:1;filter:none
+
+/* Clearer Gothic Library, fully visible on the right */
+.fixed-top-composition .library-watermark {
+  background-image:
+    linear-gradient(
+      90deg,
+      var(--paper) 0%,
+      color-mix(in srgb, var(--paper) 94%, transparent) 26%,
+      color-mix(in srgb, var(--paper) 55%, transparent) 48%,
+      transparent 72%
+    ),
+    url("{{ '/images/gothic-library.png' | relative_url }}");
+
+  background-size: 100% 100%, auto 100%;
+  background-position: center center, right center;
+  background-repeat: no-repeat;
+  opacity: 1;
+  filter: contrast(1.08) saturate(1.08);
 }
+
+
+/* Display the academic name on two lines */
+#home-title .name-second-line {
+  display: block;
+  font-size: 0.72em;
+  line-height: 1.15;
+  margin-top: 3px;
+}
+
+ 
 html[data-mode="dark"] .fixed-top-composition .library-watermark{
  background-image:linear-gradient(90deg,var(--paper) 0%,color-mix(in srgb,var(--paper) 89%,transparent) 29%,rgba(12,20,28,.46) 69%,rgba(12,20,28,.25) 100%),url("{{ '/images/gothic-library.png' | relative_url }}");opacity:1;filter:none
 }
@@ -485,7 +511,12 @@ html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition .library-water
 <div aria-hidden="true" class="library-watermark"></div>
 <div class="intro-inner">
 <div class="eyebrow">MACHINE LEARNING FOR BIOMEDICAL &amp; SCIENTIFIC DISCOVERY</div>
-<h2 id="home-title">Victoria Tran (My-Uyen Tran)</h2>
+
+<h2 id="home-title">
+  Victoria Tran
+  <span class="name-second-line">(My-Uyen Tran)</span>
+</h2>
+
 <p class="intro-lead">From Statistics to AI for Biomedical and Beyond</p>
 <p class="intro-secondary">“Toward generalizable AI models that help understand living systems and accelerate scientific discovery.”</p>
 </div>
