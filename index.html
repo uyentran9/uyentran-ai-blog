@@ -864,6 +864,93 @@ html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition .library-water
   filter: brightness(.80) sepia(.12) saturate(.89) !important;
 }
 
+
+/* V7.8 — One continuous Gothic panorama behind BOTH the top navigation and hero.
+   This supersedes the older hero-only background without changing its content. */
+.fixed-top-composition {
+  position: relative;
+  isolation: isolate;
+  background: var(--paper);
+  overflow: hidden;
+}
+.fixed-top-composition::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg,
+      rgba(248, 252, 255, .57) 0%,
+      rgba(248, 252, 255, .37) 25%,
+      rgba(248, 252, 255, .12) 51%,
+      rgba(248, 252, 255, .02) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  background-repeat: no-repeat;
+  background-size: 100% 100%, cover;
+  background-position: center center, center 53%;
+}
+.fixed-top-composition > .topbar {
+  position: relative;
+  z-index: 3;
+  background: rgba(248, 252, 255, .20) !important;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  border-bottom-color: color-mix(in srgb, var(--line) 70%, transparent);
+}
+.fixed-top-composition > .intro-hero {
+  position: relative;
+  z-index: 1;
+  isolation: auto !important;
+  background: transparent !important;
+}
+/* Only the parent paints the Gothic image, avoiding a seam between the two areas. */
+.fixed-top-composition .library-watermark {
+  display: none !important;
+}
+html[data-mode="light"][data-theme="ivory"] .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg,
+      rgba(255, 250, 242, .59) 0%,
+      rgba(255, 250, 242, .39) 25%,
+      rgba(255, 250, 242, .14) 51%,
+      rgba(255, 250, 242, .025) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter: sepia(.055) saturate(.95);
+}
+html[data-mode="light"][data-theme="ivory"] .fixed-top-composition > .topbar {
+  background: rgba(255, 251, 244, .23) !important;
+}
+html[data-mode="dark"][data-theme="sky"] .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg,
+      rgba(14, 29, 43, .87) 0%,
+      rgba(14, 29, 43, .76) 30%,
+      rgba(14, 29, 43, .50) 65%,
+      rgba(14, 29, 43, .41) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter: brightness(.87) saturate(.91);
+}
+html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg,
+      rgba(39, 32, 26, .89) 0%,
+      rgba(39, 32, 26, .78) 30%,
+      rgba(39, 32, 26, .54) 65%,
+      rgba(39, 32, 26, .44) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter: brightness(.86) saturate(.84) sepia(.12);
+}
+html[data-mode="dark"][data-theme="sky"] .fixed-top-composition > .topbar {
+  background: rgba(14, 29, 43, .42) !important;
+}
+html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition > .topbar {
+  background: rgba(39, 32, 26, .44) !important;
+}
+@media (max-width: 620px) {
+  .fixed-top-composition::before { background-position: center center, 56% 53%; }
+}
+
 </style>
 </head>
 <body>
