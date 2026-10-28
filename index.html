@@ -377,13 +377,13 @@ html[data-mode="dark"] .vision-section .interest-row{background:var(--panel)}
 .visitors-section p,.privacy-note{font-size:13px;line-height:1.6}
 /* Architectural images from the existing repository: bolder but behind readable text. */
 
-/* Panoramic Gothic Library: continuous sky with readable text. */
+/* Panoramic Gothic banner: branches, open sky, distant fir, and library. */
 .fixed-top-composition .intro-hero {
-  background: linear-gradient(100deg, var(--paper) 0%, var(--wash) 100%);
+  background: linear-gradient(110deg, var(--paper) 0%, var(--wash) 100%);
   isolation: isolate;
 }
 
-/* Gothic architecture on the right, softly blended across the banner. */
+/* Keep the Gothic building on the right, blending smoothly into the sky. */
 .fixed-top-composition .library-watermark {
   position: absolute;
   inset: 0;
@@ -394,27 +394,52 @@ html[data-mode="dark"] .vision-section .interest-row{background:var(--panel)}
   background-repeat: no-repeat;
   opacity: 1;
   filter: none;
-  -webkit-mask-image: linear-gradient(to right, transparent 48%, black 69%);
-  mask-image: linear-gradient(to right, transparent 48%, black 69%);
   pointer-events: none;
+  -webkit-mask-image: linear-gradient(to right, transparent 47%, black 72%);
+  mask-image: linear-gradient(to right, transparent 47%, black 72%);
 }
 
-/* Faint tree branches at the left edge; fade gently into the sky. */
+/* Left branches are taken from the edge of the same original image. */
 .fixed-top-composition .intro-hero::before {
   content: "";
   position: absolute;
   inset: 0 auto 0 0;
-  width: 170px;
-  background: url("{{ '/images/gothic-library.png' | relative_url }}")
-    no-repeat right center / auto 155%;
+  width: 175px;
+  background: url("{{ '/images/gothic-library.png' | relative_url }}") no-repeat right top / auto 195%;
   transform: scaleX(-1);
-  opacity: 0.30;
+  opacity: 0.78;
+  filter: contrast(1.18) saturate(1.10);
   pointer-events: none;
-  z-index: 1;
-  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 12%, black 35%, transparent 100%);
-  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 35%, transparent 100%);
+  z-index: 0;
+  /* The fade direction is reversed because this layer is flipped. */
+  -webkit-mask-image: linear-gradient(to left, black 0%, black 12%, transparent 90%);
+  mask-image: linear-gradient(to left, black 0%, black 12%, transparent 90%);
 }
 
+/* Add the fir-tree detail between the left sky and the Gothic building. */
+.fixed-top-composition .intro-hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 31%;
+  width: 260px;
+  background: url("{{ '/images/gothic-library.png' | relative_url }}") no-repeat 68% top / auto 205%;
+  opacity: 0.60;
+  filter: contrast(1.10);
+  pointer-events: none;
+  z-index: 0;
+  -webkit-mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0%, black 35%, black 65%, transparent 100%);
+}
+
+/* Keep the atmospheric details subtle on smaller screens and in Dark Mode. */
+@media (max-width: 850px) {
+  .fixed-top-composition .intro-hero::before { opacity: 0.32; }
+  .fixed-top-composition .intro-hero::after { opacity: 0.22; left: 36%; }
+}
+html[data-mode="dark"] .fixed-top-composition .intro-hero::before { opacity: 0.23; }
+html[data-mode="dark"] .fixed-top-composition .intro-hero::after { opacity: 0.22; }
 
 html[data-mode="dark"] .fixed-top-composition .library-watermark {
   background-image: url("{{ '/images/gothic-library.png' | relative_url }}");
@@ -500,6 +525,72 @@ html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition .library-water
   }
   .fixed-top-composition .intro-lead { margin-bottom: 6px; }
   .fixed-top-composition .intro-secondary { margin-bottom: 0; }
+}
+</style>
+<style id="profile-sidebar-theme-sync">
+/* Match the fixed profile sidebar to the four Sky/Ivory × Light/Dark palettes. */
+.sidebar {
+  --sidebar-surface: #eaf5fb;
+  --sidebar-art-opacity: 0.95;
+  --sidebar-art-filter: none;
+  background: var(--sidebar-surface);
+  border-right-color: var(--line);
+}
+html[data-mode="light"][data-theme="ivory"] .sidebar {
+  --sidebar-surface: #f3eee5;
+  --sidebar-art-opacity: 0.78;
+  --sidebar-art-filter: sepia(0.35) saturate(0.7);
+}
+html[data-mode="dark"][data-theme="sky"] .sidebar {
+  --sidebar-surface: #182c3e;
+  --sidebar-art-opacity: 0.42;
+  --sidebar-art-filter: brightness(0.60) saturate(0.75);
+}
+html[data-mode="dark"][data-theme="ivory"] .sidebar {
+  --sidebar-surface: #352e27;
+  --sidebar-art-opacity: 0.38;
+  --sidebar-art-filter: sepia(0.40) brightness(0.52) saturate(0.65);
+}
+
+/* Preserve the sidebar Gothic illustration without a fixed Sky-blue overlay. */
+.sidebar::before {
+  background-image:
+    linear-gradient(to bottom,
+      var(--sidebar-surface) 0%,
+      color-mix(in srgb, var(--sidebar-surface) 76%, transparent) 48%,
+      color-mix(in srgb, var(--sidebar-surface) 8%, transparent) 100%),
+    url("{{ '/images/gothic-library2.png' | relative_url }}");
+  opacity: var(--sidebar-art-opacity);
+  filter: var(--sidebar-art-filter);
+}
+.sidebar::after {
+  background: linear-gradient(to bottom,
+    color-mix(in srgb, var(--sidebar-surface) 8%, transparent),
+    transparent 67%,
+    color-mix(in srgb, var(--sidebar-surface) 10%, transparent));
+}
+
+/* All profile text, links, icons, dividers and counters follow the palette. */
+.v7-sidebar-inner .portrait-ring { background: var(--panel); border-color: var(--line); }
+.v7-sidebar-inner .profile-name { color: var(--ink); }
+.v7-sidebar-inner .profile-role { color: var(--accent-strong); }
+.v7-sidebar-inner .profile-bio { color: var(--ink-2); }
+.v7-side-links { color: var(--ink-2); }
+.v7-side-links a:hover { color: var(--accent-strong); }
+.v7-side-links .side-icon,
+.v7-side-links .kaggle-icon { color: var(--accent-strong); }
+.v7-side-links .side-fact.muted,
+.v7-side-links .side-fact.muted i { color: var(--muted); }
+.v7-stats { color: var(--muted); border-top-color: var(--line); }
+.v7-stat strong { color: var(--accent); }
+.v7-sidebar-quote {
+  color: var(--ink-2);
+  text-shadow: none;
+  border-left-color: var(--accent);
+  background: linear-gradient(to right,
+    var(--sidebar-surface),
+    color-mix(in srgb, var(--sidebar-surface) 86%, transparent) 70%,
+    transparent);
 }
 </style>
 </head>
