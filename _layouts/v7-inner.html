@@ -466,7 +466,141 @@ html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition .library-water
 .v7-article-surface .notes-date{font-size:13px;opacity:.85}
 .v7-inner-layout .nav-tab.active{border-bottom:2px solid var(--accent)!important;color:var(--ink)!important;font-weight:700}
 @media(max-width:850px){.v7-inner-layout #main-content{padding:26px 17px 55px}.v7-article-surface{font-size:16px}.v7-article-surface table{display:block;overflow-x:auto;white-space:normal}}
+</style>  
+ <!-- V9: shared palette and Gothic panorama for Notes, Projects, Publications and CV -->
+<style id="v7-inner-shared-theme-v9">
+/* The old inner-page sidebar used fixed light-blue values. */
+html[data-theme="sky"][data-mode="light"] { --side:#eaf5fb; }
+html[data-theme="ivory"][data-mode="light"] { --side:#f3eee5; }
+html[data-theme="sky"][data-mode="dark"] { --side:#142536; }
+html[data-theme="ivory"][data-mode="dark"] { --side:#302923; }
+
+/* Sidebar palette: follows the exact data-theme/data-mode set by its own JS. */
+.v7-inner-layout .sidebar {
+  background: var(--side) !important;
+  border-right: 1px solid var(--line) !important;
+  isolation: isolate;
+}
+.v7-inner-layout .v7-sidebar-inner { position:relative; z-index:1; }
+.v7-inner-layout .portrait-ring { background:var(--panel) !important; border-color:var(--line) !important; }
+.v7-inner-layout .profile-name,
+.v7-inner-layout .profile-name span { color:var(--ink) !important; }
+.v7-inner-layout .profile-name span { display:block; font-size:inherit; line-height:1.22; }
+.v7-inner-layout .profile-role { color:var(--accent-strong) !important; text-align:center; }
+.v7-inner-layout .profile-bio,
+.v7-inner-layout .v7-side-links,
+.v7-inner-layout .v7-side-links a,
+.v7-inner-layout .v7-side-links .side-fact { color:var(--ink-2) !important; }
+.v7-inner-layout .v7-side-links .side-icon,
+.v7-inner-layout .v7-side-links .kaggle-icon { color:var(--accent-strong) !important; }
+.v7-inner-layout .v7-stats {
+  color:var(--muted) !important;
+  border-top-color:var(--line) !important;
+  background:transparent !important;
+}
+.v7-inner-layout .v7-stat strong { color:var(--accent) !important; }
+.v7-inner-layout .v7-sidebar-quote {
+  color:var(--ink-2) !important;
+  border-left-color:var(--accent) !important;
+  text-shadow:none !important;
+  background:linear-gradient(90deg,
+     color-mix(in srgb,var(--side) 75%,transparent),
+     color-mix(in srgb,var(--side) 42%,transparent) 70%, transparent) !important;
+}
+/* Original footer artwork, fading smoothly into each sidebar palette. */
+.v7-inner-layout .sidebar::before {
+  content:"";
+  position:absolute;
+  left:0; right:0; bottom:0;
+  height:410px;
+  z-index:0;
+  pointer-events:none;
+  background: url("{{ '/images/gothic-library2.png' | relative_url }}") center bottom / cover no-repeat !important;
+  opacity:1 !important;
+  -webkit-mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.1) 15%,rgba(0,0,0,.55) 35%,black 70%);
+  mask-image:linear-gradient(to bottom,transparent 0%,rgba(0,0,0,.1) 15%,rgba(0,0,0,.55) 35%,black 70%);
+  filter:brightness(.89) contrast(1.12) saturate(1.05);
+}
+html[data-theme="ivory"][data-mode="light"] .v7-inner-layout .sidebar::before {
+  filter:brightness(.87) contrast(1.15) sepia(.13) saturate(.95);
+}
+html[data-theme="sky"][data-mode="dark"] .v7-inner-layout .sidebar::before {
+  filter:brightness(.69) contrast(1.22) saturate(.8);
+}
+html[data-theme="ivory"][data-mode="dark"] .v7-inner-layout .sidebar::before {
+  filter:brightness(.73) contrast(1.25) sepia(.27) saturate(.78);
+}
+.v7-inner-layout .sidebar::after { background:transparent !important; }
+
+/* One unified Gothic Library 4 background for BOTH menu and page heading. */
+.v7-inner-layout .fixed-top-composition {
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  background:var(--paper);
+}
+.v7-inner-layout .fixed-top-composition::before {
+  content:"";
+  position:absolute;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(90deg,rgba(247,251,254,.62) 0%,rgba(247,251,254,.35) 32%,rgba(247,251,254,.08) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  background-size:100% 100%,cover;
+  background-position:center,center 43%;
+  background-repeat:no-repeat;
+}
+.v7-inner-layout .fixed-top-composition > .topbar,
+.v7-inner-layout .fixed-top-composition > .intro-hero {
+  position:relative;
+  z-index:1;
+}
+.v7-inner-layout .fixed-top-composition > .topbar {
+  background:rgba(248,252,255,.28) !important;
+  border-bottom-color:color-mix(in srgb,var(--line) 65%,transparent);
+  backdrop-filter:blur(2px);
+}
+.v7-inner-layout .fixed-top-composition > .intro-hero {
+  background:transparent !important;
+  isolation:auto !important;
+}
+.v7-inner-layout .fixed-top-composition .library-watermark { display:none !important; }
+.v7-inner-layout .fixed-top-composition .intro-hero::before,
+.v7-inner-layout .fixed-top-composition .intro-hero::after { content:none !important; display:none !important; }
+
+html[data-theme="ivory"][data-mode="light"] .v7-inner-layout .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg,rgba(255,250,242,.64) 0%,rgba(255,250,242,.38) 32%,rgba(255,250,242,.10) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+}
+html[data-theme="ivory"][data-mode="light"] .v7-inner-layout .fixed-top-composition > .topbar {
+  background:rgba(255,251,244,.28) !important;
+}
+html[data-theme="sky"][data-mode="dark"] .v7-inner-layout .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg,rgba(16,30,44,.88) 0%,rgba(16,30,44,.68) 33%,rgba(16,30,44,.35) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter:brightness(.87);
+}
+html[data-theme="ivory"][data-mode="dark"] .v7-inner-layout .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg,rgba(39,31,25,.89) 0%,rgba(39,31,25,.70) 33%,rgba(39,31,25,.40) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter:brightness(.87) sepia(.06);
+}
+html[data-mode="dark"] .v7-inner-layout .fixed-top-composition > .topbar {
+  background:rgba(17,29,41,.28) !important;
+}
+html[data-theme="ivory"][data-mode="dark"] .v7-inner-layout .fixed-top-composition > .topbar {
+  background:rgba(38,29,23,.3) !important;
+}
+@media(max-width:850px) {
+  .v7-inner-layout .sidebar::before { height:280px; }
+}
 </style>
+
 </head>
 <body class="v7-inner-layout">
 <a class="skip-link" href="#main-content">Skip to main content</a>
