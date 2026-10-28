@@ -634,167 +634,55 @@ html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition .library-water
   filter:brightness(.90) contrast(1.16) sepia(.14) !important;
 }
 /* Restore the exact original sidebar Gothic artwork; preserve its tower, lower building and trees. */
-/* ===== Sidebar bottom Gothic artwork: darker, clearer, smoother transition ===== */
-.sidebar{
-  position:relative;
-  isolation:isolate;
-  background:var(--side) !important;
-}
-
-/* Main bottom artwork */
-.sidebar::before{
+.sidebar{position:relative;isolation:isolate;background:var(--side) !important;}
+.sidebar::before {
   content:"";
   position:absolute;
-  left:0;
-  right:0;
-  bottom:0;
-  height:420px;   /* taller so the transition starts earlier and looks smoother */
+  inset:auto 0 0 0;
+  height:300px;
   z-index:0;
   pointer-events:none;
-
   background-image:
-    linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--side) 99%, transparent) 0%,
-      color-mix(in srgb, var(--side) 94%, transparent) 12%,
-      color-mix(in srgb, var(--side) 78%, transparent) 28%,
-      color-mix(in srgb, var(--side) 46%, transparent) 50%,
-      color-mix(in srgb, var(--side) 18%, transparent) 72%,
-      color-mix(in srgb, var(--side) 6%, transparent) 100%
-    ),
+    linear-gradient(to bottom,
+      var(--side) 0%,
+      color-mix(in srgb,var(--side) 74%,transparent) 22%,
+      color-mix(in srgb,var(--side) 23%,transparent) 60%,
+      color-mix(in srgb,var(--side) 8%,transparent) 100%),
     url("{{ '/images/gothic-library2.png' | relative_url }}");
-
+  background-size:100% 100%,cover;
+  background-position:center center,center bottom;
   background-repeat:no-repeat;
-  background-size:100% 100%, cover;
-  background-position:center top, center bottom;
-  opacity:1;
-  filter:contrast(1.40) saturate(1.15) brightness(.98);
+  opacity:1 !important;
+  filter:contrast(1.19) saturate(1.16);
 }
-
-/* Soft blend layer so it does not look like two separate color blocks */
-.sidebar::after{
+.sidebar::after {
   content:"";
   position:absolute;
   inset:0;
   z-index:0;
   pointer-events:none;
-  background:
-    linear-gradient(
-      to bottom,
-      transparent 0%,
-      transparent 56%,
-      rgba(0,0,0,0.02) 72%,
-      rgba(0,0,0,0.06) 100%
-    );
+  background:none;
 }
-.v7-sidebar-inner{
-  position:relative;
-  z-index:1;
-}
-
-/* Make the stats/quote area sit more naturally on the same background */
-.v7-stats,
-.v7-sidebar-quote{
-  position:relative;
-  z-index:1;
-}
-
-.v7-stats{
-  color:var(--muted);
-  border-top:1px solid color-mix(in srgb, var(--line) 82%, transparent);
-  padding-top:16px;
-  background:transparent !important;
-}
-
-.v7-sidebar-quote{
-  color:var(--ink-2);
-  text-shadow:none;
-  background:
-    linear-gradient(
-      90deg,
-      color-mix(in srgb, var(--side) 76%, transparent) 0%,
-      color-mix(in srgb, var(--side) 42%, transparent) 56%,
-      transparent 100%
-    ) !important;
-  border-left:2px solid color-mix(in srgb, var(--accent) 72%, transparent);
-  border-radius:2px;
-}
-
-/* ===== Theme-specific tuning ===== */
-
-/* Sky Light */
-html[data-theme="sky"][data-mode="light"] .sidebar::before{
+.v7-sidebar-inner {position:relative;z-index:1;}
+html[data-theme="ivory"][data-mode="light"] .sidebar::before {
   background-image:
-    linear-gradient(
-      to bottom,
-      rgba(226, 236, 245, 0.98) 0%,
-      rgba(226, 236, 245, 0.90) 14%,
-      rgba(226, 236, 245, 0.68) 30%,
-      rgba(226, 236, 245, 0.34) 52%,
-      rgba(226, 236, 245, 0.12) 74%,
-      rgba(226, 236, 245, 0.03) 100%
-    ),
+    linear-gradient(to bottom,
+      var(--side) 0%,
+      color-mix(in srgb,var(--side) 73%,transparent) 21%,
+      color-mix(in srgb,var(--side) 21%,transparent) 59%,
+      color-mix(in srgb,var(--side) 9%,transparent) 100%),
     url("{{ '/images/gothic-library2.png' | relative_url }}");
-  background-repeat:no-repeat;
-  background-size:100% 100%, cover;
-  background-position:center top, center bottom;
-  filter:brightness(.84) contrast(1.18) saturate(1.05);
+  filter:sepia(.20) saturate(1.12) contrast(1.24) brightness(.98);
 }
-
-/* Ivory Light */
-html[data-theme="ivory"][data-mode="light"] .sidebar::before{
+html[data-theme="sky"][data-mode="dark"] .sidebar::before {
   background-image:
-    linear-gradient(
-      to bottom,
-      rgba(241, 237, 229, 0.98) 0%,
-      rgba(241, 237, 229, 0.90) 14%,
-      rgba(241, 237, 229, 0.69) 30%,
-      rgba(241, 237, 229, 0.35) 52%,
-      rgba(241, 237, 229, 0.13) 74%,
-      rgba(241, 237, 229, 0.03) 100%
-    ),
+    linear-gradient(to bottom,
+      var(--side) 0%,
+      color-mix(in srgb,var(--side) 71%,transparent) 20%,
+      rgba(19,35,52,.16) 66%,
+      rgba(19,35,52,.13) 100%),
     url("{{ '/images/gothic-library2.png' | relative_url }}");
-  background-repeat:no-repeat;
-  background-size:100% 100%, cover;
-  background-position:center top, center bottom;
-  filter:brightness(.82) contrast(1.18) sepia(.12) saturate(1.02);
-}
-
-/* Sky Dark */
-html[data-theme="sky"][data-mode="dark"] .sidebar::before{
-  background-image:
-    linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--side) 98%, transparent) 0%,
-      color-mix(in srgb, var(--side) 88%, transparent) 14%,
-      color-mix(in srgb, var(--side) 68%, transparent) 30%,
-      rgba(19,35,52,.34) 54%,
-      rgba(19,35,52,.16) 100%
-    ),
-    url("{{ '/images/gothic-library2.png' | relative_url }}");
-  filter:brightness(.86) contrast(1.46) saturate(.86);
-}
-
-/* Ivory Dark */
-html[data-theme="ivory"][data-mode="dark"] .sidebar::before{
-  background-image:
-    linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--side) 98%, transparent) 0%,
-      color-mix(in srgb, var(--side) 88%, transparent) 14%,
-      color-mix(in srgb, var(--side) 68%, transparent) 30%,
-      rgba(45,34,26,.34) 54%,
-      rgba(45,34,26,.16) 100%
-    ),
-    url("{{ '/images/gothic-library2.png' | relative_url }}");
-  filter:brightness(.84) sepia(.36) saturate(.84) contrast(1.48);
-}
-
-/* Mobile */
-@media (max-width: 850px){
-  .sidebar::before{
-    height:360px;
-  }
+  filter:brightness(.69) contrast(1.38) saturate(.85);
 }
 html[data-theme="ivory"][data-mode="dark"] .sidebar::before {
   background-image:
@@ -805,6 +693,92 @@ html[data-theme="ivory"][data-mode="dark"] .sidebar::before {
       rgba(45,34,26,.14) 100%),
     url("{{ '/images/gothic-library2.png' | relative_url }}");
   filter:brightness(.73) sepia(.40) saturate(.86) contrast(1.43);
+}
+
+
+/* V7.5 -- seamless Gothic sidebar landscape, matching all four palettes.
+   Keep the Gothic image, layout, and navigation unchanged. */
+.sidebar {
+  position: relative;
+  isolation: isolate;
+  background: var(--side) !important;
+}
+.sidebar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  height: 420px;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 1 !important;
+  background-image:
+    linear-gradient(to bottom,
+      color-mix(in srgb, var(--side) 96%, transparent) 0%,
+      color-mix(in srgb, var(--side) 78%, transparent) 22%,
+      color-mix(in srgb, var(--side) 43%, transparent) 52%,
+      color-mix(in srgb, var(--side) 7%, transparent) 100%),
+    url("{{ '/images/gothic-library2.png' | relative_url }}");
+  background-repeat: no-repeat;
+  background-size: 100% 100%, cover;
+  background-position: center top, center bottom;
+  /* Fade the *entire* image overlay in, including the filtered gradient.
+     Without this mask, filtering tints the top pixel and creates a hard horizontal seam. */
+  -webkit-mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(0,0,0,.04) 9%,
+    rgba(0,0,0,.20) 22%,
+    rgba(0,0,0,.55) 42%,
+    rgba(0,0,0,.85) 60%,
+    #000 76%);
+  mask-image: linear-gradient(to bottom,
+    transparent 0%,
+    rgba(0,0,0,.04) 9%,
+    rgba(0,0,0,.20) 22%,
+    rgba(0,0,0,.55) 42%,
+    rgba(0,0,0,.85) 60%,
+    #000 76%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+.sidebar::after {
+  content: none !important;
+  display: none !important;
+}
+.v7-sidebar-inner { position: relative; z-index: 1; }
+.v7-stats { background: transparent !important; }
+
+/* Color intensity tuning only; picture geometry is identical in every palette. */
+html[data-mode="light"][data-theme="sky"] .sidebar::before {
+  filter: brightness(.85) contrast(1.17) saturate(1.05);
+}
+html[data-mode="light"][data-theme="ivory"] .sidebar::before {
+  filter: brightness(.83) contrast(1.18) sepia(.12) saturate(1.02);
+}
+html[data-mode="dark"][data-theme="sky"] .sidebar::before {
+  background-image:
+    linear-gradient(to bottom,
+      color-mix(in srgb, var(--side) 95%, transparent) 0%,
+      color-mix(in srgb, var(--side) 65%, transparent) 23%,
+      rgba(19,35,52,.32) 60%,
+      rgba(19,35,52,.13) 100%),
+    url("{{ '/images/gothic-library2.png' | relative_url }}");
+  filter: brightness(.86) contrast(1.36) saturate(.86);
+}
+html[data-mode="dark"][data-theme="ivory"] .sidebar::before {
+  background-image:
+    linear-gradient(to bottom,
+      color-mix(in srgb, var(--side) 95%, transparent) 0%,
+      color-mix(in srgb, var(--side) 65%, transparent) 23%,
+      rgba(45,34,26,.33) 60%,
+      rgba(45,34,26,.14) 100%),
+    url("{{ '/images/gothic-library2.png' | relative_url }}");
+  filter: brightness(.84) contrast(1.40) sepia(.30) saturate(.84);
+}
+@media (max-width:850px) {
+  .sidebar::before { height: 360px; }
 }
 
 </style>
