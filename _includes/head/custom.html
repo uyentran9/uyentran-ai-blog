@@ -4,7 +4,6 @@
 
 <!-- Support for Academicons -->
 <link rel="stylesheet" href="{{ base_path }}/assets/css/academicons.css"/>
-
 <!-- favicon from https://commons.wikimedia.org/wiki/File:OOjs_UI_icon_academic-progressive.svg -->
 <link rel="apple-touch-icon" sizes="180x180" href="{{ base_path }}/images/apple-touch-icon-180x180.png"/>
 <link rel="icon" type="image/svg+xml" href="{{ base_path }}/images/favicon.svg"/>
@@ -13,8 +12,200 @@
 <link rel="manifest" href="{{ base_path }}/images/manifest.json"/>
 <link rel="icon" href="/images/favicon.ico"/>
 <meta name="theme-color" content="#ffffff"/>
-
 <!-- end custom head snippets -->
 
+{% comment %}
+  Unified inner pages styling (Notes / Projects / Publications / CV).
+  Home has a self-contained index.html. Keep this patch restricted to inner pages.
+{% endcomment %}
+{% assign page_path = page.url | default: '' %}
+{% if page_path contains '/blog/' or page_path contains '/projects/' or page_path contains '/publications/' or page_path contains '/cv/' %}
+<style id="victoria-inner-theme-v8">
+/* Shared theme palette for non-Home pages. */
+html[data-mode="light"][data-theme="sky"] {
+  --victoria-side: #eaf5fb;
+  --victoria-ink: #203b4c;
+  --victoria-ink2: #385367;
+  --victoria-muted: #617a8a;
+  --victoria-accent: #427ba5;
+  --victoria-line: #d5e5ed;
+  --victoria-side-overlay: rgba(234,245,251,.95);
+  --victoria-art-filter: brightness(.87) contrast(1.18) saturate(1.06);
+}
+html[data-mode="light"][data-theme="ivory"] {
+  --victoria-side: #f3eee5;
+  --victoria-ink: #453b32;
+  --victoria-ink2: #615346;
+  --victoria-muted: #827467;
+  --victoria-accent: #937757;
+  --victoria-line: #e8e0d6;
+  --victoria-side-overlay: rgba(243,238,229,.95);
+  --victoria-art-filter: brightness(.86) contrast(1.21) sepia(.13) saturate(.97);
+}
+html[data-mode="dark"][data-theme="sky"] {
+  --victoria-side: #142536;
+  --victoria-ink: #f2f8fd;
+  --victoria-ink2: #d9e7f3;
+  --victoria-muted: #c2d4e3;
+  --victoria-accent: #bcdfff;
+  --victoria-line: #49647b;
+  --victoria-side-overlay: rgba(20,37,54,.97);
+  --victoria-art-filter: brightness(.82) contrast(1.28) saturate(.86);
+}
+html[data-mode="dark"][data-theme="ivory"] {
+  --victoria-side: #302923;
+  --victoria-ink: #fff9ef;
+  --victoria-ink2: #f0e4d5;
+  --victoria-muted: #ddcbb7;
+  --victoria-accent: #f2d19f;
+  --victoria-line: #665548;
+  --victoria-side-overlay: rgba(48,41,35,.97);
+  --victoria-art-filter: brightness(.80) contrast(1.31) sepia(.32) saturate(.82);
+}
 
+/* Let the same Gothic artwork appear seamlessly behind nav AND heading. */
+.fixed-top-composition {
+  position: relative !important;
+  isolation: isolate;
+  overflow: hidden;
+  background: var(--paper);
+}
+.fixed-top-composition::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(90deg, rgba(248,252,255,.57) 0%, rgba(248,252,255,.37) 25%, rgba(248,252,255,.12) 51%, rgba(248,252,255,.02) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  background-position: center center, center 32%;
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
+}
+.fixed-top-composition > .topbar,
+.fixed-top-composition > .intro-hero {
+  position: relative;
+  z-index: 1;
+}
+.fixed-top-composition > .topbar {
+  background: rgba(248,252,255,.36) !important;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-bottom-color: color-mix(in srgb, var(--victoria-line) 70%, transparent);
+}
+.fixed-top-composition > .intro-hero {
+  background: transparent !important;
+  isolation: auto !important;
+}
+.fixed-top-composition .library-watermark { display: none !important; }
+.fixed-top-composition .intro-hero::before,
+.fixed-top-composition .intro-hero::after { content: none !important; display: none !important; }
 
+html[data-mode="light"][data-theme="ivory"] .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg, rgba(255,250,242,.59) 0%, rgba(255,250,242,.39) 25%, rgba(255,250,242,.14) 51%, rgba(255,250,242,.025) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter: sepia(.055) saturate(.95);
+}
+html[data-mode="light"][data-theme="ivory"] .fixed-top-composition > .topbar {
+  background: rgba(255,251,244,.40) !important;
+}
+html[data-mode="dark"][data-theme="sky"] .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg, rgba(14,29,43,.87) 0%, rgba(14,29,43,.76) 30%, rgba(14,29,43,.50) 65%, rgba(14,29,43,.41) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter: brightness(.87) saturate(.91);
+}
+html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition::before {
+  background-image:
+    linear-gradient(90deg, rgba(39,32,26,.89) 0%, rgba(39,32,26,.78) 30%, rgba(39,32,26,.54) 65%, rgba(39,32,26,.44) 100%),
+    url("{{ '/images/gothic-library4.png' | relative_url }}");
+  filter: brightness(.86) saturate(.84) sepia(.12);
+}
+html[data-mode="dark"][data-theme="sky"] .fixed-top-composition > .topbar {
+  background: rgba(14,29,43,.52) !important;
+}
+html[data-mode="dark"][data-theme="ivory"] .fixed-top-composition > .topbar {
+  background: rgba(39,32,26,.52) !important;
+}
+
+/* Keep the entire sidebar in the selected palette, not just the main pane. */
+html[data-theme][data-mode] .sidebar {
+  position: relative;
+  isolation: isolate;
+  background: var(--victoria-side) !important;
+  color: var(--victoria-ink) !important;
+  border-right-color: var(--victoria-line) !important;
+}
+html[data-theme][data-mode] .sidebar::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  z-index: 0;
+  height: 420px;
+  opacity: 1 !important;
+  pointer-events: none;
+  background-image:
+    linear-gradient(to bottom,
+      var(--victoria-side-overlay) 0%,
+      color-mix(in srgb, var(--victoria-side) 78%, transparent) 22%,
+      color-mix(in srgb, var(--victoria-side) 43%, transparent) 52%,
+      color-mix(in srgb, var(--victoria-side) 7%, transparent) 100%),
+    url("{{ '/images/gothic-library2.png' | relative_url }}") !important;
+  background-position: center top, center bottom;
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
+  filter: var(--victoria-art-filter) !important;
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.04) 9%, rgba(0,0,0,.20) 22%, rgba(0,0,0,.55) 42%, rgba(0,0,0,.85) 60%, #000 76%) !important;
+  mask-image: linear-gradient(to bottom, transparent 0%, rgba(0,0,0,.04) 9%, rgba(0,0,0,.20) 22%, rgba(0,0,0,.55) 42%, rgba(0,0,0,.85) 60%, #000 76%) !important;
+}
+html[data-theme][data-mode] .sidebar::after { content: none !important; display: none !important; }
+html[data-theme][data-mode] .sidebar-inner,
+html[data-theme][data-mode] .v7-sidebar-inner { position: relative; z-index: 1; }
+html[data-theme][data-mode] .sidebar .profile-name,
+html[data-theme][data-mode] .sidebar .author__name { color: var(--victoria-ink) !important; }
+html[data-theme][data-mode] .sidebar .profile-name span {
+  display: block;
+  font-size: 1em;
+  color: inherit;
+}
+html[data-theme][data-mode] .sidebar .profile-role { color: var(--victoria-accent) !important; }
+html[data-theme][data-mode] .sidebar .profile-bio,
+html[data-theme][data-mode] .sidebar .v7-side-links,
+html[data-theme][data-mode] .sidebar .v7-side-links a,
+html[data-theme][data-mode] .sidebar .side-fact,
+html[data-theme][data-mode] .sidebar .author__bio,
+html[data-theme][data-mode] .sidebar .author__urls a,
+html[data-theme][data-mode] .sidebar .author__urls li {
+  color: var(--victoria-ink2) !important;
+}
+html[data-theme][data-mode] .sidebar .side-icon,
+html[data-theme][data-mode] .sidebar .kaggle-icon,
+html[data-theme][data-mode] .sidebar .sidebar-lucide,
+html[data-theme][data-mode] .sidebar .v7-stat strong,
+html[data-theme][data-mode] .sidebar .author__urls i {
+  color: var(--victoria-accent) !important;
+}
+html[data-theme][data-mode] .sidebar .v7-stats {
+  background: transparent !important;
+  border-top-color: var(--victoria-line) !important;
+  color: var(--victoria-muted) !important;
+}
+html[data-theme][data-mode] .sidebar .v7-sidebar-quote {
+  color: var(--victoria-ink2) !important;
+  text-shadow: none !important;
+  border-left-color: var(--victoria-accent) !important;
+  background: linear-gradient(90deg,
+    color-mix(in srgb, var(--victoria-side) 76%, transparent),
+    color-mix(in srgb, var(--victoria-side) 42%, transparent) 56%,
+    transparent 100%) !important;
+}
+@media (max-width: 850px) {
+  html[data-theme][data-mode] .sidebar::before { height: 360px; }
+}
+</style>
+{% endif %}
