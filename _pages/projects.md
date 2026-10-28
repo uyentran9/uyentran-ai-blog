@@ -28,7 +28,46 @@ I prioritize **rigorous empirical evaluation over headline performance metrics**
   <span><strong>{{ planned_projects.size }}</strong> Planned</span>
 </div>
 
+
+<style>
+/* Improve Project Overview table readability on mobile */
+@media (max-width: 767px) {
+  .project-table-scroll {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .project-table-scroll > table {
+    width: 100%;
+    min-width: 900px;
+    max-width: none !important;
+    table-layout: auto;
+  }
+
+  .project-table-scroll th,
+  .project-table-scroll td {
+    word-break: normal !important;
+    overflow-wrap: normal !important;
+    hyphens: none !important;
+  }
+
+  /* Give Research Area sufficient width */
+  .project-table-scroll th:nth-child(2),
+  .project-table-scroll td:nth-child(2) {
+    min-width: 180px !important;
+  }
+
+  .project-table-scroll th:nth-child(2) {
+    white-space: nowrap;
+  }
+}
+</style>
+
+<div class="project-table-scroll">
 <table>
+
   <thead>
     <tr>
   <th>Project</th>
@@ -48,6 +87,7 @@ I prioritize **rigorous empirical evaluation over headline performance metrics**
   {% endfor %}
   </tbody>
 </table>
+</div>
 
 ---
 
