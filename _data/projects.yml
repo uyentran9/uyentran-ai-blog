@@ -67,8 +67,8 @@
   overview_methods: "PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Evaluation"  
   
 - title: "Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Skin Lesion Classification (DermaMNIST-C 224)"
-  status: planned
-  year: "Upcoming"
+  status: in-progress
+  year: "2026"
   category: "Biomedical computer vision"
   research_area: "Biomedical Computer Vision"
   summary: >-
