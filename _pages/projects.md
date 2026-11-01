@@ -211,33 +211,36 @@ The experiment used official BloodMNIST train/validation/test splits, training-d
 
 ## In Progress  
 
-{% assign detail_dermamnist = project_items | where: "id", "dermamnist-c-vit" | first %}
-### Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Skin Lesion Classification (DermaMNIST-C 224)
 
-**Status:** {% case detail_dermamnist.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_dermamnist.status | escape }}{% endcase %}  
+{% assign detail_pneumonia = project_items | where: "id", "pneumoniamnist-vit" | first %}
+
+### Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Pneumonia Classification (PneumoniaMNIST+ 224)
+
+**Status:** {% case detail_pneumonia.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_pneumonia.status | escape }}{% endcase %}  
 **Research Area:** Computer Vision, Transfer Learning, and Biomedical Image Classification  
-**Task:** Multiclass Skin Lesion Classification and Pretrained Visual Representation Comparison  
-**Dataset:** DermaMNIST-C (Corrected DermaMNIST, 224 × 224)  
+**Task:** Binary Pneumonia Classification and Pretrained Visual Representation Comparison  
+**Dataset:** PneumoniaMNIST+ (224 × 224), pediatric chest X-ray images  
 **Methods:** PyTorch, ResNet-18, DeiT-Tiny, Vision Transformers, ImageNet Pretraining, Frozen Feature Extractors, Linear Probing, Representation Evaluation
 
-A comparative study of ImageNet-pretrained convolutional neural networks and Vision Transformers for seven-class skin lesion classification using DermaMNIST-C 224. The project will examine how pretrained CNN and Transformer representations support classification when the feature extractors are frozen and only lightweight linear classifiers are trained.
+A comparative study of ImageNet-pretrained convolutional neural networks and Vision Transformers for binary pneumonia classification using PneumoniaMNIST+ 224. The project investigates how pretrained CNN and Transformer representations support chest X-ray classification when the feature extractors are frozen and only lightweight linear classification heads are trained.
 
 **What I plan to investigate**
 
-- skin lesion image classification using the corrected DermaMNIST-C dataset, with its predefined training, validation, and test partitions;
+- binary classification of pediatric chest X-ray images into Normal and Pneumonia using the official PneumoniaMNIST+ training, validation, and test partitions;
 - differences between convolution-based feature extraction in ResNet-18 and attention-based visual representations in DeiT-Tiny;
-- transfer learning from ImageNet-pretrained models to biomedical image classification;
-- frozen feature extraction and linear probing to evaluate the classification performance of pretrained representations;
-- parameter-efficient training by optimizing only the linear classification heads and caching extracted embeddings;
-- comparative performance using macro-F1 as the primary metric, supported by accuracy, multiclass ROC-AUC, sensitivity, and specificity.
+- transfer learning from ImageNet-pretrained models to chest X-ray classification;
+- frozen feature extraction and linear probing to compare the classification performance of pretrained representations;
+- computational efficiency through cached feature embeddings and training only lightweight linear classification heads;
+- comparative performance using macro-F1 as the primary metric, supported by accuracy, ROC-AUC, sensitivity, and specificity.
 
 **Planned models and methods**
 
 `PyTorch` · `ResNet-18` · `DeiT-Tiny` · `Vision Transformers` · `Transfer Learning` · `ImageNet Pretraining` · `Frozen Encoders` · `Linear Probing` · `Feature Embeddings` · `AdamW` · `Macro-F1` · `ROC-AUC`
 
-**Planned experimental protocol:** ImageNet-pretrained ResNet-18 and DeiT-Tiny with frozen feature extractors, independently trained linear classification heads, AdamW optimizer, random seed 42, and a maximum of 10 training epochs for each head. The study will use the corrected dataset partitions and evaluate selected models on held-out test data.
+**Planned experimental protocol:** ImageNet-pretrained ResNet-18 and DeiT-Tiny with frozen feature extractors and independently trained linear classification heads. Grayscale chest X-ray images will be converted to three channels for compatibility with the pretrained models. The study will use the official dataset partitions, AdamW optimizer, random seed 42, and a maximum of 10 training epochs for each linear head. Model selection will be based on validation macro-F1, followed by final evaluation on the held-out test set.
 
-**Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for skin lesion classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.  
+**Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for pneumonia classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.
+
 
 ---  
 
