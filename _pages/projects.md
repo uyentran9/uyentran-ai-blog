@@ -239,6 +239,9 @@ A comparative study of ImageNet-pretrained convolutional neural networks and Vis
 
 **Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for skin lesion classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.
 
+---  
+
+## Upcoming   
 
 {% assign detail_project_4 = project_items | where: "id", "pubmed-rct" | first %}
 ### PubMed RCT Sentence Classification with Transformer Models
@@ -266,9 +269,6 @@ A comparative study of traditional text-classification approaches and Transforme
 
 **Research objective:** To investigate how contextual representations learned by pretrained Transformer models compare with traditional text-based baselines in biomedical sentence classification. The project will develop practical experience in modern NLP pipelines, pretrained language models, transfer learning, and systematic error analysis.
 
----  
-
-## Upcoming  
 
 {% assign detail_project_5 = project_items | where: "id", "molhiv-gnn" | first %}
 ### Molecular Graph Classification with GNN Baselines (OGBG-MolHIV)
