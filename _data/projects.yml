@@ -64,7 +64,29 @@
   id: "bloodmnist-cnn"
   overview_title: "Biomedical Microscopy Classification with MLP and CNN Baselines (BloodMNIST)"
   overview_research_area: "Biomedical Computer Vision"
-  overview_methods: "PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Evaluation"
+  overview_methods: "PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Evaluation"  
+  
+- title: "Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Skin Lesion Classification (DermaMNIST-C 224)"
+  status: planned
+  year: "Upcoming"
+  category: "Biomedical computer vision"
+  research_area: "Biomedical Computer Vision"
+  summary: >-
+    Planned comparison of ImageNet-pretrained ResNet-18 and DeiT-Tiny
+    representations for skin lesion classification, using frozen encoders,
+    linear probing, and evaluation under image corruptions.
+  methods:
+    - PyTorch
+    - ResNet-18
+    - DeiT-Tiny
+    - Linear probing
+  image: "/images/vision-transformer-pneumonia2.png"
+  website: ""
+  code: ""
+  id: "dermamnist-c-vit"
+  overview_title: "Pretrained CNN vs. Vision Transformer for Skin Lesion Classification (DermaMNIST-C)"
+  overview_research_area: "Biomedical Computer Vision"
+  overview_methods: "PyTorch, ResNet-18, DeiT-Tiny, ImageNet Pretraining, Linear Probing, Robustness Evaluation"  
 
 - title: "Biomedical Sentence Classification with Transformer Models"
   status: planned
