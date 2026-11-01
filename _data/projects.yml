@@ -66,15 +66,15 @@
   overview_research_area: "Biomedical Computer Vision"
   overview_methods: "PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Evaluation"  
   
-- title: "Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Skin Lesion Classification (DermaMNIST-C 224)"
+- title: "Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Pneumonia Classification (PneumoniaMNIST+ 224)"
   status: in-progress
   year: "2026"
   category: "Biomedical computer vision"
   research_area: "Biomedical Computer Vision"
   summary: >-
-    Planned comparison of ImageNet-pretrained ResNet-18 and DeiT-Tiny
-    representations for skin lesion classification, using frozen encoders,
-    linear probing, and evaluation under image corruptions.
+    Comparing ImageNet-pretrained ResNet-18 and DeiT-Tiny representations
+    for binary pneumonia classification using pediatric chest X-ray images,
+    frozen feature extractors, and linear probing.
   methods:
     - PyTorch
     - ResNet-18
@@ -83,10 +83,10 @@
   image: "/images/vision-transformer-pneumonia2.png"
   website: ""
   code: ""
-  id: "dermamnist-c-vit"
-  overview_title: "Pretrained CNN vs. Vision Transformer for Skin Lesion Classification (DermaMNIST-C)"
+  id: "pneumoniamnist-vit"
+  overview_title: "Pretrained CNN vs. Vision Transformer for Pneumonia Classification (PneumoniaMNIST+ 224)"
   overview_research_area: "Biomedical Computer Vision"
-  overview_methods: "PyTorch, ResNet-18, DeiT-Tiny, ImageNet Pretraining, Linear Probing, Robustness Evaluation"  
+  overview_methods: "PyTorch, ResNet-18, DeiT-Tiny, ImageNet Pretraining, Frozen Encoders, Linear Probing, Macro-F1"
 
 - title: "Biomedical Sentence Classification with Transformer Models"
   status: planned
