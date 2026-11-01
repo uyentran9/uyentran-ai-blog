@@ -237,7 +237,7 @@ A comparative study of ImageNet-pretrained convolutional neural networks and Vis
 
 **Planned experimental protocol:** ImageNet-pretrained ResNet-18 and DeiT-Tiny with frozen feature extractors, independently trained linear classification heads, AdamW optimizer, random seed 42, and a maximum of 10 training epochs for each head. The study will use the corrected dataset partitions and evaluate selected models on held-out test data.
 
-**Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for skin lesion classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.
+**Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for skin lesion classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.  
 
 ---  
 
