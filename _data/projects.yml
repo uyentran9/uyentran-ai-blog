@@ -46,7 +46,7 @@
   overview_methods: "PyTorch, Deep MLPs, Backpropagation, Gradient Analysis, Weight Initialization, SGD"
 
 - title: "Comparative Evaluation of MLP and CNN Models for Blood Cell Classification"
-  status: in-progress
+  status: completed
   year: "2026"
   category: "Biomedical computer vision"
   research_area: "Biomedical Computer Vision"
