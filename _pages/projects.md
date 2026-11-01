@@ -168,38 +168,77 @@ A controlled empirical investigation of how network depth and activation functio
 [View GitHub Repository](https://github.com/uyentran9/gradient-vanishing)
 -->  
 
----
-
-## In Progress
 
 {% assign detail_project_3 = project_items | where: "id", "bloodmnist-cnn" | first %}
-### Biomedical Microscopy Classification with MLP and CNN Baselines (BloodMNIST)
+### Biomedical Microscopy Classification with MLP and CNN Baselines (BloodMNIST)  
+### From MLP to CNN: Spatial Feature Learning and Classifier-Head Efficiency on BloodMNIST  
 
-**Status:** {% case detail_project_3.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_3.status | escape }}{% endcase %}  
-**Research Area:** Biomedical Computer Vision  
-**Task:** Multiclass Microscopic Image Classification  
+**Status:** {% case detail_bloodmnist.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_bloodmnist.status | escape }}{% endcase %}  
+**Research Area:** Deep Learning and Biomedical Image Classification  
+**Task:** Empirical Comparison of MLP and CNN Architectures and Classifier-Head Parameter Efficiency  
 **Dataset:** BloodMNIST (MedMNIST v2)  
-**Methods:** PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Training and Evaluation
+**Methods:** PyTorch, MLPs, CNNs, Batch Normalization, Dropout, He Initialization, Adam, Global Average Pooling, Macro-F1, Confusion Matrix
 
-A comparative investigation of fully connected and convolutional neural networks for eight-class microscopic blood-cell image classification using a consistent experimental pipeline.
+An educational empirical study comparing an MLP baseline and two CNN architectures for eight-class blood cell image classification. The study examines spatial feature learning, classification performance, and the trade-off between model accuracy and trainable parameter counts under a shared training protocol.
+
+**What I investigated**
+
+- differences in classification performance between a two-hidden-layer MLP (M0) and two small CNN architectures (M1 and M2);
+- the effects of Flatten and Global Average Pooling (GAP) classifier-head designs on parameter counts and observed classification performance;
+- parameter efficiency across architectures containing 636,296 (M0), 44,680 (M1), and 20,104 (M2) trainable parameters;
+- training and validation behavior using cross-entropy loss, accuracy, and macro-F1 across 12 epochs;
+- held-out test performance using the best validation macro-F1 checkpoint for each model;
+- class-specific prediction errors using the predefined M2 confusion matrix.
+
+The experiment used official BloodMNIST train/validation/test splits, training-derived RGB normalization, a fixed Adam learning rate of 0.001, and three independent model runs with random seed 42.
+
+**Models and methods**
+
+`PyTorch` · `MLP` · `CNN` · `BatchNorm` · `ReLU` · `Dropout` · `He/Kaiming Initialization` · `Adam` · `Flatten` · `Global Average Pooling` · `Macro-F1` · `Confusion Matrix`
+
+**Final Experimental Results**
+
+- **M1 (CNN + BatchNorm + Flatten)** achieved the highest test accuracy of **91.52%** and test macro-F1 of **0.9051**, compared with **83.81%** accuracy and **0.8150** macro-F1 for the MLP baseline (M0).
+- **M2 (CNN + BatchNorm + GAP)** achieved **87.02%** test accuracy and **0.8452** test macro-F1 while reducing trainable parameters by **55.0%** relative to M1 (20,104 versus 44,680).
+- M2's confusion matrix identified monocytes as the most difficult class by recall (**57.39%**), with **114 monocyte images** misclassified as immature granulocytes.
+
+**What the project demonstrates:** The study demonstrates how architectural choices, including convolutional feature extraction and classifier-head design, are associated with classification performance and model size. Both CNN architectures outperformed the MLP baseline under the tested settings. Replacing Flatten with GAP substantially reduced trainable parameters but resulted in lower test macro-F1. The findings illustrate a performance–parameter trade-off and are limited to the predefined single-seed experiment.
+
+
+[View project website](https://uyentran9.github.io/bloodmnist-mlp-cnn/)
+
+---  
+
+## In Progress  
+
+{% assign detail_dermamnist = project_items | where: "id", "dermamnist-c-vit" | first %}
+### Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Skin Lesion Classification (DermaMNIST-C 224)
+
+**Status:** {% case detail_dermamnist.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_dermamnist.status | escape }}{% endcase %}  
+**Research Area:** Computer Vision, Transfer Learning, and Biomedical Image Classification  
+**Task:** Multiclass Skin Lesion Classification and Pretrained Visual Representation Comparison  
+**Dataset:** DermaMNIST-C (Corrected DermaMNIST, 224 × 224)  
+**Methods:** PyTorch, ResNet-18, DeiT-Tiny, Vision Transformers, ImageNet Pretraining, Frozen Feature Extractors, Linear Probing, Representation Evaluation
+
+A comparative study of ImageNet-pretrained convolutional neural networks and Vision Transformers for seven-class skin lesion classification using DermaMNIST-C 224. The project will examine how pretrained CNN and Transformer representations support classification when the feature extractors are frozen and only lightweight linear classifiers are trained.
 
 **What I plan to investigate**
 
-- predictive performance differences between MLP and CNN baselines on microscopic blood-cell images;
-- the contribution of convolutional architectures and spatial inductive biases to image classification;
-- image normalization, preprocessing, and selected data-augmentation strategies;
-- effects of architectural and training choices on optimization and generalization;
-- class-wise classification performance, confusion patterns, and common model errors;
-- reproducibility of model comparisons under consistent data splits and evaluation procedures.
+- skin lesion image classification using the corrected DermaMNIST-C dataset, with its predefined training, validation, and test partitions;
+- differences between convolution-based feature extraction in ResNet-18 and attention-based visual representations in DeiT-Tiny;
+- transfer learning from ImageNet-pretrained models to biomedical image classification;
+- frozen feature extraction and linear probing to evaluate the classification performance of pretrained representations;
+- parameter-efficient training by optimizing only the linear classification heads and caching extracted embeddings;
+- comparative performance using macro-F1 as the primary metric, supported by accuracy, multiclass ROC-AUC, sensitivity, and specificity.
 
 **Planned models and methods**
 
-`PyTorch` · `MLP Baselines` · `CNN Baselines` · `Convolutional Layers` · `Image Normalization` · `Data Augmentation` · `Cross-Entropy Loss` · `Macro-F1` · `Confusion Matrices`
+`PyTorch` · `ResNet-18` · `DeiT-Tiny` · `Vision Transformers` · `Transfer Learning` · `ImageNet Pretraining` · `Frozen Encoders` · `Linear Probing` · `Feature Embeddings` · `AdamW` · `Macro-F1` · `ROC-AUC`
 
-**Research objective:** To establish reproducible biomedical image-classification baselines and examine when convolutional architectures offer advantages over fully connected networks. The project will extend my experience with PyTorch model implementation, image-processing pipelines, and comparative evaluation while remaining distinct from the earlier Gradient Vanishing study.  
+**Planned experimental protocol:** ImageNet-pretrained ResNet-18 and DeiT-Tiny with frozen feature extractors, independently trained linear classification heads, AdamW optimizer, random seed 42, and a maximum of 10 training epochs for each head. The study will use the corrected dataset partitions and evaluate selected models on held-out test data.
 
----
-## Upcoming
+**Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for skin lesion classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.
+
 
 {% assign detail_project_4 = project_items | where: "id", "pubmed-rct" | first %}
 ### PubMed RCT Sentence Classification with Transformer Models
@@ -228,6 +267,8 @@ A comparative study of traditional text-classification approaches and Transforme
 **Research objective:** To investigate how contextual representations learned by pretrained Transformer models compare with traditional text-based baselines in biomedical sentence classification. The project will develop practical experience in modern NLP pipelines, pretrained language models, transfer learning, and systematic error analysis.
 
 ---  
+
+## Upcoming  
 
 {% assign detail_project_5 = project_items | where: "id", "molhiv-gnn" | first %}
 ### Molecular Graph Classification with GNN Baselines (OGBG-MolHIV)
