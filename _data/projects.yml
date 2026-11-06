@@ -67,7 +67,7 @@
   overview_methods: "PyTorch, MLPs, CNNs, Image Preprocessing, Data Augmentation, Model Evaluation"  
   
 - title: "Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Pneumonia Classification (PneumoniaMNIST+ 224)"
-  status: in-progress
+  status: completed
   year: "2026"
   category: "Biomedical computer vision"
   research_area: "Biomedical Computer Vision"
@@ -110,7 +110,7 @@
   overview_methods: "TF-IDF Baselines, Tokenization, Embeddings, Pretrained Transformers, Fine-Tuning"
 
 - title: "Molecular Property Prediction with Graph Neural Networks"
-  status: planned
+  status: In progress
   year: "Upcoming"
   category: "Molecular machine learning"
   research_area: "Molecular Machine Learning"
