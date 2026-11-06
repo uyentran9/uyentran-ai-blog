@@ -80,7 +80,7 @@
     - ResNet-18
     - DeiT-Tiny
     - Linear probing
-  image: "/images/vision-transformer-pneumonia2.png"
+  image: "/images/vision-transformer-pneumonia5.png"
   website: ""
   code: ""
   id: "pneumoniamnist-vit"
