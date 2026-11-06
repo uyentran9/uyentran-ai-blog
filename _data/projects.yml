@@ -110,8 +110,8 @@
   overview_methods: "TF-IDF Baselines, Tokenization, Embeddings, Pretrained Transformers, Fine-Tuning"
 
 - title: "Molecular Property Prediction with Graph Neural Networks"
-  status: In progress
-  year: "Upcoming"
+  status: in progress
+  year: "2026"
   category: "Molecular machine learning"
   research_area: "Molecular Machine Learning"
   summary: >-
