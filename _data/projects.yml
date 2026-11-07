@@ -73,9 +73,9 @@
   research_area: "Biomedical Computer Vision"
   summary: >-
     Compared ImageNet-pretrained ResNet-18 and DeiT-Tiny using
-  full fine-tuning on PneumoniaMNIST+ 224 across three
-  random seeds. Evaluated held-out classification performance,
-  training behavior, and run-to-run variability.
+    full fine-tuning on PneumoniaMNIST+ 224 across three
+    random seeds. Evaluated held-out classification performance,
+    training behavior, and run-to-run variability.
   methods:
     - PyTorch
     - ResNet-18
