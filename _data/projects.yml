@@ -72,21 +72,28 @@
   category: "Biomedical computer vision"
   research_area: "Biomedical Computer Vision"
   summary: >-
-    Comparing ImageNet-pretrained ResNet-18 and DeiT-Tiny representations
-    for binary pneumonia classification using pediatric chest X-ray images,
-    frozen feature extractors, and linear probing.
+    Compared ImageNet-pretrained ResNet-18 and DeiT-Tiny using
+  full fine-tuning on PneumoniaMNIST+ 224 across three
+  random seeds. Evaluated held-out classification performance,
+  training behavior, and run-to-run variability.
   methods:
     - PyTorch
     - ResNet-18
     - DeiT-Tiny
-    - Linear probing
+    - ImageNet Pretraining
+    - Full Fine-Tuning
+    - AdamW
+    - Multi-Seed Evaluation
+    - Macro-F1
+    - ROC-AUC
+
   image: "/images/vision-transformer-pneumonia5.png"
   website: ""
   code: ""
   id: "pneumoniamnist-vit"
   overview_title: "Pretrained CNN vs. Vision Transformer for Pneumonia Classification (PneumoniaMNIST+ 224)"
   overview_research_area: "Biomedical Computer Vision"
-  overview_methods: "PyTorch, ResNet-18, DeiT-Tiny, ImageNet Pretraining, Frozen Encoders, Linear Probing, Macro-F1"
+  overview_methods: "PyTorch, ResNet-18, DeiT-Tiny, ImageNet Pretraining, Full Fine-Tuning, Multi-Seed Evaluation, Macro-F1, ROC-AUC"
 
 - title: "Biomedical Sentence Classification with Transformer Models"
   status: planned
