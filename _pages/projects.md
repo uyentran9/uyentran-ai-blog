@@ -94,7 +94,11 @@ I prioritize **rigorous empirical evaluation over headline performance metrics**
 ## Completed Projects
 
 {% assign detail_project_1 = project_items | where: "id", "hepatic-risk" | first %}
-### Hepatic Risk Outcome Prediction
+### Hepatic Risk Outcome Prediction  
+
+<p align="center">  
+   <img src="{{ '/images/hepatic-risk.png' | relative_url }}" alt="Hepatic Risk Outcome Prediction project overview" loading="lazy" style="display:block;width:100%;max-width:850px;height:auto;margin:0.75em 0 1.25em;border-radius:8px;">
+</p>
 **Status:** {% case detail_project_1.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_1.status | escape }}{% endcase %} 
 **Research Area:** Clinical Tabular Machine Learning 
 **Task:** Multiclass probability prediction  
@@ -130,6 +134,10 @@ A reproducible machine-learning pipeline for predicting three cirrhosis outcomes
 
 {% assign detail_project_2 = project_items | where: "id", "gradient-vanishing" | first %}
 ### Investigating Vanishing Gradients and Early-Layer Trainability Across Network Depth in Deep MLPs on BloodMNIST
+
+<p align="center">  
+   <img src="{{ '/images/gradient_vanishing.png' | relative_url }}" alt="Gradient propagation study across deep multilayer perceptrons" loading="lazy" style="display:block;width:100%;max-width:850px;height:auto;margin:0.75em 0 1.25em;border-radius:8px;">
+</p>  
 
 **Status:** {% case detail_project_2.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_2.status | escape }}{% endcase %}  
 **Research Area:** Deep Learning and Neural Network Optimization  
@@ -173,6 +181,10 @@ A controlled empirical investigation of how network depth and activation functio
 ### Biomedical Microscopy Classification with MLP and CNN Baselines (BloodMNIST)  
 ### From MLP to CNN: Spatial Feature Learning and Classifier-Head Efficiency on BloodMNIST  
 
+<p align="center">
+   <img src="{{ '/images/bloodmnist-mlp-cnn.png' | relative_url }}" alt="BloodMNIST comparison of MLP and CNN architectures" loading="lazy" style="display:block;width:100%;max-width:850px;height:auto;margin:0.75em 0 1.25em;border-radius:8px;">
+</p>   
+
 **Status:** {% case detail_bloodmnist.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_bloodmnist.status | escape }}{% endcase %}  
 **Research Area:** Deep Learning and Biomedical Image Classification  
 **Task:** Empirical Comparison of MLP and CNN Architectures and Classifier-Head Parameter Efficiency  
@@ -212,30 +224,42 @@ The experiment used official BloodMNIST train/validation/test splits, training-d
 
 ### Comparative Evaluation of Pretrained CNN and Vision Transformer Representations for Pneumonia Classification (PneumoniaMNIST+ 224)
 
+<p align="center">
+   <img src="{{ '/images/vision-transformer-pneumonia5.png' | relative_url }}" alt="ImageNet-pretrained ResNet-18 and DeiT-Tiny comparison on PneumoniaMNIST+ 224" loading="lazy" style="display:block;width:100%;max-width:850px;height:auto;margin:0.75em 0 1.25em;border-radius:8px;">
+</p>   
+
 **Status:** {% case detail_pneumonia.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_pneumonia.status | escape }}{% endcase %}  
-**Research Area:** Computer Vision, Transfer Learning, and Biomedical Image Classification  
-**Task:** Binary Pneumonia Classification and Pretrained Visual Representation Comparison  
-**Dataset:** PneumoniaMNIST+ (224 × 224), pediatric chest X-ray images  
-**Methods:** PyTorch, ResNet-18, DeiT-Tiny, Vision Transformers, ImageNet Pretraining, Frozen Feature Extractors, Linear Probing, Representation Evaluation
+**Research Area:** Biomedical Computer Vision and Transfer Learning  
+**Task:** Binary Pneumonia Classification and CNN–Vision Transformer Comparison  
+**Dataset:** PneumoniaMNIST+ 224 (5,856 pediatric chest X-ray images; official train/validation/test splits)  
+**Methods:** PyTorch, ResNet-18, DeiT-Tiny, ImageNet Pretraining, Full Fine-Tuning, AdamW, Multi-Seed Evaluation, Macro-F1, ROC-AUC
 
-A comparative study of ImageNet-pretrained convolutional neural networks and Vision Transformers for binary pneumonia classification using PneumoniaMNIST+ 224. The project investigates how pretrained CNN and Transformer representations support chest X-ray classification when the feature extractors are frozen and only lightweight linear classification heads are trained.
+A controlled empirical comparison of ImageNet-pretrained ResNet-18 and DeiT-Tiny for classifying pediatric chest X-rays as Normal or Pneumonia. Both models were fully fine-tuned under the same preprocessing, optimization settings, and training budget. The study examines held-out classification performance, run-to-run variability, learning curves, and classification errors.
 
-**What I plan to investigate**
+**What I investigated**
 
-- binary classification of pediatric chest X-ray images into Normal and Pneumonia using the official PneumoniaMNIST+ training, validation, and test partitions;
-- differences between convolution-based feature extraction in ResNet-18 and attention-based visual representations in DeiT-Tiny;
-- transfer learning from ImageNet-pretrained models to chest X-ray classification;
-- frozen feature extraction and linear probing to compare the classification performance of pretrained representations;
-- computational efficiency through cached feature embeddings and training only lightweight linear classification heads;
-- comparative performance using macro-F1 as the primary metric, supported by accuracy, ROC-AUC, sensitivity, and specificity.
+- transfer learning from ImageNet-pretrained CNN and Vision Transformer models to 224 × 224 chest X-ray images;
+- full fine-tuning of ResNet-18 and DeiT-Tiny under a shared training protocol;
+- model performance across three predefined seeds (42, 43, and 44), with six independent runs in total;
+- validation-based checkpoint selection and held-out test performance using macro-F1, accuracy, sensitivity, specificity, and ROC-AUC;
+- training and validation loss trends, runtime, and false-positive/false-negative patterns across runs;
+- the limitations of interpreting a small, single-dataset comparison as evidence of general architectural superiority.
 
-**Planned models and methods**
+**Models and methods**
 
-`PyTorch` · `ResNet-18` · `DeiT-Tiny` · `Vision Transformers` · `Transfer Learning` · `ImageNet Pretraining` · `Frozen Encoders` · `Linear Probing` · `Feature Embeddings` · `AdamW` · `Macro-F1` · `ROC-AUC`
+`PyTorch` · `ResNet-18` · `DeiT-Tiny` · `Vision Transformers` · `ImageNet Pretraining` · `Full Fine-Tuning` · `AdamW` · `Multi-Seed Experiments` · `Macro-F1` · `ROC-AUC`
 
-**Planned experimental protocol:** ImageNet-pretrained ResNet-18 and DeiT-Tiny with frozen feature extractors and independently trained linear classification heads. Grayscale chest X-ray images will be converted to three channels for compatibility with the pretrained models. The study will use the official dataset partitions, AdamW optimizer, random seed 42, and a maximum of 10 training epochs for each linear head. Model selection will be based on validation macro-F1, followed by final evaluation on the held-out test set.
+**Experimental protocol:** Official splits of 4,708 training, 524 validation, and 624 test images; grayscale images converted to three channels and normalized with ImageNet statistics. Each model was fully fine-tuned for five epochs per seed using AdamW (learning rate 2 × 10⁻⁵, weight decay 0.01, batch size 16). The best checkpoint in each run was selected by validation macro-F1 and then evaluated on the held-out test set. Results are reported as mean ± sample standard deviation over three seeds.
 
-**Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for pneumonia classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.
+**Final Experimental Results**
+
+- **ResNet-18:** test macro-F1 **0.9114 ± 0.0176**, accuracy **0.9209 ± 0.0148**, and ROC-AUC **0.9907 ± 0.0027**.
+- **DeiT-Tiny:** test macro-F1 **0.9121 ± 0.0119**, accuracy **0.9215 ± 0.0100**, and ROC-AUC **0.9900 ± 0.0005**.
+- Both models achieved mean sensitivity of approximately **0.9974**, but specificity was lower (approximately **0.79**), with more false positives among Normal images. Neither model consistently outperformed the other across the three seeds.
+
+**What the project demonstrates:** The two pretrained pipelines achieved similar test performance under the fixed full fine-tuning protocol, with a mean macro-F1 difference of only 0.0007. The results illustrate the value of multi-seed evaluation and class-specific error analysis. They do not establish statistical equivalence, general CNN–Transformer superiority, or clinical reliability.
+
+[View GitHub repository](https://github.com/uyentran9/pneumoniamnist-cnn-transformer)  
 
 ---  
 
@@ -243,6 +267,10 @@ A comparative study of ImageNet-pretrained convolutional neural networks and Vis
 
 {% assign detail_project_5 = project_items | where: "id", "molhiv-gnn" | first %}
 ### Molecular Graph Classification with GNN Baselines (OGBG-MolHIV)
+
+<p align="center">  
+   <img src="{{ '/images/GNN_OGBG_MolHIV.png' | relative_url }}" alt="ImageNet-pretrained ResNet-18 and DeiT-Tiny comparison on PneumoniaMNIST+ 224" loading="lazy" style="display:block;width:100%;max-width:850px;height:auto;margin:0.75em 0 1.25em;border-radius:8px;">
+</p>  
 
 **Status:** {% case detail_project_5.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_5.status | escape }}{% endcase %}  
 **Research Area:** Molecular Machine Learning and Graph Representation Learning  
@@ -275,6 +303,10 @@ A benchmark-based investigation of graph neural network architectures for predic
 
 {% assign detail_project_4 = project_items | where: "id", "pubmed-rct" | first %}
 ### PubMed RCT Sentence Classification with Transformer Models
+
+<p align="center">
+   <img src="{{ '/images/pubmed-transformer.png' | relative_url }}" alt="ImageNet-pretrained ResNet-18 and DeiT-Tiny comparison on PneumoniaMNIST+ 224" loading="lazy" style="display:block;width:100%;max-width:850px;height:auto;margin:0.75em 0 1.25em;border-radius:8px;">
+</p>
 
 **Status:** {% case detail_project_4.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_4.status | escape }}{% endcase %}  
 **Research Area:** Biomedical Natural Language Processing  
