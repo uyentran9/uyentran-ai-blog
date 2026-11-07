@@ -1358,7 +1358,7 @@ function statusCounters() {
 function initProjects() {
   document.getElementById('home-counts').innerHTML = statusCounters();
   document.getElementById('full-counts').innerHTML = statusCounters();
-  document.getElementById('metric-projects').textContent = String(PROJECTS.filter(p => p.status !== 'planned').length);
+  document.getElementById('metric-projects').textContent = String(PROJECTS.length);
   document.getElementById('metric-publications').textContent = String(PUBLICATIONS.length);
   document.getElementById('metric-awards').textContent = String(PROFILE.honors.length || PROFILE.awardsAndGrantsCount);
   const cards = PROJECTS.map(projectCard).join('');
