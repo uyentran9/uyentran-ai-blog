@@ -261,6 +261,8 @@ A controlled empirical comparison of ImageNet-pretrained ResNet-18 and DeiT-Tiny
 
 [View GitHub repository](https://github.com/uyentran9/pneumoniamnist-cnn-transformer)  
 
+[View project website](https://uyentran9.github.io/pneumoniamnist-cnn-transformer/)   
+
 ---  
 
 ## In Progress  
