@@ -207,10 +207,6 @@ The experiment used official BloodMNIST train/validation/test splits, training-d
 
 [View project website](https://uyentran9.github.io/bloodmnist-mlp-cnn/)
 
----  
-
-## In Progress  
-
 
 {% assign detail_pneumonia = project_items | where: "id", "pneumoniamnist-vit" | first %}
 
@@ -241,8 +237,39 @@ A comparative study of ImageNet-pretrained convolutional neural networks and Vis
 
 **Research objective:** To compare the usefulness of pretrained CNN and Vision Transformer representations for pneumonia classification under a shared linear-probing protocol. The project aims to develop practical experience with Vision Transformers, transfer learning, and representation evaluation in biomedical computer vision, without claiming that either architecture is universally superior.
 
+---  
+
+## In Progress  
+
+{% assign detail_project_5 = project_items | where: "id", "molhiv-gnn" | first %}
+### Molecular Graph Classification with GNN Baselines (OGBG-MolHIV)
+
+**Status:** {% case detail_project_5.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_5.status | escape }}{% endcase %}  
+**Research Area:** Molecular Machine Learning and Graph Representation Learning  
+**Task:** Binary Molecular Property Prediction  
+**Dataset:** OGBG-MolHIV (Open Graph Benchmark)  
+**Methods:** Molecular Fingerprints, Graph Neural Networks, Message Passing, Graph Embeddings, Benchmark Evaluation
+
+A benchmark-based investigation of graph neural network architectures for predicting molecular HIV activity from molecular structure, with comparisons against non-graph molecular fingerprint baselines.
+
+**What I plan to investigate**
+
+- molecular graph representations based on atoms, bonds, and molecular connectivity;
+- feature-based molecular fingerprint baselines for binary property prediction;
+- graph message passing and neighborhood aggregation in molecular GNNs;
+- selected GNN architectures, including Graph Convolutional Networks (GCNs) and Graph Isomorphism Networks (GINs);
+- graph-level representation learning and molecular property prediction;
+- model performance under the benchmark's scaffold-based dataset splits, using ROC-AUC and appropriate experimental comparisons.
+
+**Planned models and methods**
+
+`Molecular Graphs` · `Molecular Fingerprints` · `PyTorch Geometric` · `Message Passing` · `GCN` · `GIN` · `Graph Embeddings` · `Scaffold Splits` · `ROC-AUC`
+
+**Research objective:** To investigate the contribution of molecular graph structure and message-passing representations to molecular property prediction, compared with established fingerprint-based approaches. The project will provide a foundation for further research in graph representation learning and biomedical applications of GNNs.
+
 
 ---  
+
 
 ## Upcoming   
 
@@ -271,33 +298,6 @@ A comparative study of traditional text-classification approaches and Transforme
 `TF-IDF` · `Classical Text Classification` · `Tokenization` · `Text Embeddings` · `Pretrained Transformers` · `Fine-Tuning` · `Hugging Face` · `PyTorch` · `Macro-F1`
 
 **Research objective:** To investigate how contextual representations learned by pretrained Transformer models compare with traditional text-based baselines in biomedical sentence classification. The project will develop practical experience in modern NLP pipelines, pretrained language models, transfer learning, and systematic error analysis.
-
-
-{% assign detail_project_5 = project_items | where: "id", "molhiv-gnn" | first %}
-### Molecular Graph Classification with GNN Baselines (OGBG-MolHIV)
-
-**Status:** {% case detail_project_5.status %}{% when "completed" %}Completed{% when "in-progress" %}In progress{% when "planned" %}Planned{% else %}{{ detail_project_5.status | escape }}{% endcase %}  
-**Research Area:** Molecular Machine Learning and Graph Representation Learning  
-**Task:** Binary Molecular Property Prediction  
-**Dataset:** OGBG-MolHIV (Open Graph Benchmark)  
-**Methods:** Molecular Fingerprints, Graph Neural Networks, Message Passing, Graph Embeddings, Benchmark Evaluation
-
-A benchmark-based investigation of graph neural network architectures for predicting molecular HIV activity from molecular structure, with comparisons against non-graph molecular fingerprint baselines.
-
-**What I plan to investigate**
-
-- molecular graph representations based on atoms, bonds, and molecular connectivity;
-- feature-based molecular fingerprint baselines for binary property prediction;
-- graph message passing and neighborhood aggregation in molecular GNNs;
-- selected GNN architectures, including Graph Convolutional Networks (GCNs) and Graph Isomorphism Networks (GINs);
-- graph-level representation learning and molecular property prediction;
-- model performance under the benchmark's scaffold-based dataset splits, using ROC-AUC and appropriate experimental comparisons.
-
-**Planned models and methods**
-
-`Molecular Graphs` · `Molecular Fingerprints` · `PyTorch Geometric` · `Message Passing` · `GCN` · `GIN` · `Graph Embeddings` · `Scaffold Splits` · `ROC-AUC`
-
-**Research objective:** To investigate the contribution of molecular graph structure and message-passing representations to molecular property prediction, compared with established fingerprint-based approaches. The project will provide a foundation for further research in graph representation learning and biomedical applications of GNNs.
 
 ---
 
